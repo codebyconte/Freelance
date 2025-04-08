@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
 import { StackedLayout } from "@/components/ui/stacked-layout";
 import {
   Sidebar,
@@ -17,6 +18,7 @@ import {
 
 export default function Header({ children }) {
   const pathname = usePathname();
+
   return (
     <StackedLayout
       navbar={
@@ -34,9 +36,9 @@ export default function Header({ children }) {
           </NavbarSection>
           <NavbarSpacer />
           <NavbarSection>
-            <NavbarItem href="/contact" current={pathname === "/contact"}>
-              <span>Prendre RDV</span>
-            </NavbarItem>
+            <Button href="/contact" color="blue">
+              Prendre RDV
+            </Button>
           </NavbarSection>
         </Navbar>
       }
@@ -47,7 +49,11 @@ export default function Header({ children }) {
               <SidebarItem href="/">Acceuil</SidebarItem>
               <SidebarItem href="/services">Offres & tarifs</SidebarItem>
               <SidebarItem href="/portfolio">Portofolio</SidebarItem>
-              <SidebarItem href="/contact">Prendre RDV</SidebarItem>
+            </SidebarSection>
+            <SidebarSection>
+              <Button href="/contact" color="dark">
+                Prendre RDV
+              </Button>
             </SidebarSection>
           </SidebarBody>
         </Sidebar>
