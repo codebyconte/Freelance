@@ -4,7 +4,7 @@ import { GoogleStat } from "@/components/section/home/GoogleStat";
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-full">
       <Hero />
       <GoogleStat />
       <Services />
