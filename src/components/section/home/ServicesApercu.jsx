@@ -6,23 +6,32 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Store, ShoppingCart, TowerControl, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export default function ServicesApercu() {
   return (
-    <section className="flex flex-col justify-center items-center h-screen">
-      <div className="text-center max-w-3xl space-y-6">
-        <h2 className="text-5xl font-bold">
+    <section className=" py-24 sm:px-6 lg:px-8 h-screen">
+      <div className="mx-auto max-w-4xl text-center space-y-6">
+        <h2 className="text-4xl sm:text-5xl font-bold">
           Des services pensés pour faire évoluer votre entreprise
         </h2>
-        <p className="text-lg">
+        <p className="text-lg text-[#334155]">
           Site vitrine, e-commerce, refonte ou optimisation SEO .<br /> je
           conçois des solutions web sur-mesure, rapides et efficaces, <br />
           adaptées aux enjeux des entrepreneurs d’aujourd’hui.
         </p>
       </div>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 py-8">
-        <Card className="max-w-2xs ">
+      <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <Card className="hover:shadow-xl  transition-all duration-300 ">
           <CardHeader>
+            <Store />
+            <div className="flex gap-2 py-2">
+              <Badge color="blue">Image</Badge>
+              <Badge color="sky">Presence</Badge>
+              <Badge color="green">Confiance</Badge>
+            </div>
             <CardTitle>
               <h3>Site vitrine professionnel</h3>
             </CardTitle>
@@ -38,8 +47,13 @@ export default function ServicesApercu() {
             <p></p>
           </CardFooter>
         </Card>
-        <Card className="max-w-2xs">
+        <Card className="hover:shadow-xl transition-all duration-300">
           <CardHeader>
+            <ShoppingCart />
+            <div className="flex gap-2 py-2">
+              <Badge color="indigo">Conversion</Badge>
+              <Badge color="zinc">Paiement</Badge>
+            </div>
             <CardTitle>
               <h3>Boutique e-commerce performante</h3>
             </CardTitle>
@@ -54,8 +68,13 @@ export default function ServicesApercu() {
             <p></p>
           </CardFooter>
         </Card>
-        <Card className="max-w-2xs">
+        <Card className="hover:shadow-xl transition-all duration-300">
           <CardHeader>
+            <TowerControl />
+            <div className="flex gap-2 py-2">
+              <Badge color="amber">Modernisation</Badge>
+              <Badge color="fuchsia">Rapidité </Badge>
+            </div>
             <CardTitle>
               <h3>Refonte & optimisation de site existant</h3>
             </CardTitle>
@@ -71,8 +90,13 @@ export default function ServicesApercu() {
             <p></p>
           </CardFooter>
         </Card>
-        <Card className="max-w-2xs">
+        <Card className="hover:shadow-xl transition-all duration-300">
           <CardHeader>
+            <Zap />
+            <div className="flex gap-2 py-2">
+              <Badge color="lime">Visibilité</Badge>
+              <Badge color="blue">SEO </Badge>
+            </div>
             <CardTitle>
               <h3>Optimisation SEO & performance</h3>
             </CardTitle>
@@ -88,8 +112,11 @@ export default function ServicesApercu() {
           </CardFooter>
         </Card>
       </div>
-      <div>
+      <div className="mt-10 text-center italic text-gray-700">
         <p>Des solutions digitales pensées pour les entrepreneurs exigeants</p>
+        <Button href="/services" color="blue" className="mt-2.5">
+          Découvrir mes offres
+        </Button>
       </div>
     </section>
   );
