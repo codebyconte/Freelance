@@ -51,7 +51,7 @@ export default function Header({ children }) {
               <SidebarItem href="/portfolio">Portofolio</SidebarItem>
             </SidebarSection>
             <SidebarSection>
-              <Button href="/contact" color="dark">
+              <Button href="/contact" color="blue">
                 Prendre RDV
               </Button>
             </SidebarSection>
