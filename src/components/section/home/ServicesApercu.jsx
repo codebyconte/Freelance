@@ -9,13 +9,14 @@ import {
 import { Store, ShoppingCart, TowerControl, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { dmSerif } from "@/app/styles/fonts";
 
 export default function ServicesApercu() {
   return (
-    <section className=" py-24 sm:px-6 lg:px-8 h-screen">
+    <section className="px-6  md:px-12 lg:px-24 py-24">
       <div className="mx-auto max-w-4xl text-center space-y-6">
-        <h2 className="text-4xl sm:text-5xl font-bold">
-          Des services pensés pour faire évoluer votre entreprise
+        <h2 className={`${dmSerif.className} text-4xl sm:text-6xl font-bold`}>
+          Des services pensées pour faire évoluer votre entreprise
         </h2>
         <p className="text-lg text-[#334155]">
           Site vitrine, e-commerce, refonte ou optimisation SEO .<br /> je
@@ -114,7 +115,7 @@ export default function ServicesApercu() {
       </div>
       <div className="mt-10 text-center italic text-gray-700">
         <p>Des solutions digitales pensées pour les entrepreneurs exigeants</p>
-        <Button href="/services" color="blue" className="mt-2.5">
+        <Button href="/services" color="blue" className="m-8">
           Découvrir mes offres
         </Button>
       </div>
