@@ -13,14 +13,14 @@ import {
 
 export default function AboutPage() {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16 space-y-18">
-      <div className="text-center space-y-6 ">
+    <section className="max-w-6xl mx-auto px-4 py-20 space-y-24">
+      <div className="text-center space-y-8">
         <h1
-          className={`${dmSerif.className} text-4xl md:text-6xl text-shadow-lg`}
+          className={`${dmSerif.className} text-4xl md:text-6xl text-shadow-lg `}
         >
           Un développeur web passionné, au service de votre réussite digitale
         </h1>
-        <p className="mt-12">
+        <p className="mt-12 text-lg max-w-3xl mx-auto">
           Bonjour, je m’appelle <span className="font-bold">Conte Mouctar</span>
           , développeur web indépendant, diplômé{" "}
           <span className="underline decoration-indigo-500">
@@ -28,7 +28,7 @@ export default function AboutPage() {
           </span>{" "}
           en développement web.
         </p>
-        <p>
+        <p className=" max-w-3xl mx-auto">
           Depuis toujours, je suis fasciné par l’informatique et les
           technologies numériques. J’aime comprendre comment fonctionnent les
           choses, relever des défis techniques et transformer des idées en
@@ -36,7 +36,7 @@ export default function AboutPage() {
           où je peux allier créativité et expertise pour accompagner les
           entreprises dans leur transformation digitale.
         </p>
-        <p>
+        <p className="max-w-3xl mx-auto">
           Aujourd’hui, j’aide les entrepreneurs, indépendants et petites
           entreprises à se démarquer grâce à des sites web performants,
           sur-mesure et pensés pour atteindre leurs objectifs : renforcer leur
@@ -47,13 +47,13 @@ export default function AboutPage() {
 
       <Divider />
 
-      <div className="space-y-4   ">
+      <div className="space-y-8">
         <h2
-          className={`${dmSerif.className} text-3xl md:text-5xl max-w-6xl text-center p-4`}
+          className={`${dmSerif.className} text-3xl md:text-5xl text-center p-4`}
         >
           Ma philosophie de travail
         </h2>
-        <p className="text-center text-lg">
+        <p className="text-center text-lg text-gray-700">
           Une collaboration{" "}
           <span className="box-decoration-slice bg-linear-to-r from-blue-900 to-cyan-400 text-white px-2">
             humaine
@@ -65,7 +65,7 @@ export default function AboutPage() {
           technique. Je crois fermement que la réussite d’un projet repose sur
           une relation de confiance et une communication fluide.
         </p>
-        <ul className="space-y-4">
+        <ul className="space-y-4 grid md:grid-cols-2 gap-6 mt-8">
           <li className="flex gap-2">
             <div>
               <Ear />
@@ -120,40 +120,40 @@ export default function AboutPage() {
 
       <Divider />
 
-      <div className="space-y-4">
+      <div className="space-y-10 text-center">
         <h2
           className={`${dmSerif.className} text-3xl md:text-5xl max-w-6xl text-center p-4`}
         >
           Pourquoi me faire confiance ?
         </h2>
-        <ul className="space-y-4">
+        <ul className="flex flex-col gap-8 md:flex-row">
           <li>
             <div className="flex justify-center gap-2 mb-2">
               <GraduationCap />
-              <h3 className="font-semibold text-center ">Formation solide</h3>
+              <h3 className="font-semibold  ">Formation solide</h3>
             </div>
-            <p className="md:text-center">
+            <p>
               Diplômé d’OpenClassrooms en développement web (Bac+2), je maîtrise
               les technologies modernes comme HTML5, CSS3, JavaScript, React.js
               et Tailwind CSS.
             </p>
           </li>
-          <li className="mt-10">
+          <li>
             <div className="flex justify-center gap-2 mb-2">
               <Brain />
               <h3 className="font-semibold">Passionné & curieux</h3>
             </div>
-            <p className="md:text-center">
+            <p>
               Le monde numérique évolue vite. Je reste en veille constante pour
               proposer des solutions toujours à la pointe.
             </p>
           </li>
-          <li className="mt-10">
+          <li>
             <div className="flex justify-center gap-2 mb-2">
               <Handshake />
               <h3 className="font-semibold">Engagement fort</h3>
             </div>
-            <p className="md:text-center">
+            <p>
               Votre satisfaction est ma priorité. Je m’investis pleinement dans
               chaque mission pour obtenir un résultat à la hauteur de vos
               attentes.
@@ -164,13 +164,13 @@ export default function AboutPage() {
 
       <Divider />
 
-      <div className="space-y-4">
+      <div className="space-y-4 text-center">
         <h2
           className={`${dmSerif.className} text-3xl md:text-5xl max-w-6xl text-center p-4`}
         >
           Mon objectif
         </h2>
-        <p className="text-center">
+        <p className=" max-w-3xl mx-auto">
           Vous aider à prendre une longueur d’avance sur le web. Que vous soyez
           une petite entreprise, un entrepreneur ou un indépendant, je vous
           accompagne pour créer un site qui vous distingue vraiment.
