@@ -3,10 +3,11 @@
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/components/ui/link";
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 export default function PageContact() {
   const formRef = useRef(null);
+  const [confirmation, setConfirmation] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,11 +27,17 @@ export default function PageContact() {
     });
 
     const result = await res.json();
-    if (result.status === "ok") {
-      alert("✅ Message envoyé !");
+    if (result.status === 200) {
+      setConfirmation("success");
       formRef.current.reset();
-    } else {
-      alert("❌ Erreur lors de l'envoi");
+      setTimeout(() => {
+        setConfirmation(null);
+      }, 5000);
+    } else if (res.status === 404) {
+      setConfirmation("error");
+      setTimeout(() => {
+        setConfirmation(null);
+      }, 5000);
     }
   };
 
@@ -86,12 +93,12 @@ export default function PageContact() {
                   />
                 </dt>
                 <dd>
-                  <a
+                  <Link
                     href="mailto:hello@example.com"
                     className="hover:text-gray-900"
                   >
                     Mr.conte@icloud.com
-                  </a>
+                  </Link>
                 </dd>
               </div>
             </dl>
@@ -194,6 +201,18 @@ export default function PageContact() {
               <Button color="blue" type="submit">
                 Envoyer un message
               </Button>
+            </div>
+            <div>
+              {confirmation === "success" && (
+                <p className="mt-4 text-green-600">
+                  Message envoyé avec succès !
+                </p>
+              )}
+              {confirmation === "error" && (
+                <p className="mt-4 text-red-600">
+                  Une erreur est survenue, veuillez réessayer.
+                </p>
+              )}
             </div>
           </div>
         </form>

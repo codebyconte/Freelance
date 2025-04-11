@@ -15,10 +15,10 @@ export async function POST(req) {
     });
 
     if (error) {
-      return Response.json({ error }, { status: 500 });
+      return Response.json({ error }, { status: 404 });
     }
 
-    return Response.json({ data, status: "ok" });
+    return Response.json({ data, status: 200 });
   } catch (error) {
     return Response.json({ error: error.message }, { status: 500 });
   }
