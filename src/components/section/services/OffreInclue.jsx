@@ -35,8 +35,8 @@ export default function OffreInclue() {
           <li className="flex items-start gap-3">
             <Gauge className="text-blue-600 mt-1" size={24} />
             <span>
-              <strong>Performances optimales</strong> — vitesse, SEO,
-              compatibilité mobile
+              <strong>Performances optimales</strong> — vitesse de chargement
+              rapide, SEO renforcé, compatibilité mobile garantie.
             </span>
           </li>
           <li className="flex items-start gap-3">

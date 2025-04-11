@@ -19,7 +19,8 @@ export function JeuxGratter() {
         <p className="max-w-3xl mx-auto">
           Pour vous remercier de votre visite, grattez une carte au hasard et
           découvrez une ressource offerte pour améliorer votre site. Pas besoin
-          d’achat, aucun engagement.
+          d’achat ni d’engagement juste un petit cadeau pour booster votre
+          présence en ligne.
         </p>
       </div>
       <div className="flex flex-col  justify-center items-center gap-4 md:gap-8 md:flex-row py-8 ">

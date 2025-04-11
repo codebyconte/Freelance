@@ -19,9 +19,9 @@ export default function ServicesApercu() {
           Des services pensées pour faire évoluer votre entreprise
         </h2>
         <p className="text-lg text-[#334155]">
-          Site vitrine, e-commerce, refonte ou optimisation SEO .<br /> je
-          conçois des solutions web sur-mesure, rapides et efficaces, <br />
-          adaptées aux enjeux des entrepreneurs d’aujourd’hui.
+          Que vous ayez besoin d’un site vitrine, d’une boutique e-commerce ou
+          d’une refonte complète, je conçois des solutions web sur-mesure,
+          rapides et efficaces, adaptées aux enjeux des entrepreneurs exigeants.
         </p>
       </div>
       <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

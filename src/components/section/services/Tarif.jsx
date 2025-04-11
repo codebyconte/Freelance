@@ -16,9 +16,7 @@ export default function Tarif() {
       <h2
         className={`${dmSerif.className} text-4xl sm:text-6xl font-bold max-w-6xl text-center p-4`}
       >
-        Quel que soit votre objectif renforcer votre image, développer votre
-        visibilité ou vendre en ligne je propose trois solutions claires,
-        fiables , pensées pour les dirigeants exigeants
+        Des solutions adaptées à vos besoins professionnels
       </h2>
       <div className="text-black flex flex-col gap-4 mt-6 lg:flex-row p-4">
         <Card className="hover:ring-4 ring-blue-600">
@@ -36,7 +34,9 @@ export default function Tarif() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-blue-600" />
-                <span>Design unique & responsive</span>
+                <span>
+                  Design unique & responsive (adapté à tous les écrans)
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-blue-600" />
@@ -165,8 +165,8 @@ export default function Tarif() {
             claire, moderne et crédible.
           </li>
           <li>
-            <span className="font-bold">Structuré & Évolutif</span> : pour
-            publier, se développer, apparaître.
+            <span className="font-bold">Structuré & Évolutif</span> : Pour
+            publier facilement du contenu et accompagner votre développement.
           </li>
           <li>
             <span className="font-bold">E-commerce Performant</span> : pour

@@ -12,12 +12,12 @@ export default function PourquoiMoi() {
     <section className="bg-black text-white py-24  px-4 w-full ">
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className={`${dmSerif.className} text-4xl sm:text-6xl font-bold`}>
-          Une approche humaine, des résultats concrets
+          Des solutions digitales pensées pour les entrepreneurs exigeants
         </h2>
         <p className="mt-4 text-lg text-white leading-relaxed">
-          Je ne me contente pas de livrer un site : je vous accompagne pour
-          créer un outil durable, performant et parfaitement aligné avec vos
-          objectifs business.
+          Je ne me contente pas de créer un site : je conçois un outil durable,
+          performant et parfaitement aligné avec vos objectifs business. Chaque
+          projet est unique et fait l’objet d’un accompagnement personnalisé.
         </p>
       </div>
 

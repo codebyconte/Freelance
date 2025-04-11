@@ -6,7 +6,6 @@ import {
   Dialog,
   DialogActions,
   DialogBody,
-  DialogDescription,
   DialogTitle,
 } from "@/components/ui/dialog";
 
@@ -70,11 +69,11 @@ export default function Quiz() {
     if (first === "Vendre mes produits ou services en ligne")
       return "E-commerce Performant";
     if (trois === "Paiement en ligne sécurisé") {
-      return "E-commerce Performant";
+      return " E-commerce Performant";
     } else if (trois === "Un blog ou espace d’actus") {
-      return "Site Structuré & Évolutif";
+      return " Structuré & Évolutif";
     } else if (trois === "Pas de besoin particulier, je veux un site simple") {
-      return "Site Présence Pro";
+      return " Présence Pro";
     }
   };
 
@@ -84,7 +83,8 @@ export default function Quiz() {
         Pas certain de l’offre qui correspond à vos besoins ?
       </p>
       <p className="text-lg">
-        Faites le test en 2 minutes et recevez une recommandation personnalisée.
+        Faites le test en seulement 2 minutes et recevez une recommandation
+        personnalisée adaptée à vos objectifs.
       </p>
       <Button
         type="button"
@@ -95,7 +95,7 @@ export default function Quiz() {
           setAnswers([]);
         }}
       >
-        Commencer
+        Commencer le test
       </Button>
 
       <Dialog open={isOpen} onClose={setIsOpen} className="flex flex-col">
