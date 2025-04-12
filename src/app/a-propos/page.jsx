@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Divider } from "@/components/ui/divider";
 import { dmSerif } from "../styles/fonts";
+
 import {
   Ear,
   MessagesSquare,
@@ -14,7 +15,7 @@ import {
 export default function AboutPage() {
   return (
     <section className="max-w-6xl mx-auto px-4 py-20 space-y-24">
-      <div className="text-center space-y-8">
+      <div className="text-center space-y-8 ">
         <h1
           className={`${dmSerif.className} text-4xl md:text-6xl text-shadow-lg `}
         >
