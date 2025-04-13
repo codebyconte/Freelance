@@ -47,6 +47,13 @@ export default function Header({ children }) {
             <NavbarItem href="/services" current={pathname === "/services"}>
               Offres & tarifs
             </NavbarItem>
+            <NavbarItem
+              href="/site-performant"
+              current={pathname === "/site-performant"}
+            >
+              Pourquoi un site performant ?
+            </NavbarItem>
+
             <NavbarItem href="/portfolio" current={pathname === "/portofolio"}>
               Portfolio
             </NavbarItem>
@@ -79,6 +86,9 @@ export default function Header({ children }) {
             <SidebarSection>
               <SidebarItem href="/">Acceuil</SidebarItem>
               <SidebarItem href="/services">Offres & tarifs</SidebarItem>
+              <SidebarItem href="/site-performant">
+                Pourquoi un site performant ?
+              </SidebarItem>
               <SidebarItem href="/portfolio">Portofolio</SidebarItem>
               <SidebarItem href="/a-propos">À propos</SidebarItem>
             </SidebarSection>

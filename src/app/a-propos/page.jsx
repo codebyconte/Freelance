@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Divider } from "@/components/ui/divider";
 import { dmSerif } from "../styles/fonts";
-
+import Image from "next/image";
 import {
   Ear,
   MessagesSquare,
@@ -14,8 +14,8 @@ import {
 
 export default function AboutPage() {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-20 space-y-24">
-      <div className="text-center space-y-8 ">
+    <main className="flex flex-col justify-center items-center ">
+      <div className="text-center space-y-8 py-24 h-screen max-w-4xl p-4">
         <h1
           className={`${dmSerif.className} text-4xl md:text-6xl text-shadow-lg `}
         >
@@ -46,15 +46,13 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <Divider />
-
-      <div className="space-y-8">
+      <div className="space-y-8 bg-black text-white w-full p-4 py-24 text-center">
         <h2
           className={`${dmSerif.className} text-3xl md:text-5xl text-center p-4`}
         >
           Ma philosophie de travail
         </h2>
-        <p className="text-center text-lg text-gray-700">
+        <p className="text-center text-lg text-gray-300">
           Une collaboration{" "}
           <span className="box-decoration-slice bg-linear-to-r from-blue-900 to-cyan-400 text-white px-2">
             humaine
@@ -66,10 +64,10 @@ export default function AboutPage() {
           technique. Je crois fermement que la réussite d’un projet repose sur
           une relation de confiance et une communication fluide.
         </p>
-        <ul className="space-y-4 grid md:grid-cols-2 gap-6 mt-8">
-          <li className="flex gap-2">
+        <ul className="grid md:grid-cols-2 gap-6 mt-8 py-10">
+          <li className="flex gap-4 max-w-2xl mx-auto">
             <div>
-              <Ear />
+              <Ear className="text-blue-600" />
             </div>
             <p>
               <span className="font-bold">L’écoute avant tout :</span> Vous êtes
@@ -79,9 +77,9 @@ export default function AboutPage() {
             </p>
           </li>
 
-          <li className="flex gap-2">
+          <li className="flex gap-4 max-w-2xl mx-auto">
             <div>
-              <MessagesSquare />
+              <MessagesSquare className="text-blue-600" />
             </div>
             <p>
               <span className="font-bold ">
@@ -91,9 +89,9 @@ export default function AboutPage() {
               est expliquée de manière transparente.
             </p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-4 max-w-2xl mx-auto">
             <div>
-              <Target />
+              <Target className="text-blue-600" />
             </div>
             <p>
               <span className="font-bold">Un accompagnement sur-mesure :</span>{" "}
@@ -102,9 +100,9 @@ export default function AboutPage() {
               réels.
             </p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-4 max-w-2xl mx-auto">
             <div>
-              <PhoneCall />
+              <PhoneCall className="text-blue-600" />
             </div>
             <p>
               <span className="font-bold">Disponibilité et réactivité :</span>{" "}
@@ -119,41 +117,46 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <Divider />
-
-      <div className="space-y-10 text-center">
-        <h2
-          className={`${dmSerif.className} text-3xl md:text-5xl max-w-6xl text-center p-4`}
-        >
+      <div className="text-center space-y-10  py-24 p-4">
+        <h2 className={`${dmSerif.className} text-3xl md:text-5xl  p-4`}>
           Pourquoi me faire confiance ?
         </h2>
-        <ul className="flex flex-col gap-8 md:flex-row">
-          <li>
-            <div className="flex justify-center gap-2 mb-2">
-              <GraduationCap />
-              <h3 className="font-semibold  ">Formation solide</h3>
-            </div>
+        <ul className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+          <li className="flex flex-col justify-center items-center gap-3">
+            <Image
+              src="/Diplome.svg"
+              width={250}
+              height={250}
+              alt="Formation solide"
+            />
+            <h3 className="font-semibold text-lg ">Formation solide</h3>
             <p>
               Diplômé d’OpenClassrooms en développement web (Bac+2), je maîtrise
               les technologies modernes comme HTML5, CSS3, JavaScript, React.js
               et Tailwind CSS.
             </p>
           </li>
-          <li>
-            <div className="flex justify-center gap-2 mb-2">
-              <Brain />
-              <h3 className="font-semibold">Passionné & curieux</h3>
-            </div>
+          <li className="flex flex-col justify-center items-center gap-3">
+            <Image
+              src="/Code.svg"
+              width={250}
+              height={250}
+              alt="Formation solide"
+            />
+            <h3 className="font-semibold text-lg ">Passionné & curieux</h3>
             <p>
               Le monde numérique évolue vite. Je reste en veille constante pour
               proposer des solutions toujours à la pointe.
             </p>
           </li>
-          <li>
-            <div className="flex justify-center gap-2 mb-2">
-              <Handshake />
-              <h3 className="font-semibold">Engagement fort</h3>
-            </div>
+          <li className="flex flex-col justify-center items-center gap-3">
+            <Image
+              src="/Ensemble.svg"
+              width={250}
+              height={250}
+              alt="Formation solide"
+            />
+            <h3 className="font-semibold text-lg ">Engagement fort</h3>
             <p>
               Votre satisfaction est ma priorité. Je m’investis pleinement dans
               chaque mission pour obtenir un résultat à la hauteur de vos
@@ -163,11 +166,9 @@ export default function AboutPage() {
         </ul>
       </div>
 
-      <Divider />
-
-      <div className="space-y-4 text-center">
+      <div className="space-y-4 text-center py-24 p-4 bg-blue-600 w-full">
         <h2
-          className={`${dmSerif.className} text-3xl md:text-5xl max-w-6xl text-center p-4`}
+          className={`${dmSerif.className} text-3xl md:text-5xl text-center p-4`}
         >
           Mon objectif
         </h2>
@@ -176,18 +177,16 @@ export default function AboutPage() {
           une petite entreprise, un entrepreneur ou un indépendant, je vous
           accompagne pour créer un site qui vous distingue vraiment.
         </p>
-      </div>
 
-      <div className="text-center space-y-4">
         <h3 className="text-xl font-semibold">Prêt à collaborer ?</h3>
         <p>
           Ensemble, nous pouvons transformer vos idées en un outil digital
           performant qui sert vos ambitions.
         </p>
-        <Button href="/contact" color="blue">
+        <Button href="/contact" color="dark">
           Contactez-moi dès maintenant
         </Button>
       </div>
-    </section>
+    </main>
   );
 }

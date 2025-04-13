@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { dmSerif } from "@/app/styles/fonts";
 import { AuroraText } from "@/components/magicui/aurora-text";
-import { MoveDown } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="h-screen  flex flex-col justify-center items-center ">
-      <div className="max-w-5xl  text-center space-y-6 ">
+      <div className="max-w-5xl  text-center space-y-6 p-4">
         <h1
           className={`${dmSerif.className} text-6xl  lg:text-8xl text-shadow-lg`}
         >
@@ -21,7 +20,6 @@ export default function Hero() {
         <Button href="/contact" color="blue">
           Discutons de votre projet gratuitement
         </Button>
-        <svg className="size-6 animate-bounce "></svg>
       </div>
     </section>
   );

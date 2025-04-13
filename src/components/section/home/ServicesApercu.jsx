@@ -25,9 +25,9 @@ export default function ServicesApercu() {
         </p>
       </div>
       <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <Card className="hover:shadow-xl  transition-all duration-300 ">
+        <Card className="hover:shadow-xl  hover:scale-110 ease-out transition-all duration-400  ">
           <CardHeader>
-            <Store />
+            <Store className="text-blue-600" />
             <div className="flex gap-2 py-2">
               <Badge color="blue">Image</Badge>
               <Badge color="sky">Presence</Badge>
@@ -48,9 +48,9 @@ export default function ServicesApercu() {
             <p></p>
           </CardFooter>
         </Card>
-        <Card className="hover:shadow-xl transition-all duration-300">
+        <Card className="hover:shadow-xl hover:scale-110 ease-out transition-all duration-300">
           <CardHeader>
-            <ShoppingCart />
+            <ShoppingCart className="text-blue-600" />
             <div className="flex gap-2 py-2">
               <Badge color="indigo">Conversion</Badge>
               <Badge color="zinc">Paiement</Badge>
@@ -69,9 +69,9 @@ export default function ServicesApercu() {
             <p></p>
           </CardFooter>
         </Card>
-        <Card className="hover:shadow-xl transition-all duration-300">
+        <Card className="hover:shadow-xl hover:scale-110 ease-out transition-all duration-300">
           <CardHeader>
-            <TowerControl />
+            <TowerControl className="text-blue-600" />
             <div className="flex gap-2 py-2">
               <Badge color="amber">Modernisation</Badge>
               <Badge color="fuchsia">Rapidité </Badge>
@@ -91,9 +91,9 @@ export default function ServicesApercu() {
             <p></p>
           </CardFooter>
         </Card>
-        <Card className="hover:shadow-xl transition-all duration-300">
+        <Card className="hover:shadow-xl hover:scale-110 ease-out transition-all duration-300">
           <CardHeader>
-            <Zap />
+            <Zap className="text-blue-600" />
             <div className="flex gap-2 py-2">
               <Badge color="lime">Visibilité</Badge>
               <Badge color="blue">SEO </Badge>

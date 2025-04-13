@@ -78,7 +78,7 @@ export default function Quiz() {
   };
 
   return (
-    <div className="py-8 mx-auto text-center space-y-2">
+    <div className="py-8 mx-auto text-center space-y-2 p-4">
       <p className="text-bold text-3xl">
         Pas certain de l’offre qui correspond à vos besoins ?
       </p>

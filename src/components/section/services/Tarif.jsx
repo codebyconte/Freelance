@@ -19,7 +19,7 @@ export default function Tarif() {
         Des solutions adaptées à vos besoins professionnels
       </h2>
       <div className="text-black flex flex-col gap-4 mt-6 lg:flex-row p-4">
-        <Card className="hover:ring-4 ring-blue-600">
+        <Card className="hover:ring-4 ring-blue-600 ">
           <CardHeader>
             <CardTitle className="text-blue-600">Site Présence Pro</CardTitle>
             <p>
@@ -153,7 +153,7 @@ export default function Tarif() {
           </CardFooter>
         </Card>
       </div>
-      <div className="mt-10 max-w-3xl mx-auto text-center space-y-4 text-white">
+      <div className="mt-10 max-w-3xl mx-auto text-center space-y-4 text-white p-4">
         <h3
           className={`${dmSerif.className} text-2xl underline underline-offset-3`}
         >
