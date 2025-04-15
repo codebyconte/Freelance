@@ -26,6 +26,7 @@ export async function POST(req) {
       etablissement?.adresseEtablissement?.libelleCommuneEtablissement;
     const activiteUniteLegale =
       etablissement?.uniteLegale?.activitePrincipaleUniteLegale;
+    const nomEntreprise = etablissement.uniteLegale.denominationUniteLegale;
 
     const concurrents = await getConcurrentsByCommuneAndActivity({
       apiKey,
@@ -41,7 +42,7 @@ export async function POST(req) {
       statistiques: stats,
       message:
         concurrents.length > 0
-          ? `${concurrents.length} concurrent(s) trouvé(s).`
+          ? `+ de ${concurrents.length} concurrent(s) trouvé(s).`
           : "Aucun concurrent trouvé dans cette commune et ce secteur.",
     });
   } catch (error) {
@@ -52,10 +53,6 @@ export async function POST(req) {
     );
   }
 }
-
-// -------------------------------------------------------------
-// UTILITAIRES
-// -------------------------------------------------------------
 
 async function getEntrepriseBySiret(apiKey, siret) {
   const url = `https://api.insee.fr/api-sirene/3.11/siret/${siret}`;
@@ -76,7 +73,7 @@ async function getConcurrentsByCommuneAndActivity({
   activiteUniteLegale,
 }) {
   try {
-    const baseActivite = activiteUniteLegale?.slice(0, 2) + "*";
+    const baseActivite = activiteUniteLegale;
 
     const query = `
       libelleCommuneEtablissement:"${libelleCommune}" 
