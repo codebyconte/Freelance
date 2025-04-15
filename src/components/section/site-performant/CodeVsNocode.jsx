@@ -16,7 +16,7 @@ import { dmSerif } from "@/app/styles/fonts";
 
 export default function CodeVsNocode() {
   return (
-    <section className="py-24 space-y-8">
+    <section className="py-18 space-y-8">
       <div className=" text-center max-w-4xl mx-auto p-4">
         <h2 className={`${dmSerif.className} text-4xl sm:text-6xl font-bold`}>
           Code vs No-Code : que choisir pour votre entreprise ?
@@ -136,41 +136,50 @@ export default function CodeVsNocode() {
             terme :
           </p>
         </div>
+
         <ul className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
-          <li className="flex gap-2 max-w-2xl mx-auto">
-            <CircleGauge className="text-blue-600 w-10 h-10" />
+          <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3">
+            <div className="flex gap-2 text-center">
+              <CircleGauge className="text-blue-600 " />
+              <p className="font-semibold text-lg ">Problèmes de performance</p>
+            </div>
             <p>
-              <span className="font-semibold">Problèmes de performance :</span>{" "}
               Les sites no-code sont souvent alourdis par des plugins inutiles
               qui ralentissent leur fonctionnement.
             </p>
           </li>
-          <li className="flex gap-2 max-w-2xl mx-auto">
-            <LockKeyhole className="text-blue-600 w-10 h-10" />
+          <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3">
+            <div className="flex gap-2 text-center">
+              <LockKeyhole className="text-blue-600 " />
+              <p className="font-semibold text-lg">Dépendance au fournisseur</p>
+            </div>
             <p>
-              <span className="font-semibold">Dépendance au fournisseur :</span>
               Vous ne possédez pas réellement votre site ; vous êtes lié aux
               conditions et évolutions imposées par la plateforme.
             </p>
           </li>
-          <li className="flex gap-2 max-w-2xl mx-auto">
-            <BadgeDollarSign className="text-blue-600 w-10 h-10" />
+          <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3">
+            <div className="flex gap-2 text-center">
+              <BadgeDollarSign className="text-blue-600 " />
+              <p className="font-semibold text-lg">Frais récurrents élevés</p>
+            </div>
             <p>
-              <span className="font-semibold">Frais récurrents élevés :</span>{" "}
               Les abonnements mensuels s’accumulent rapidement, rendant ces
               solutions coûteuses à long terme.
             </p>
           </li>
-          <li className="flex gap-2 max-w-2xl mx-auto">
-            <TrendingDown className="text-blue-600 w-10 h-10" />
+          <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3">
+            <div className="flex gap-2 text-center">
+              <TrendingDown className="text-blue-600 " />
+              <p className="font-semibold text-lg">Difficultés en SEO avancé</p>
+            </div>
             <p>
-              <span className="font-semibold">Difficultés en SEO avancé :</span>
               Les limitations techniques impactent directement votre capacité à
               bien vous positionner sur Google.
             </p>
           </li>
         </ul>
-        <p className="max-w-3xl mx-auto leading-6">
+        <p className="max-w-3xl mx-auto leading-6 mt-12">
           Si votre objectif est de créer un site professionnel qui reflète
           parfaitement l’identité de votre entreprise tout en garantissant
           performance, sécurité et évolutivité, le développement sur mesure est

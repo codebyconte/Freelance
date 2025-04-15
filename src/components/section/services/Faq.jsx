@@ -19,7 +19,7 @@ export default function Faq() {
         <p className="text-lg">
           Vous ne trouvez pas ce que vous recherchez ?{" "}
           <Link href="/contact" className="text-blue-600 hover:underline">
-            Contactez-nous
+            Contactez-moi
           </Link>
         </p>
       </div>

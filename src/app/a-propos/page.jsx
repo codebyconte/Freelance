@@ -121,7 +121,7 @@ export default function AboutPage() {
         <h2 className={`${dmSerif.className} text-3xl md:text-5xl  p-4`}>
           Pourquoi me faire confiance ?
         </h2>
-        <ul className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <ul className="grid grid-cols-1 md:grid-cols-3 gap-12  mx-auto">
           <li className="flex flex-col justify-center items-center gap-3">
             <Image
               src="/Diplome.svg"
