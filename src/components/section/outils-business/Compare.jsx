@@ -92,12 +92,6 @@ export default function Compare() {
                   <strong>Statuts juridiques</strong> les plus courants
                 </span>
               </li>
-              <li className="flex items-start gap-2">
-                <Users className="text-blue-600 mt-1" size={20} />
-                <span>
-                  <strong>Taille moyenne</strong> des équipes
-                </span>
-              </li>
             </ul>
 
             <p className="text-sm mt-4">
@@ -123,7 +117,6 @@ export default function Compare() {
             Le nombre de concurrents dans votre secteur et votre ville
             <br />
             Les statuts juridiques les plus courants <br />
-            La taille moyenne des équipes
           </DialogDescription>
           <DialogBody>
             <Field>
