@@ -2,10 +2,11 @@ import { NextResponse } from "next/server";
 
 export async function POST(req) {
   try {
-    const { siret } = await req.json();
+    let { siret } = await req.json();
+    siret = siret.replace(/\s/g, "");
     const apiKey = process.env.SIRENE_API_KEY;
 
-    if (!siret) {
+    if (!/^\d{14}$/.test(siret)) {
       return NextResponse.json(
         { error: "SIRET invalide. Doit contenir 14 chiffres." },
         { status: 400 }
@@ -38,11 +39,12 @@ export async function POST(req) {
 
     return NextResponse.json({
       etablissement,
+      nomEntreprise,
       concurrents,
       statistiques: stats,
       message:
         concurrents.length > 0
-          ? `+ de ${concurrents.length} concurrent(s) trouvé(s).`
+          ? `Plus de ${concurrents.length} entreprises similaires exercent dans ce secteur d’activité a ${libelleCommune}`
           : "Aucun concurrent trouvé dans cette commune et ce secteur.",
     });
   } catch (error) {
@@ -95,11 +97,28 @@ async function getConcurrentsByCommuneAndActivity({
 
     const data = await res.json();
     return data.etablissements || [];
-  } catch (err) {
-    console.error("Erreur getConcurrentsByCommuneAndActivity:", err);
+  } catch (error) {
+    console.error("Erreur getConcurrentsByCommuneAndActivity:", error);
     return [];
   }
 }
+
+const CODES_JURIDIQUES = {
+  1000: "Entrepreneur individuel",
+  5485: "Société par actions simplifiée (SAS)",
+  5498: "Société par actions simplifiée unipersonnelle (SASU)",
+  5420: "Société à responsabilité limitée (SARL)",
+  5720: "Société anonyme à directoire et conseil de surveillance (SA)",
+  5710: "Société anonyme à conseil d'administration (SA)",
+  9220: "Association déclarée",
+  9300: "Organisme de droit étranger",
+  7210: "Groupement d'intérêt économique (GIE)",
+  7110: "Société civile",
+  7312: "Profession libérale",
+  2700: "Groupement agricole d'exploitation en commun (GAEC)",
+  2210: "Exploitant agricole",
+  9999: "Autre ou non spécifié",
+};
 
 function calculerStatutsJuridiques(concurrents) {
   const statutsJuridiques = {};
@@ -110,6 +129,10 @@ function calculerStatutsJuridiques(concurrents) {
   });
 
   return Object.entries(statutsJuridiques)
-    .map(([code, nombre]) => ({ code, nombre }))
+    .map(([code, nombre]) => ({
+      code,
+      libelle: CODES_JURIDIQUES[code] || "Code inconnu",
+      nombre,
+    }))
     .sort((a, b) => b.nombre - a.nombre);
 }

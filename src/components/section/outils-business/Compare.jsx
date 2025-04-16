@@ -13,14 +13,20 @@ import { Input } from "@/components/ui/input";
 import { dmSerif } from "@/app/styles/fonts";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Search, BarChart3, Users, BadgePercent } from "lucide-react";
+import { Search, BarChart3, BadgePercent } from "lucide-react";
+import Link from "next/link";
 
 export default function Compare() {
-  let [isOpen, setIsOpen] = useState(false);
+  const [modaleRecherche, setModaleRecherche] = useState(false);
+  const [modaleResultat, setModaleResultat] = useState(false);
+  const [modaleStatut, setModaleStatut] = useState(false);
   const [resultats, setResultats] = useState(null);
   const [siret, setSiret] = useState("");
+  const [erreur, setErreur] = useState("");
 
   const handleSubmit = async () => {
+    setErreur("");
+
     try {
       const res = await fetch("/api/sirene", {
         method: "POST",
@@ -28,17 +34,19 @@ export default function Compare() {
         body: JSON.stringify({ siret }),
       });
 
-      console.log("Réponse brute:", res);
       const data = await res.json();
-      console.log("Données reçues:", data);
 
       if (!res.ok) {
-        throw new Error("Une erreur est survenue");
+        setErreur(data.error || "Une erreur est survenue.");
+        return;
       }
 
       setResultats(data);
+      setModaleRecherche(false);
+      setModaleResultat(true);
     } catch (err) {
       console.error("Erreur réseau :", err.message || err);
+      setErreur("Impossible de joindre le serveur");
     }
   };
 
@@ -56,7 +64,7 @@ export default function Compare() {
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto bg-gray-100 rounded-2xl p-8 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out space-y-10">
+      <div className="max-w-4xl mx-auto bg-gray-100 rounded-2xl p-8 hover:shadow-lg transition duration-300 ease-in-out space-y-10">
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="w-full md:w-1/2">
             <Image
@@ -102,7 +110,7 @@ export default function Compare() {
               color="blue"
               type="button"
               className="cursor-pointer"
-              onClick={() => setIsOpen(true)}
+              onClick={() => setModaleRecherche(true)}
             >
               Comparer mon entreprise
             </Button>
@@ -110,17 +118,17 @@ export default function Compare() {
         </div>
       </div>
       <div>
-        <Dialog open={isOpen} onClose={setIsOpen}>
+        <Dialog open={modaleRecherche} onClose={setModaleRecherche}>
           <DialogTitle>Comparez votre entreprise</DialogTitle>
-          <DialogDescription>
+          <DialogDescription className="space-y-2">
             Entrez le numéro SIRET de votre entreprise pour découvrir :<br />
-            Le nombre de concurrents dans votre secteur et votre ville
+            - Le nombre de concurrents dans votre secteur et votre ville
             <br />
-            Les statuts juridiques les plus courants <br />
+            - Les statuts juridiques les plus courants <br />
           </DialogDescription>
           <DialogBody>
             <Field>
-              <Label>numéro SIRET</Label>
+              <Label>Numéro SIRET</Label>
               <Input
                 name="siret"
                 value={siret}
@@ -128,20 +136,134 @@ export default function Compare() {
                 placeholder="Ex. : 81234567800019"
               />
             </Field>
+            {erreur && (
+              <span className="text-red-600 text-sm mt-2">{erreur}</span>
+            )}
           </DialogBody>
           <DialogActions>
             <Button
               plain
               className="cursor-pointer"
-              onClick={() => setIsOpen(false)}
+              onClick={() => setModaleRecherche(false)}
             >
               Annuler
             </Button>
             <Button className="cursor-pointer" onClick={handleSubmit}>
-              Rechercher votre entreprise
+              Lancer analyse
             </Button>
           </DialogActions>
         </Dialog>
+      </div>
+      <div>
+        {resultats && modaleResultat && (
+          <section>
+            <div>
+              <Dialog open={modaleResultat} onClose={setModaleResultat}>
+                <DialogTitle>
+                  Résultat de votre recherche d’entreprise
+                </DialogTitle>
+                <DialogDescription className="space-y-2">
+                  <strong>Nom de votre entreprise :</strong>
+                  {resultats.etablissement?.uniteLegale
+                    ?.denominationUniteLegale || "Nom non disponible"}
+                  <br />
+                  <strong>Localisation : </strong>
+                  {
+                    resultats.etablissement?.adresseEtablissement
+                      ?.libelleCommuneEtablissement
+                  }
+                  <br />
+                  <strong>Secteur d’activité (Code NAF) :</strong>
+                  {
+                    resultats.etablissement?.uniteLegale
+                      ?.activitePrincipaleUniteLegale
+                  }
+                  <br />
+                  <span className="mt-2 font-medium text-blue-600">
+                    {resultats.message}
+                  </span>
+                </DialogDescription>
+                <DialogBody>
+                  <Field>Analyse concurrentielle personnalisée</Field>
+                  <ul className="space-y-1">
+                    {resultats.concurrents.map((etab) => (
+                      <li key={etab.siret}>
+                        <strong>
+                          {etab.uniteLegale?.denominationUniteLegale ||
+                            "Nom indisponible"}
+                        </strong>{" "}
+                        — SIRET : {etab.siret}
+                      </li>
+                    ))}
+                  </ul>
+                </DialogBody>
+                <DialogActions>
+                  <Button
+                    plain
+                    className="cursor-pointer"
+                    onClick={() => setModaleResultat(false)}
+                  >
+                    Fermer
+                  </Button>
+                  <Button
+                    className="cursor-pointer"
+                    onClick={() => setModaleStatut(true)}
+                  >
+                    Statuts juridiques concurrents
+                  </Button>
+                </DialogActions>
+              </Dialog>
+            </div>
+            <div>
+              {" "}
+              <Dialog open={modaleStatut} onClose={setModaleStatut}>
+                <DialogTitle>
+                  Analyse des statuts juridiques des entreprises concurrentes
+                </DialogTitle>
+                <DialogDescription className="space-y-2">
+                  Cette analyse présente la répartition des{" "}
+                  <strong>statuts juridiques</strong> des entreprises exerçant
+                  une activité similaire dans la même commune.
+                  <span className="font-medium text-blue-600">
+                    {resultats.message}
+                  </span>
+                </DialogDescription>
+                <DialogBody>
+                  {resultats.statistiques && (
+                    <ul>
+                      {resultats.statistiques.map((statut) => (
+                        <li key={statut.code}>
+                          <strong>{statut.libelle}</strong> (Code {statut.code})
+                          — {statut.nombre} entreprise(s)
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  Vous avez repéré un code de statut juridique inconnu ou
+                  souhaitez en savoir plus ?{" "}
+                  <Link
+                    href="https://www.insee.fr/fr/information/2028129"
+                    className="underline decoration-double decoration-blue-600 hover:text-blue-600"
+                    target="_blank"
+                  >
+                    Consultez la nomenclature officielle des statuts juridiques
+                    de l’Insee
+                  </Link>{" "}
+                  pour obtenir toutes les informations détaillées sur chaque
+                  code. Pour plus d
+                </DialogBody>
+                <DialogActions>
+                  <Button
+                    className="cursor-pointer"
+                    onClick={() => setModaleStatut(false)}
+                  >
+                    Fermer
+                  </Button>
+                </DialogActions>
+              </Dialog>
+            </div>
+          </section>
+        )}
       </div>
     </section>
   );
