@@ -108,18 +108,14 @@ export default function Graphique() {
     <section className=" mx-auto px-4 py-18 space-y-8">
       <div className="mb-12 text-center mx-auto">
         <h2
-          className={`${dmSerif.className} text-3xl font-bold tracking-tight sm:text-4xl`}
+          className={`${dmSerif.className} text-4xl sm:text-5xl font-bold text-black`}
         >
           Analyse sectorielle : Top secteurs par chiffre d’affaires et secteurs
           à risques
         </h2>
         <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
-          Explorez les dynamiques économiques les plus marquantes à travers deux
-          classements stratégiques : <br />
-          Les secteurs qui génèrent le plus de chiffre d’affaires, moteurs de
-          l’économie française.
-          <br /> Les secteurs avec le plus de radiations d’entreprises,
-          indicateurs clés des zones de risque ou d’instabilité.
+          Analysez votre marché, comparez-vous à la concurrence, simulez vos
+          revenus et suivez les tendances locales en quelques clics.
         </p>
       </div>
       <div className="text-center mx-auto ">
@@ -152,7 +148,7 @@ export default function Graphique() {
             <YAxis
               type="category"
               dataKey="secteur_d_activite_me"
-              width={220}
+              width={200}
             />
             <Tooltip
               formatter={(value) =>
@@ -166,8 +162,8 @@ export default function Graphique() {
             <Legend />
             <Bar
               dataKey="chiffres_d_affaires"
-              name="chiffre d'affaire"
-              fill="#8884d8"
+              name="Chiffre d'affaire"
+              fill="#3b82f6"
             />
           </BarChart>
         </ResponsiveContainer>
@@ -201,14 +197,14 @@ export default function Graphique() {
             <YAxis
               type="category"
               dataKey="secteur_d_activite_me"
-              width={220}
+              width={200}
             />
             <Tooltip />
             <Legend />
             <Bar
               dataKey="radiations"
               name="Nombre de radiations"
-              fill="#8884d8"
+              fill="#f87171"
             />
           </BarChart>
         </ResponsiveContainer>

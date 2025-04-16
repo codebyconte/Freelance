@@ -2,6 +2,7 @@ import "@/app/styles/globals.css";
 import Header from "@/components/layout/Header";
 import { inter } from "@/app/styles/fonts";
 import Script from "next/script";
+import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Code By Conte",
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
           `}
           </Script>
         </Header>
+        <Footer />
       </body>
     </html>
   );
