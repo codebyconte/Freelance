@@ -1,9 +1,9 @@
 import {
   CheckCircle,
-  ShieldCheck,
+  Crosshair,
   Code2,
-  Sparkles,
   Handshake,
+  CircleCheckBig,
 } from "lucide-react";
 import { dmSerif } from "@/app/styles/fonts";
 
@@ -12,12 +12,12 @@ export default function PourquoiMoi() {
     <section className="bg-black text-white py-24  px-4 w-full ">
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className={`${dmSerif.className} text-4xl sm:text-6xl font-bold`}>
-          Des solutions digitales pensées pour les entrepreneurs exigeants
+          Un partenaire tech au service de votre croissance
         </h2>
         <p className="mt-4 text-lg text-white leading-relaxed">
-          Je ne me contente pas de créer un site : je conçois un outil durable,
-          performant et parfaitement aligné avec vos objectifs business. Chaque
-          projet est unique et fait l’objet d’un accompagnement personnalisé.
+          Derrière chaque ligne de code, il y a une stratégie : la vôtre. Je ne
+          me limite pas à livrer un site, je vous accompagne dans la création
+          d’un véritable outil de croissance digitale, sur-mesure et durable .
         </p>
       </div>
 
@@ -26,34 +26,33 @@ export default function PourquoiMoi() {
           <div className="mt-1">
             <Code2 className="text-blue-700 size-6" />
           </div>
+          <p>Solutions 100% personnalisées, sans template préconçu</p>
+        </div>
+        <div className="flex  gap-4">
+          <div className="mt-1">
+            <Crosshair className="text-blue-700 size-6" />
+          </div>
           <p>
-            Chaque ligne de code est pensée pour votre projet, sans modèle
-            préfabriqué.
+            Ciblage clair de vos objectifs : visibilité, conversion, notoriété
           </p>
-        </div>
-        <div className="flex  gap-4">
-          <div className="mt-1">
-            <ShieldCheck className="text-blue-700 size-6" />
-          </div>
-          <p>Performance, sécurité et design responsive garantis.</p>
-        </div>
-        <div className="flex  gap-4">
-          <div className="mt-1">
-            <Sparkles className="text-blue-700 size-6" />
-          </div>
-          <p>Optimisation SEO et UX dès la première ligne de code.</p>
         </div>
         <div className="flex  gap-4">
           <div className="mt-1">
             <Handshake className="text-blue-700 size-6" />
           </div>
-          <p>Accompagnement personnalisé et réactif.</p>
+          <p>
+            Collaboration transparente et humaine, du premier contact à la mise
+            en ligne
+          </p>
         </div>
         <div className="flex  gap-4">
           <div className="mt-1">
             <CheckCircle className="text-blue-700 size-6" />
           </div>
-          <p>Tarifs clairs, sans frais cachés, sans engagement.</p>
+          <p>
+            Vision long terme : votre site est prêt à évoluer avec votre
+            entreprise
+          </p>
         </div>
       </div>
     </section>

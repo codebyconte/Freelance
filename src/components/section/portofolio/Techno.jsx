@@ -20,7 +20,7 @@ export default function Techno() {
   return (
     <section className="py-18 mx-auto p-4 ">
       <h2
-        className={`${dmSerif.className} text-4xl mx-auto sm:text-6xl font-bold max-w-6xl text-center p-4`}
+        className={`${dmSerif.className} text-4xl mx-auto sm:text-6xl font-bold max-w-6xl text-center p-4 mb-12`}
       >
         J’utilise les outils les plus performants pour livrer des sites
         modernes, rapides et sécurisés.
