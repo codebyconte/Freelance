@@ -10,7 +10,7 @@ export default function MentionsLegales() {
         <strong>SIRET :</strong> 82893014900012
       </p>
       <p>
-        <strong>Email :</strong> contact@codebyconte.fr
+        <strong>Email :</strong> Mr.conte@icloud.com
       </p>
       <p>
         <strong>Site web :</strong> https://www.codebyconte.fr
