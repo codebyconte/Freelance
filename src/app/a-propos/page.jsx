@@ -1,16 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Divider } from "@/components/ui/divider";
 import { dmSerif } from "../styles/fonts";
 import Image from "next/image";
-import {
-  Ear,
-  MessagesSquare,
-  Target,
-  PhoneCall,
-  GraduationCap,
-  Brain,
-  Handshake,
-} from "lucide-react";
+import { Ear, MessagesSquare, Target, PhoneCall } from "lucide-react";
 
 export default function AboutPage() {
   return (

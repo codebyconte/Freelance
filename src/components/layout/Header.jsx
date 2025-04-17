@@ -95,7 +95,7 @@ export default function Header({ children }) {
                 Pourquoi un site performant ?
               </SidebarItem>
               <SidebarItem href="/outils-business">Outils business</SidebarItem>
-              outils-business
+
               <SidebarItem href="/portfolio">Portofolio</SidebarItem>
               <SidebarItem href="/a-propos">À propos</SidebarItem>
             </SidebarSection>
