@@ -9,6 +9,13 @@ const navigation = {
     { name: "Portfolio", href: "/portfolio" },
     { name: "À propos", href: "/a-propos" },
   ],
+  legal: [
+    { name: "Mentions légales", href: "/mentions-legales" },
+    {
+      name: "Politique de confidentialité",
+      href: "/confidentialite",
+    },
+  ],
   social: [
     {
       name: "LinkedIn",
@@ -86,6 +93,13 @@ export default function Footer() {
             >
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="size-6" />
+            </Link>
+          ))}
+        </div>
+        <div className="mt-6 flex justify-center gap-x-6 text-sm text-gray-500">
+          {navigation.legal.map((item) => (
+            <Link key={item.name} href={item.href} className="hover:underline">
+              {item.name}
             </Link>
           ))}
         </div>

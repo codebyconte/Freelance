@@ -4,10 +4,17 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/components/ui/link";
 import { useState, useRef } from "react";
+import {
+  CheckboxGroup,
+  Checkbox,
+  CheckboxField,
+} from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/fieldset";
 
 export default function PageContact() {
   const formRef = useRef(null);
   const [confirmation, setConfirmation] = useState(null);
+  const [ok, setOk] = useState(true);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -208,8 +215,28 @@ export default function PageContact() {
                   </div>
                 </div>
               </div>
+
+              <CheckboxGroup className="p-4">
+                <CheckboxField>
+                  <Checkbox color="blue" checked={ok} onChange={setOk} />
+                  <Label>
+                    {" "}
+                    J’accepte que mes données soient utilisées pour me
+                    recontacter dans le cadre de ma demande.
+                    <br />
+                    Voir la{" "}
+                    <Link
+                      href="/confidentialite"
+                      className="underline text-indigo-600 hover:text-indigo-800"
+                    >
+                      politique de confidentialité
+                    </Link>
+                  </Label>
+                </CheckboxField>
+              </CheckboxGroup>
+
               <div className="mt-8 flex justify-end">
-                <Button color="blue" type="submit">
+                <Button color="blue" type="submit" disabled={!ok}>
                   Envoyer un message
                 </Button>
               </div>

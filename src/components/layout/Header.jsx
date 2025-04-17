@@ -69,7 +69,7 @@ export default function Header({ children }) {
           <NavbarSpacer />
           <NavbarSection>
             <Button href="/contact" color="blue">
-              Prendre RDV
+              Contact
             </Button>
           </NavbarSection>
         </Navbar>
@@ -101,7 +101,7 @@ export default function Header({ children }) {
             </SidebarSection>
             <SidebarSection>
               <Button href="/contact" color="blue">
-                Prendre RDV
+                Contact
               </Button>
             </SidebarSection>
           </SidebarBody>
