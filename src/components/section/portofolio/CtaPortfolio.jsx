@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CtaPortfolio() {
   return (
-    <section className="text-center py-8 space-y-2 p-4">
+    <section className="text-center py-8 space-y-2 p-4 mb-8">
       <h2 className="text-2xl sm:text-4xl font-bold p-4">
         Et si votre projet rejoignait cette page ?
       </h2>
