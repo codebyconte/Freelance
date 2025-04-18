@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HeroService() {
   return (
-    <section className="min-h-screen flex justify-center items-center px-4 py-12 md:py-24">
+    <section className="min-h-screen flex justify-center items-center px-4 md:py-24">
       <div className="max-w-5xl text-center space-y-6 md:space-y-10">
         <h1
           className={`${dmSerif.className} text-3xl md:text-6xl lg:text-8xl leading-tight text-shadow-lg`}

@@ -3,7 +3,7 @@ import { dmSerif } from "@/app/styles/fonts";
 
 export default function HeroPerformance() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-4 py-12 md:py-24">
+    <section className="min-h-screen flex flex-col justify-center items-center px-4 md:py-24">
       <div className="max-w-6xl text-center space-y-6">
         <h1
           className={`${dmSerif.className} text-3xl md:text-6xl lg:text-8xl leading-tight text-shadow-lg`}

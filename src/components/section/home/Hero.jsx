@@ -4,7 +4,7 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-4 py-8 md:py-24">
+    <section className="min-h-screen flex flex-col justify-center items-center px-4  md:py-24">
       <div className="max-w-prose text-center space-y-6 md:space-y-10">
         <h1
           className={`${dmSerif.className} text-3xl md:text-6xl lg:text-8xl  text-shadow-lg`}

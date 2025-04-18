@@ -6,7 +6,7 @@ import { Ear, MessagesSquare, Target, PhoneCall } from "lucide-react";
 export default function AboutPage() {
   return (
     <main className="flex flex-col justify-center items-center ">
-      <div className="px-4 py-16 sm:py-24 text-center space-y-8 max-w-4xl min-h-screen">
+      <div className="px-4  sm:py-24 text-center space-y-8 max-w-4xl min-h-screen">
         <h1
           className={`${dmSerif.className} text-3xl sm:text-4xl md:text-6xl leading-tight text-shadow-lg`}
         >
