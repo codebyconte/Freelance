@@ -13,19 +13,23 @@ import { dmSerif } from "@/app/styles/fonts";
 
 export default function ServicesApercu() {
   return (
-    <section className="px-6  md:px-12 lg:px-24 py-24">
-      <div className="mx-auto max-w-4xl text-center space-y-6">
-        <h2 className={`${dmSerif.className} text-4xl sm:text-6xl font-bold`}>
-          Des services pensées pour faire évoluer votre entreprise
+    <section className="px-4 md:px-12 lg:px-24 py-12 md:py-24">
+      <div className="mx-auto max-w-4xl text-center space-y-6 md:space-y-10">
+        <h2
+          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold`}
+        >
+          Des services pensés pour faire évoluer votre entreprise
         </h2>
-        <p className="text-lg text-[#334155]">
+        <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
           Que vous ayez besoin d’un site vitrine, d’une boutique e-commerce ou
           d’une refonte complète, je conçois des solutions web sur-mesure,
           rapides et efficaces, adaptées aux enjeux des entrepreneurs exigeants.
         </p>
       </div>
-      <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <Card className="hover:shadow-xl  hover:scale-110 ease-out transition-all duration-400  ">
+
+      <div className="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        {/* Tes cartes inchangées, sauf transition Tailwind harmonisée 👇 */}
+        <Card className="hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-out">
           <CardHeader>
             <Store className="text-blue-600" />
             <div className="flex gap-2 py-2">
@@ -38,17 +42,17 @@ export default function ServicesApercu() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p>
+            <p className="text-sm md:text-base leading-relaxed">
               Présentez votre entreprise avec un site sur-mesure qui inspire
               confiance, renforce votre image de marque et attire des prospects
               qualifiés.
             </p>
           </CardContent>
-          <CardFooter>
-            <p></p>
-          </CardFooter>
+          <CardFooter />
         </Card>
-        <Card className="hover:shadow-xl hover:scale-110 ease-out transition-all duration-300">
+
+        {/* Même ajustement pour les autres cartes */}
+        <Card className="hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-out">
           <CardHeader>
             <ShoppingCart className="text-blue-600" />
             <div className="flex gap-2 py-2">
@@ -60,16 +64,15 @@ export default function ServicesApercu() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p>
+            <p className="text-sm md:text-base leading-relaxed">
               Vendez vos produits ou services en ligne avec une boutique rapide,
               sécurisée et conçue pour convertir vos visiteurs en clients.
             </p>
           </CardContent>
-          <CardFooter>
-            <p></p>
-          </CardFooter>
+          <CardFooter />
         </Card>
-        <Card className="hover:shadow-xl hover:scale-110 ease-out transition-all duration-300">
+
+        <Card className="hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-out">
           <CardHeader>
             <TowerControl className="text-blue-600" />
             <div className="flex gap-2 py-2">
@@ -81,17 +84,16 @@ export default function ServicesApercu() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p>
+            <p className="text-sm md:text-base leading-relaxed">
               Modernisez votre site actuel avec une refonte complète : design
               actualisé, navigation optimisée, meilleures performances et SEO
               renforcé.
             </p>
           </CardContent>
-          <CardFooter>
-            <p></p>
-          </CardFooter>
+          <CardFooter />
         </Card>
-        <Card className="hover:shadow-xl hover:scale-110 ease-out transition-all duration-300">
+
+        <Card className="hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-out">
           <CardHeader>
             <Zap className="text-blue-600" />
             <div className="flex gap-2 py-2">
@@ -103,19 +105,22 @@ export default function ServicesApercu() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p>
+            <p className="text-sm md:text-base leading-relaxed">
               Améliorez votre visibilité sur Google et boostez la performance de
               votre site grâce à des optimisations techniques ciblées.
             </p>
           </CardContent>
-          <CardFooter>
-            <p></p>
-          </CardFooter>
+          <CardFooter />
         </Card>
       </div>
-      <div className="mt-10 text-center italic text-gray-700">
+
+      <div className="mt-8 md:mt-10 text-center italic text-muted-foreground">
         <p>Des solutions digitales pensées pour les entrepreneurs exigeants</p>
-        <Button href="/services" color="blue" className="m-8">
+        <Button
+          href="/services"
+          color="blue"
+          className="mt-6 text-sm md:text-base w-fit"
+        >
           Découvrir mes offres
         </Button>
       </div>

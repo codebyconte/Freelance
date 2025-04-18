@@ -12,14 +12,15 @@ import { dmSerif } from "@/app/styles/fonts";
 
 export default function Tarif() {
   return (
-    <section className="bg-black text-white py-24 flex flex-col justify-center items-center">
+    <section className="bg-black text-white py-12 md:py-24 flex flex-col justify-center items-center px-4">
       <h2
-        className={`${dmSerif.className} text-4xl sm:text-6xl font-bold max-w-6xl text-center p-4`}
+        className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold max-w-6xl text-center`}
       >
         Des solutions adaptées à vos besoins professionnels
       </h2>
-      <div className="text-black flex flex-col gap-4 mt-6 lg:flex-row p-4">
-        <Card className="hover:ring-4 ring-blue-600 ">
+
+      <div className="text-black flex flex-col justify-center items-center gap-6 md:gap-8 mt-6 lg:flex-row w-full">
+        <Card className="hover:ring-4 ring-blue-600">
           <CardHeader>
             <CardTitle className="text-blue-600">Site Présence Pro</CardTitle>
             <p>
@@ -31,7 +32,7 @@ export default function Tarif() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm md:text-base leading-relaxed">
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-blue-600" />
                 <span>
@@ -59,11 +60,16 @@ export default function Tarif() {
             </ul>
           </CardContent>
           <CardFooter>
-            <Button color="blue" className="w-full" href="/contact">
+            <Button
+              color="blue"
+              href="/contact"
+              className="w-full text-sm md:text-base"
+            >
               Obtenir un site Présence Pro
             </Button>
           </CardFooter>
         </Card>
+
         <Card className="hover:ring-4 ring-blue-600">
           <CardHeader>
             <CardTitle className="text-blue-600">
@@ -78,7 +84,7 @@ export default function Tarif() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm md:text-base leading-relaxed">
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-blue-600" />
                 <span>Tout ce que contient “Présence Pro”</span>
@@ -102,11 +108,16 @@ export default function Tarif() {
             </ul>
           </CardContent>
           <CardFooter>
-            <Button color="blue" className="w-full " href="/contact">
+            <Button
+              color="blue"
+              href="/contact"
+              className="w-full text-sm md:text-base"
+            >
               Obtenir un site structuré & évolutif
             </Button>
           </CardFooter>
         </Card>
+
         <Card className="hover:ring-4 ring-blue-600">
           <CardHeader>
             <CardTitle className="text-blue-600">
@@ -121,10 +132,10 @@ export default function Tarif() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm md:text-base leading-relaxed">
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-blue-600" />
-                <span> Boutique 100% personnalisée</span>
+                <span>Boutique 100% personnalisée</span>
               </li>
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-blue-600" />
@@ -147,19 +158,22 @@ export default function Tarif() {
             </ul>
           </CardContent>
           <CardFooter>
-            <Button color="blue" className="w-full" href="/contact">
+            <Button
+              color="blue"
+              href="/contact"
+              className="w-full text-sm md:text-base"
+            >
               Obtenir un site e-commerce performant
             </Button>
           </CardFooter>
         </Card>
       </div>
-      <div className="mt-10 max-w-3xl mx-auto text-center space-y-4 text-white p-4">
-        <h3
-          className={`${dmSerif.className} text-2xl underline underline-offset-3`}
-        >
+
+      <div className="mt-8 md:mt-10 max-w-3xl mx-auto text-center space-y-4 text-white px-4">
+        <h3 className={` text-xl md:text-2xl underline underline-offset-3`}>
           Chaque offre répond à un besoin précis :
         </h3>
-        <ul className="space-y-2  leading-relaxed">
+        <ul className="space-y-2 leading-relaxed text-sm md:text-base">
           <li>
             <span className="font-bold">Présence Pro</span> : pour une image
             claire, moderne et crédible.

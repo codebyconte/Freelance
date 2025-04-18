@@ -15,7 +15,7 @@ import { dmSerif } from "@/app/styles/fonts";
 
 export default function Projet() {
   return (
-    <section className="max-w-6xl mx-auto  p-4">
+    <section className="px-4  sm:px-6 md:px-8 max-w-6xl mx-auto o">
       <div>
         <h2
           className={`${dmSerif.className} text-4xl sm:text-6xl font-bold max-w-6xl text-center p-4 mb-12`}

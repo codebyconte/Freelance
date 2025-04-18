@@ -16,19 +16,21 @@ import { dmSerif } from "@/app/styles/fonts";
 
 export default function CodeVsNocode() {
   return (
-    <section className="py-18 space-y-8">
-      <div className=" text-center max-w-4xl mx-auto p-4">
-        <h2 className={`${dmSerif.className} text-4xl sm:text-6xl font-bold`}>
+    <section className="py-12  space-y-12">
+      <div className="text-center max-w-4xl mx-auto px-4">
+        <h2
+          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold`}
+        >
           Code vs No-Code : que choisir pour votre entreprise ?
         </h2>
-        <p className="mt-8 text-lg leading-relaxed">
+        <p className="mt-6 text-base md:text-lg leading-relaxed">
           Créer ou refondre un site web implique souvent un choix crucial :
           opter pour une solution no-code rapide ou investir dans un
           développement sur-mesure ? Voici un comparatif clair pour vous aider à
           choisir la meilleure option selon vos besoins.
         </p>
       </div>
-      <div className="p-4 md:p-16">
+      <div className="px-4 md:px-16">
         <Table
           striped
           grid
@@ -124,12 +126,12 @@ export default function CodeVsNocode() {
           </TableBody>
         </Table>
       </div>
-      <div className="text-center space-y-6 p-4">
-        <div className="max-w-3xl mx-auto ">
-          <h3 className="text-3xl sm:text-4xl font-bold">
+      <div className="text-center space-y-8 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold">
             Les limites du no-code
           </h3>
-          <p className="mt-6 text-lg">
+          <p className="mt-4 text-base md:text-lg leading-relaxed">
             Bien que les solutions no-code soient séduisantes par leur rapidité
             et leur coût initial réduit, elles présentent plusieurs
             inconvénients majeurs qui peuvent freiner votre entreprise à long
@@ -138,20 +140,24 @@ export default function CodeVsNocode() {
         </div>
 
         <ul className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
-          <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3">
+          <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3 text-center">
             <div className="flex gap-2 text-center">
               <CircleGauge className="text-blue-600 " />
-              <p className="font-semibold text-lg ">Problèmes de performance</p>
+              <p className="font-semibold text-base md:text-lg">
+                Problèmes de performance
+              </p>
             </div>
             <p>
               Les sites no-code sont souvent alourdis par des plugins inutiles
               qui ralentissent leur fonctionnement.
             </p>
           </li>
-          <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3">
+          <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3 text-center">
             <div className="flex gap-2 text-center">
               <LockKeyhole className="text-blue-600 " />
-              <p className="font-semibold text-lg">Dépendance au fournisseur</p>
+              <p className="font-semibold text-base md:text-lg">
+                Dépendance au fournisseur
+              </p>
             </div>
             <p>
               Vous ne possédez pas réellement votre site ; vous êtes lié aux
@@ -161,7 +167,9 @@ export default function CodeVsNocode() {
           <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3">
             <div className="flex gap-2 text-center">
               <BadgeDollarSign className="text-blue-600 " />
-              <p className="font-semibold text-lg">Frais récurrents élevés</p>
+              <p className="font-semibold text-base md:text-lg">
+                Frais récurrents élevés
+              </p>
             </div>
             <p>
               Les abonnements mensuels s’accumulent rapidement, rendant ces
@@ -171,7 +179,9 @@ export default function CodeVsNocode() {
           <li className="max-w-2xl mx-auto flex flex-col justify-center items-center gap-3">
             <div className="flex gap-2 text-center">
               <TrendingDown className="text-blue-600 " />
-              <p className="font-semibold text-lg">Difficultés en SEO avancé</p>
+              <p className="font-semibold text-base md:text-lg">
+                Difficultés en SEO avancé
+              </p>
             </div>
             <p>
               Les limitations techniques impactent directement votre capacité à
@@ -179,7 +189,7 @@ export default function CodeVsNocode() {
             </p>
           </li>
         </ul>
-        <p className="max-w-3xl mx-auto leading-6 mt-12">
+        <p className="max-w-3xl mx-auto text-sm md:text-base leading-relaxed mt-12">
           Si votre objectif est de créer un site professionnel qui reflète
           parfaitement l’identité de votre entreprise tout en garantissant
           performance, sécurité et évolutivité, le développement sur mesure est

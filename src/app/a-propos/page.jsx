@@ -6,13 +6,13 @@ import { Ear, MessagesSquare, Target, PhoneCall } from "lucide-react";
 export default function AboutPage() {
   return (
     <main className="flex flex-col justify-center items-center ">
-      <div className="text-center space-y-8 py-24 h-screen max-w-4xl p-4">
+      <div className="px-4 py-16 sm:py-24 text-center space-y-8 max-w-4xl min-h-screen">
         <h1
-          className={`${dmSerif.className} text-4xl md:text-6xl text-shadow-lg `}
+          className={`${dmSerif.className} text-3xl sm:text-4xl md:text-6xl leading-tight text-shadow-lg`}
         >
           Un développeur web passionné, au service de votre réussite digitale
         </h1>
-        <p className="mt-12 text-lg max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg max-w-3xl mx-auto">
           Bonjour, je m’appelle <span className="font-bold">Conte Mouctar</span>
           , développeur web indépendant, diplômé{" "}
           <span className="underline decoration-indigo-500">
@@ -20,7 +20,7 @@ export default function AboutPage() {
           </span>{" "}
           en développement web.
         </p>
-        <p className=" max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg max-w-3xl mx-auto">
           Depuis toujours, je suis fasciné par l’informatique et les
           technologies numériques. J’aime comprendre comment fonctionnent les
           choses, relever des défis techniques et transformer des idées en
@@ -28,7 +28,7 @@ export default function AboutPage() {
           où je peux allier créativité et expertise pour accompagner les
           entreprises dans leur transformation digitale.
         </p>
-        <p className="max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg max-w-3xl mx-auto">
           Aujourd’hui, j’aide les entrepreneurs, indépendants et petites
           entreprises à se démarquer grâce à des sites web performants,
           sur-mesure et pensés pour atteindre leurs objectifs : renforcer leur
@@ -37,20 +37,20 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <div className="space-y-8 bg-black text-white w-full p-4 py-24 text-center">
+      <div className="bg-black text-white w-full px-4 py-16 sm:py-24 space-y-8 text-center">
         <h2
-          className={`${dmSerif.className} text-3xl md:text-5xl text-center p-4`}
+          className={`${dmSerif.className} text-2xl sm:text-3xl md:text-5xl text-center`}
         >
           Ma philosophie de travail
         </h2>
-        <p className="text-center text-lg text-gray-300">
+        <p className="text-base sm:text-lg text-gray-300">
           Une collaboration{" "}
           <span className="box-decoration-slice bg-linear-to-r from-blue-900 to-cyan-400 text-white px-2">
             humaine
           </span>{" "}
           avant tout
         </p>
-        <p>
+        <p className="text-base sm:text-lg">
           Travailler avec moi, c’est bien plus qu’une simple prestation
           technique. Je crois fermement que la réussite d’un projet repose sur
           une relation de confiance et une communication fluide.
@@ -108,8 +108,8 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <div className="text-center space-y-10  py-24 p-4">
-        <h2 className={`${dmSerif.className} text-3xl md:text-5xl  p-4`}>
+      <div className="px-4 py-16 sm:py-24 text-center space-y-10">
+        <h2 className={`${dmSerif.className} text-2xl sm:text-3xl md:text-5xl`}>
           Pourquoi me faire confiance ?
         </h2>
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-12  mx-auto">
@@ -158,18 +158,18 @@ export default function AboutPage() {
       </div>
 
       <div className="space-y-4 text-center py-24 p-4 bg-blue-600 w-full">
-        <h2
-          className={`${dmSerif.className} text-3xl md:text-5xl text-center p-4`}
-        >
+        <h2 className={`${dmSerif.className} text-2xl sm:text-3xl md:text-5xl`}>
           Mon objectif
         </h2>
-        <p className=" max-w-3xl mx-auto">
+        <p className=" text-base sm:text-lg max-w-3xl mx-auto">
           Vous aider à prendre une longueur d’avance sur le web. Que vous soyez
           une petite entreprise, un entrepreneur ou un indépendant, je vous
           accompagne pour créer un site qui vous distingue vraiment.
         </p>
 
-        <h3 className="text-xl font-semibold">Prêt à collaborer ?</h3>
+        <h3 className="text-lg sm:text-xl font-semibold">
+          Prêt à collaborer ?
+        </h3>
         <p>
           Ensemble, nous pouvons transformer vos idées en un outil digital
           performant qui sert vos ambitions.

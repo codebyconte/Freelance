@@ -11,20 +11,21 @@ import {
 
 export default function OffreInclue() {
   return (
-    <section className="py-20 px-6 sm:px-10 lg:px-20">
+    <section className="py-12 md:py-20 px-4 sm:px-10 lg:px-20">
       <div className="max-w-5xl mx-auto">
         <h2
-          className={`${dmSerif.className} text-4xl sm:text-6xl font-bold max-w-6xl text-center p-4`}
+          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold max-w-6xl text-center px-4`}
         >
           Ce que toutes les offres incluent
         </h2>
-        <p className="text-center text-lg mb-10">
+
+        <p className="text-center text-base md:text-lg leading-relaxed mb-6 md:mb-10">
           Peu importe l’offre choisie, vous bénéficiez d’un accompagnement
           complet et de prestations premium conçues pour maximiser votre retour
           sur investissement.
         </p>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm md:text-base leading-relaxed">
           <li className="flex items-start gap-3">
             <Rocket className="text-blue-600 mt-1" size={24} />
             <span>

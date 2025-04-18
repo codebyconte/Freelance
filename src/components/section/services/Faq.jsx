@@ -9,14 +9,14 @@ import Link from "next/link";
 
 export default function Faq() {
   return (
-    <section className="py-18 bg-black text-white grid grid-cols-1 sm:grid-cols-2 p-4">
+    <section className="py-12 md:py-20 bg-black text-white grid grid-cols-1 sm:grid-cols-2 px-4 gap-8">
       <div className="text-center">
         <h2
-          className={`${dmSerif.className} text-4xl sm:text-6xl font-bold max-w-6xl  p-4 mb-6`}
+          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold max-w-6xl text-center mb-6`}
         >
           Questions les plus fréquentes
         </h2>
-        <p className="text-lg">
+        <p className="text-base md:text-lg leading-relaxed">
           Vous ne trouvez pas ce que vous recherchez ?{" "}
           <Link href="/contact" className="text-blue-600 hover:underline">
             Contactez-moi
@@ -24,7 +24,7 @@ export default function Faq() {
         </p>
       </div>
       <div>
-        <h3 className="text-2xl font-semibold text-gray-400 mt-12 mb-4">
+        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
           Services proposés
         </h3>
         <Accordion type="single" className="w-full" collapsible>
@@ -68,7 +68,7 @@ export default function Faq() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <h3 className="text-2xl font-semibold text-gray-400 mt-12 mb-4">
+        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
           Processus de travail
         </h3>
         <Accordion type="single" className="w-full" collapsible>
@@ -98,7 +98,7 @@ export default function Faq() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <h3 className="text-2xl font-semibold text-gray-400 mt-12 mb-4">
+        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
           Services proposés
         </h3>
         <Accordion type="single" className="w-full" collapsible>
@@ -142,7 +142,7 @@ export default function Faq() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <h3 className="text-2xl font-semibold text-gray-400 mt-12 mb-4">
+        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
           Aspects techniques
         </h3>
         <Accordion type="single" className="w-full" collapsible>
@@ -188,7 +188,7 @@ export default function Faq() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <h3 className="text-2xl font-semibold text-gray-400 mt-12 mb-4">
+        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
           Support & maintenance
         </h3>
         <Accordion type="single" className="w-full" collapsible>
@@ -211,7 +211,7 @@ export default function Faq() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <h3 className="text-2xl font-semibold text-gray-400 mt-12 mb-4">
+        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
           Collaboration & qualité
         </h3>
         <Accordion type="single" className="w-full" collapsible>

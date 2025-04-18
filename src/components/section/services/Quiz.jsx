@@ -78,11 +78,11 @@ export default function Quiz() {
   };
 
   return (
-    <div className="py-8 mx-auto text-center space-y-2 p-4">
-      <p className="text-bold text-3xl">
+    <div className="py-8 px-4 mx-auto text-center space-y-4 md:space-y-6">
+      <p className="font-bold text-xl md:text-3xl">
         Pas certain de l’offre qui correspond à vos besoins ?
       </p>
-      <p className="text-lg">
+      <p className="text-base md:text-lg leading-relaxed">
         Faites le test en seulement 2 minutes et recevez une recommandation
         personnalisée adaptée à vos objectifs.
       </p>

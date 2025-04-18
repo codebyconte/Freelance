@@ -6,7 +6,7 @@ import CtaOutils from "@/components/section/outils-business/CtaOutils";
 
 export default function PageBusiness() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <HeroBusiness />
       <WhyBusiness />
       <Compare />

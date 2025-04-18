@@ -51,33 +51,33 @@ export default function Compare() {
   };
 
   return (
-    <section className="bg-white py-24 px-4 w-full">
-      <div className="max-w-5xl mx-auto text-center space-y-6 mb-20">
+    <section className="bg-white py-12 md:py-24 px-4 w-full  overflow-x-hidden">
+      <div className="max-w-5xl mx-auto text-center space-y-6 mb-16 md:mb-20">
         <h2
-          className={`${dmSerif.className} text-4xl sm:text-5xl font-bold text-black`}
+          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-5xl font-bold text-black`}
         >
           Nos outils pour entrepreneurs et dirigeants
         </h2>
-        <p className="text-lg text-gray-600">
+        <p className="text-base md:text-lg text-gray-600">
           Évaluez votre position sur le marché en un instant grâce à notre
           comparateur d’entreprises concurrentes.
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto bg-gray-100 rounded-2xl p-8 hover:shadow-lg transition duration-300 ease-in-out space-y-10">
-        <div className="flex flex-col md:flex-row items-center gap-10">
+      <div className="max-w-4xl mx-auto bg-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-lg transition duration-300 ease-in-out space-y-10">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
           <div className="w-full md:w-1/2">
             <Image
               src="/Business analytics-amico.svg"
               width={400}
               height={400}
               alt="Comparateur d’entreprises"
-              className="mx-auto"
+              className="mx-auto w-[220px] sm:w-[300px] md:w-[400px]"
             />
           </div>
 
-          <div className="w-full md:w-1/2 space-y-6 text-left">
-            <h3 className="text-2xl font-bold text-black">
+          <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
+            <h3 className="text-xl md:text-2xl font-bold text-black">
               Comparateur d’entreprises concurrentes
             </h3>
             <ul className="space-y-4 text-base">
@@ -117,6 +117,7 @@ export default function Compare() {
           </div>
         </div>
       </div>
+
       <div>
         <Dialog open={modaleRecherche} onClose={setModaleRecherche}>
           <DialogTitle>Comparez votre entreprise</DialogTitle>
