@@ -1,4 +1,5 @@
 import "@/app/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/layout/Header";
 import { inter } from "@/app/styles/fonts";
 import Script from "next/script";
@@ -84,6 +85,7 @@ export default function RootLayout({ children }) {
         />
         <Header>{children}</Header>
         <Footer />
+        <Analytics />
         <Script id="chatbase-script" strategy="afterInteractive">
           {`
             (function(){
