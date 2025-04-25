@@ -23,6 +23,7 @@ export default function Projet() {
           Voici quelques exemples de projets réalisés récemment.
         </h2>
       </div>
+
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12  ">
         <MorphingDialog
           transition={{
@@ -108,6 +109,24 @@ export default function Projet() {
                     vitrine clair, professionnel, et prêt à convertir les
                     visiteurs.
                   </p>
+                  <p className="font-semibold">Problématiques rencontrées :</p>
+                  <ul className="list-disc ">
+                    <li>
+                      Respect strict de la maquette tout en assurant un
+                      affichage responsive sur mobile, tablette et desktop.
+                    </li>
+                    <li>
+                      Organisation du code HTML/CSS pour garantir propreté,
+                      maintenabilité et évolutivité.
+                    </li>
+                  </ul>
+                  <Link
+                    href="https://klyx-digital.github.io/Booki/"
+                    className="mt-2 text-blue-400"
+                    target="_blank"
+                  >
+                    Lien vers le site
+                  </Link>
                 </MorphingDialogDescription>
               </div>
               <MorphingDialogClose className="text-zinc-50" />
@@ -199,6 +218,19 @@ export default function Projet() {
                       portfolio simple à mettre à jour, élégant, et facile à
                       utiliser.
                     </p>
+                    <p className="font-semibold">
+                      Problématiques rencontrées :
+                    </p>
+                    <ul className="list-disc ">
+                      <li>
+                        Développement d'un affichage dynamique sans
+                        l'utilisation de frameworks modernes.
+                      </li>
+                      <li>
+                        Gestion sécurisée de la récupération des données via une
+                        API externe.
+                      </li>
+                    </ul>
                   </div>
                 </MorphingDialogDescription>
               </div>
@@ -289,6 +321,20 @@ export default function Projet() {
                       rapide, agréable à naviguer et facilement extensible.
                     </p>
                   </div>
+                  <p className="font-semibold">Problématiques rencontrées :</p>
+                  <ul className="list-disc ">
+                    <li>
+                      Structuration de l’architecture en composants
+                      réutilisables et évolutifs.
+                    </li>
+                  </ul>
+                  <Link
+                    href="https://klyx-digital.github.io/Kasa/"
+                    className="mt-2 text-blue-400"
+                    target="_blank"
+                  >
+                    Lien vers le site
+                  </Link>
                 </MorphingDialogDescription>
               </div>
               <MorphingDialogClose className="text-zinc-50" />
@@ -382,6 +428,20 @@ export default function Projet() {
                       technique fiable et sécurisée, prête à alimenter une
                       interface utilisateur.
                     </p>
+                    <p className="font-semibold">
+                      Problématiques rencontrées :
+                    </p>
+                    <ul className="list-disc m">
+                      <li>
+                        Conception d'une API REST sécurisée respectant les
+                        bonnes pratiques de validation et de gestion des
+                        erreurs.
+                      </li>
+                      <li>
+                        Implémentation de l'authentification avec JWT et
+                        sécurisation des mots de passe avec bcrypt.
+                      </li>
+                    </ul>
                   </div>
                 </MorphingDialogDescription>
               </div>
