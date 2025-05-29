@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 export default function Bento() {
   return (
     <div className="mb-16 ">
       <div className="mx-auto max-w-3xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-base/7 font-semibold text-blue-600">
-          Sites performants & personnalisés
+          Des sites web performants, modernes et pensés pour votre activité à
+          Brest
         </h2>
         <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
-          Tout ce dont vous avez besoin pour créer un site web efficace
+          Tout ce dont vous avez besoin pour créer un site internet sur mesure,
+          rapide, responsive et bien référencé à Brest ou ailleurs.{" "}
         </p>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative lg:row-span-2">
@@ -18,16 +22,20 @@ export default function Bento() {
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                   Votre site est entièrement responsive : il s’adapte
-                  parfaitement aux smartphones, tablettes et ordinateurs, pour
-                  garantir une expérience fluide à tous vos visiteurs.
+                  parfaitement aux smartphones, tablettes et ordinateurs. Un
+                  design fluide est essentiel pour l’expérience utilisateur et
+                  améliore aussi votre référencement Google, notamment pour les
+                  recherches locales à Brest.
                 </p>
               </div>
               <div className="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
                 <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                  <img
-                    className="size-full object-cover object-top"
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
+                  <Image
+                    src="/bento-03-mobile-friendly.webp"
                     alt="Mobile"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 600px"
                   />
                 </div>
               </div>
@@ -42,16 +50,20 @@ export default function Bento() {
                   Des performances au service de votre business
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Chaque site est optimisé pour un chargement rapide, une
-                  navigation fluide et une performance technique qui favorise
-                  votre référencement.
+                  Chaque site que je développe est optimisé pour un chargement
+                  rapide, une navigation fluide et une performance technique
+                  exemplaire. Ces optimisations favorisent votre positionnement
+                  SEO, notamment pour les entreprises locales à Brest.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
-                <img
-                  className="w-full max-lg:max-w-xs"
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-performance.png"
+                <Image
+                  src="/bento-03-performance.webp"
                   alt=""
+                  width={800} // ← valeur par défaut, à ajuster si tu connais la taille réelle
+                  height={500} // ← idem
+                  className="w-full max-lg:max-w-xs object-contain"
+                  priority={false}
                 />
               </div>
             </div>
@@ -65,15 +77,21 @@ export default function Bento() {
                   Sécurisé et fiable
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Données protégées, code propre et bonne architecture : votre
-                  site respecte les meilleures pratiques de sécurité web.
+                  Vos données sont protégées grâce à un code propre, une
+                  architecture fiable et le respect des meilleures pratiques de
+                  sécurité web. En tant que développeur basé à Brest, je veille
+                  à ce que votre site reste fiable, sécurisé et conforme aux
+                  standards actuels.
                 </p>
               </div>
               <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                <img
-                  className="h-[min(152px,40cqw)] object-cover"
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
+                <Image
+                  src="/bento-03-security.webp"
                   alt=""
+                  width={500} // valeur estimée à adapter selon la taille réelle
+                  height={152} // hauteur inspirée de "152px" de ta classe Tailwind
+                  className="h-[min(152px,40cqw)] object-cover"
+                  priority={false}
                 />
               </div>
             </div>
@@ -88,8 +106,10 @@ export default function Bento() {
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                   Grâce à des technologies modernes (Next.js, React, Tailwind,
-                  etc.), je développe un site unique, personnalisable et prêt à
-                  évoluer avec votre activité.
+                  etc.), je développe des sites web uniques, performants et
+                  évolutifs. Basé à Brest, je vous accompagne sur le long terme
+                  avec une solution digitale fiable, adaptable à la croissance
+                  de votre activité.
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow">

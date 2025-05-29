@@ -7,17 +7,10 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   metadataBase: new URL("https://codebyconte.fr"),
-  title: "Code By Conte",
+  title:
+    "Développeur web à Brest | Création de site internet professionnel – CodeByConte",
   description:
-    "Je crée des sites web performants, rapides et élégants pour les entreprises et indépendants. Site vitrine, e-commerce ou refonte, le tout 100% sur-mesure.",
-  keywords: [
-    "développeur web",
-    "freelance",
-    "creation de site vitrine",
-    "création site e-commerce",
-    "Brest",
-    "Code By Conte",
-  ],
+    "Développeur web freelance à Brest, je conçois des sites internet modernes, rapides et sur mesure pour les entrepreneurs, artisans et indépendants. Parlons de votre projet !",
   openGraph: {
     title: "Conte Mouctar – Développeur Web Freelance",
     description:

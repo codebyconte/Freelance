@@ -16,7 +16,7 @@ export function JeuxGratter() {
         <h2
           className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold`}
         >
-          Un petit bonus avant de partir ?
+          Boostez votre site gratuitement… en grattant une carte{" "}
         </h2>
         <p className="max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
           Pour vous remercier de votre visite, grattez une carte au hasard et
@@ -42,7 +42,8 @@ export function JeuxGratter() {
             >
               <p className="px-4 text-black text-center text-sm leading-relaxed">
                 Vous avez gagné un audit de performance gratuit ! Recevez une
-                analyse personnalisée de la vitesse de votre site.
+                analyse personnalisée de la vitesse et de l’optimisation de
+                votre site web.
               </p>
             </ScratchToReveal>
           ) : null}

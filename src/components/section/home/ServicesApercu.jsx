@@ -11,19 +11,19 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { dmSerif } from "@/app/styles/fonts";
 
-export default function ServicesApercu() {
+export function ServicesApercu() {
   return (
     <section className="px-4 md:px-12 lg:px-24 py-12 md:py-24">
       <div className="mx-auto max-w-4xl text-center space-y-6 md:space-y-10">
-        <h2
-          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold`}
-        >
-          Des services pensés pour faire évoluer votre entreprise
+        <h2 className={`${dmSerif.className} text-2xl md:text-4xl font-bold`}>
+          Création de site internet vitrine, e-commerce et sur mesure à Brest
         </h2>
         <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-          Que vous ayez besoin d’un site vitrine, d’une boutique e-commerce ou
-          d’une refonte complète, je conçois des solutions web sur-mesure,
-          rapides et efficaces, adaptées aux enjeux des entrepreneurs exigeants.
+          Vous recherchez un développeur web à Brest pour créer un site internet
+          professionnel, efficace et adapté à votre activité ? Que ce soit pour
+          un site vitrine, une boutique e-commerce ou une refonte complète, je
+          vous accompagne de A à Z : conception sur mesure, développement
+          optimisé pour le référencement, et accompagnement personnalisé.
         </p>
       </div>
 
@@ -38,14 +38,14 @@ export default function ServicesApercu() {
               <Badge color="green">Confiance</Badge>
             </div>
             <CardTitle>
-              <h3>Site vitrine professionnel</h3>
+              <h3>Création de site vitrine à Brest</h3>
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-sm md:text-base leading-relaxed">
-              Présentez votre entreprise avec un site sur-mesure qui inspire
-              confiance, renforce votre image de marque et attire des prospects
-              qualifiés.
+              Présentez votre entreprise à Brest ou ailleurs avec un site
+              vitrine sur-mesure, qui inspire confiance, renforce votre image de
+              marque et attire des prospects qualifiés.
             </p>
           </CardContent>
           <CardFooter />
@@ -65,8 +65,10 @@ export default function ServicesApercu() {
           </CardHeader>
           <CardContent>
             <p className="text-sm md:text-base leading-relaxed">
-              Vendez vos produits ou services en ligne avec une boutique rapide,
-              sécurisée et conçue pour convertir vos visiteurs en clients.
+              Vendez vos produits en ligne avec une boutique rapide, sécurisée
+              et conçue pour convertir vos visiteurs en clients. Basée à Brest,
+              je vous accompagne dans le développement complet de votre site
+              e-commerce.
             </p>
           </CardContent>
           <CardFooter />
@@ -85,9 +87,10 @@ export default function ServicesApercu() {
           </CardHeader>
           <CardContent>
             <p className="text-sm md:text-base leading-relaxed">
-              Modernisez votre site actuel avec une refonte complète : design
-              actualisé, navigation optimisée, meilleures performances et SEO
-              renforcé.
+              Modernisez votre site existant avec une refonte complète : design
+              mis à jour, navigation plus fluide, meilleures performances
+              techniques et référencement renforcé pour mieux apparaître sur
+              Google à Brest.
             </p>
           </CardContent>
           <CardFooter />
@@ -106,8 +109,10 @@ export default function ServicesApercu() {
           </CardHeader>
           <CardContent>
             <p className="text-sm md:text-base leading-relaxed">
-              Améliorez votre visibilité sur Google et boostez la performance de
-              votre site grâce à des optimisations techniques ciblées.
+              Boostez la visibilité locale de votre site sur Google grâce à des
+              optimisations SEO ciblées : amélioration du temps de chargement,
+              audit technique, stratégie de mots-clés pour les entreprises
+              basées à Brest.
             </p>
           </CardContent>
           <CardFooter />
@@ -121,7 +126,7 @@ export default function ServicesApercu() {
           color="blue"
           className="mt-6 text-sm md:text-base w-fit"
         >
-          Découvrir mes offres
+          Voir tous mes services de création de site à Brest
         </Button>
       </div>
     </section>

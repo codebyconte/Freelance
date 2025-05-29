@@ -4,18 +4,19 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-4  md:py-24">
-      <div className="max-w-prose text-center space-y-6 md:space-y-10">
+    <section className="min-h-screen flex flex-col justify-center items-center px-4  ">
+      <div className="max-w-3xl text-center space-y-6 md:space-y-10">
         <h1
-          className={`${dmSerif.className} text-3xl md:text-6xl lg:text-8xl  text-shadow-lg`}
+          className={`${dmSerif.className} text-3xl md:text-6xl  text-shadow-lg`}
         >
-          Un site web à la hauteur de vos <AuroraText>ambitions</AuroraText>
+          Développeur web freelance à <AuroraText>Brest</AuroraText> <br />-{" "}
+          Création de sites internet
         </h1>
-        <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
-          Je conçois des sites professionnels rapides, élégants et optimisés
-          pour renforcer l’image de votre entreprise, attirer de nouveaux
-          clients et vous démarquer dans un monde numérique en constante
-          évolution.
+        <p className="text-base md:text-lg  text-gray-600">
+          Développeur web freelance basé à Brest, je conçois des sites internet
+          sur mesure, rapides et élégants, pour les indépendants, artisans et
+          petites entreprises bretonnes. Mon objectif : valoriser votre activité
+          en ligne, attirer vos futurs clients et vous démarquer !
         </p>
         <Button
           href="/contact"

@@ -9,12 +9,14 @@ export default function Cta() {
         <h2
           className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl text-gray-900`}
         >
-          Prêt à faire passer votre site au niveau supérieur ?
+          Faites passer votre site au niveau supérieur avec un développeur web à
+          Brest{" "}
         </h2>
         <p className="mx-auto max-w-xl text-base md:text-lg leading-relaxed text-pretty text-gray-600">
           Discutons ensemble de votre projet autour d’un échange gratuit et sans
-          engagement. Je vous conseille sur les meilleures solutions pour faire
-          évoluer votre présence en ligne.
+          engagement. En tant que développeur web freelance à Brest, je vous
+          conseille sur les meilleures solutions pour créer ou améliorer votre
+          site internet professionnel et renforcer votre visibilité locale.
         </p>
         <div className="mt-6 md:mt-10 flex items-center justify-center">
           <Button
