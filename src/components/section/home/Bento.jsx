@@ -59,7 +59,7 @@ export default function Bento() {
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
                 <Image
                   src="/bento-03-performance.webp"
-                  alt=""
+                  alt="Performance"
                   width={800} // ← valeur par défaut, à ajuster si tu connais la taille réelle
                   height={500} // ← idem
                   className="w-full max-lg:max-w-xs object-contain"
@@ -87,7 +87,7 @@ export default function Bento() {
               <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
                 <Image
                   src="/bento-03-security.webp"
-                  alt=""
+                  alt="Sécurité"
                   width={500} // valeur estimée à adapter selon la taille réelle
                   height={152} // hauteur inspirée de "152px" de ta classe Tailwind
                   className="h-[min(152px,40cqw)] object-cover"
