@@ -41,29 +41,24 @@ export default function Header({ children }) {
           </Link>
           <NavbarDivider />
           <NavbarSection>
-            <NavbarItem href="/" current={pathname === "/"}>
-              Accueil
-            </NavbarItem>
             <NavbarItem href="/services" current={pathname === "/services"}>
               Offres & tarifs
             </NavbarItem>
-            <NavbarItem
-              href="/site-performant"
-              current={pathname === "/site-performant"}
-            >
-              Pourquoi un site performant ?
-            </NavbarItem>
+
             <NavbarItem
               href="/outils-business"
               current={pathname === "/outils-business"}
             >
               Outils business
             </NavbarItem>
-            <NavbarItem href="/portfolio" current={pathname === "/portofolio"}>
+            <NavbarItem href="/portfolio" current={pathname === "/portfolio"}>
               Portfolio
             </NavbarItem>
             <NavbarItem href="/a-propos" current={pathname === "/a-propos"}>
               À propos
+            </NavbarItem>
+            <NavbarItem href="/blog" current={pathname.startsWith("/blog")}>
+              Blog
             </NavbarItem>
           </NavbarSection>
           <NavbarSpacer />
@@ -89,15 +84,13 @@ export default function Header({ children }) {
               </Link>
             </SidebarHeader>
             <SidebarSection>
-              <SidebarItem href="/">Acceuil</SidebarItem>
               <SidebarItem href="/services">Offres & tarifs</SidebarItem>
-              <SidebarItem href="/site-performant">
-                Pourquoi un site performant ?
-              </SidebarItem>
+
               <SidebarItem href="/outils-business">Outils business</SidebarItem>
 
               <SidebarItem href="/portfolio">Portofolio</SidebarItem>
               <SidebarItem href="/a-propos">À propos</SidebarItem>
+              <SidebarItem href="/blog">Blog</SidebarItem>
             </SidebarSection>
             <SidebarSection>
               <Button href="/contact" color="blue">

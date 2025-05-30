@@ -3,10 +3,69 @@ import { dmSerif } from "../styles/fonts";
 import Image from "next/image";
 import { Ear, MessagesSquare, Target, PhoneCall } from "lucide-react";
 
+export const metadata = {
+  title: "À propos – Conte Mouctar, développeur web à Brest",
+  description:
+    "Découvrez le parcours, les valeurs et les engagements de Conte Mouctar, développeur web freelance à Brest. Une approche humaine, sur-mesure et orientée performance pour accompagner votre réussite digitale.",
+  alternates: {
+    canonical: "https://codebyconte.fr/a-propos",
+  },
+  openGraph: {
+    title: "Développeur web à Brest – Une approche humaine et sur-mesure",
+    description:
+      "Conte Mouctar vous accompagne dans votre projet web avec passion, écoute et engagement. Découvrez son parcours et sa vision.",
+    url: "https://codebyconte.fr/a-propos",
+    siteName: "Code By Conte",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aperçu du site Code By Conte",
+      },
+    ],
+    locale: "fr_FR",
+    type: "profile",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Conte Mouctar – Développeur web freelance à Brest",
+    description:
+      "Un partenaire web engagé pour la réussite des entrepreneurs et indépendants à Brest et partout en France.",
+    site: "@klyx_digital",
+    creator: "@klyx_digital",
+    images: ["/opengraph-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function AboutPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Conte Mouctar",
+    jobTitle: "Développeur Web Freelance",
+    worksFor: {
+      "@type": "Organization",
+      name: "Code By Conte",
+    },
+    url: "https://codebyconte.fr/a-propos",
+    image: "https://codebyconte.fr/opengraph-image.png",
+    sameAs: [
+      "https://codebyconte.fr",
+      "https://www.linkedin.com/in/conte-mouctar/",
+    ],
+  };
   return (
     <main className="flex flex-col justify-center items-center ">
-      <div className="px-4  sm:py-24 text-center space-y-8 max-w-4xl min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="px-4   text-center space-y-8 max-w-4xl min-h-screen">
         <h1
           className={`${dmSerif.className} text-3xl sm:text-4xl md:text-6xl leading-tight text-shadow-lg`}
         >

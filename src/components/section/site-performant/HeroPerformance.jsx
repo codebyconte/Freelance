@@ -6,21 +6,20 @@ export default function HeroPerformance() {
     <section className="min-h-screen flex flex-col justify-center items-center px-4 md:py-24">
       <div className="max-w-6xl text-center space-y-6">
         <h1
-          className={`${dmSerif.className} text-3xl md:text-6xl lg:text-8xl leading-tight text-shadow-lg`}
+          className={`${dmSerif.className} text-3xl md:text-6xl leading-tight text-shadow-lg`}
         >
-          Un site web performant, le pilier de votre réussite en ligne
+          Vous vous demandez si investir dans un site web performant est
+          vraiment la priorité pour votre entreprise à Brest en 2025 ?{" "}
         </h1>
         <p className="text-base md:text-lg lg:text-xl leading-relaxed">
-          En 2025, votre site web n’est pas juste une vitrine, c’est votre
-          levier de croissance, votre premier commercial, et votre meilleur
-          outil pour fidéliser vos clients. Découvrez pourquoi investir dans un
-          site sur-mesure et performant peut transformer votre entreprise.
+          Dans un monde où vos clients potentiels passent plus de temps en ligne
+          que jamais, ne pas avoir une présence digitale solide n'est plus une
+          option, mais un frein à votre croissance. Imaginez : votre site web,
+          non pas comme une simple carte de visite en ligne, mais comme votre
+          commercial numéro un, travaillant sans relâche pour attirer,
+          convaincre et fidéliser votre clientèle locale et au-delà.
         </p>
-        <Button
-          href="/contact"
-          color="blue"
-          className="text-sm md:text-base w-fit"
-        >
+        <Button href="/contact" color="blue">
           Découvrez nos solutions sur-mesure
         </Button>
       </div>

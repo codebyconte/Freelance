@@ -3,10 +3,10 @@ import { dmSerif } from "@/app/styles/fonts";
 
 export default function HeroBusiness() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-4  md:py-24 w-full overflow-x-hidden">
+    <section className="min-h-screen flex flex-col justify-center items-center px-4   w-full overflow-x-hidden">
       <div className="max-w-5xl text-center space-y-6">
         <h1
-          className={`${dmSerif.className} text-3xl md:text-6xl lg:text-8xl leading-tight text-shadow-lg`}
+          className={`${dmSerif.className} text-3xl md:text-6xl leading-tight text-shadow-lg`}
         >
           Prenez une longueur d’avance avec nos outils business
         </h1>

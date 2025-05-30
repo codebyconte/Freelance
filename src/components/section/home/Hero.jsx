@@ -9,8 +9,8 @@ export default function Hero() {
         <h1
           className={`${dmSerif.className} text-3xl md:text-6xl  text-shadow-lg`}
         >
-          Développeur web freelance à <AuroraText>Brest</AuroraText> <br />-{" "}
-          Création de sites internet
+          Développeur web à <AuroraText>Brest</AuroraText>, création de sites
+          internet sur mesure
         </h1>
         <p className="text-base md:text-lg  text-gray-600">
           Développeur web freelance basé à Brest, je conçois des sites internet

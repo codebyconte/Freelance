@@ -7,22 +7,21 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   metadataBase: new URL("https://codebyconte.fr"),
-  title:
-    "Développeur web à Brest | Création de site internet professionnel – CodeByConte",
+  title: "Création site internet à Brest – Développeur web freelance",
   description:
-    "Développeur web freelance à Brest, je conçois des sites internet modernes, rapides et sur mesure pour les entrepreneurs, artisans et indépendants. Parlons de votre projet !",
+    "Développeur web freelance à Brest, je crée des sites internet modernes, rapides et sur mesure pour les entrepreneurs et artisans. Discutons de votre projet !",
   openGraph: {
-    title: "Conte Mouctar – Développeur Web Freelance",
+    title: "Création site internet à Brest – Développeur web freelance",
     description:
-      "Je développe des sites sur mesure, performants et optimisés pour les entreprises ambitieuses.",
+      "Sites web modernes, performants et sur mesure pour les entreprises à Brest.",
     url: "https://codebyconte.fr",
-    siteName: "Code by conte",
+    siteName: "Code By Conte",
     images: [
       {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Aperçu du site de Conte Mouctar",
+        alt: "Aperçu du site Code By Conte",
       },
     ],
     locale: "fr_FR",
@@ -30,9 +29,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Conte Mouctar – Développeur Web Freelance",
+    title: "Développeur web à Brest – Code By Conte",
     description:
-      "Je développe des sites sur mesure, performants et optimisés pour les entreprises ambitieuses.",
+      "Création de sites sur mesure pour entrepreneurs, artisans et PME à Brest.",
     site: "@klyx_digital",
     creator: "@klyx_digital",
     images: ["/opengraph-image.png"],
@@ -47,35 +46,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Code By Conte",
-    alternateName: "Conte Mouctar",
-    url: "https://codebyconte.fr",
-    logo: "https://codebyconte.fr/Logo.svg",
-    image: "https://codebyconte.fr/opengraph-image.png",
-    description: "Développeur Web Freelance à Brest",
-    openingHours: "Mo, Tu, We, Th, Fr, Sa, Su 08:00-20:00",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Brest",
-      postalCode: "29200",
-      addressCountry: "FR",
-    },
-    areaServed: "France",
-    telephone: "+33 6 19 31 20 53",
-    email: "mailto:mr.conte@icloud.com",
-    paymentAccepted: "Cash, Credit Card, Cryptocurrency",
-  };
-
   return (
     <html lang="fr" className={inter.className}>
       <body className="w-full">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
         <Header>{children}</Header>
         <Footer />
         <Analytics />
