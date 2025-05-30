@@ -90,6 +90,7 @@ export default function Footer() {
               href={item.href}
               className="text-gray-400 hover:text-gray-300"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="size-6" />
