@@ -8,13 +8,13 @@ export const metadata = {
   description:
     "Découvrez mes réalisations web : sites vitrines, e-commerce et projets sur-mesure. Chaque projet est pensé pour la performance et le SEO.",
   alternates: {
-    canonical: "https://codebyconte.fr/portfolio",
+    canonical: "https://www.codebyconte.fr/portfolio",
   },
   openGraph: {
     title: "Portfolio | Création de sites web à Brest",
     description:
       "Découvrez des projets concrets réalisés à Brest : sites vitrines, boutiques en ligne et plateformes personnalisées.",
-    url: "https://codebyconte.fr/portfolio",
+    url: "https://www.codebyconte.fr/portfolio",
     siteName: "Code By Conte",
     images: [
       {

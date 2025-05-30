@@ -5,13 +5,13 @@ export const metadata = {
   description:
     "Contactez-moi pour discuter de votre projet web à Brest. Je réponds rapidement pour vous proposer un site performant, moderne et adapté à vos besoins.",
   alternates: {
-    canonical: "https://codebyconte.fr/contact",
+    canonical: "https://www.codebyconte.fr/contact",
   },
   openGraph: {
     title: "Contact – Développeur web à Brest",
     description:
       "Échangeons sur votre projet de site web à Brest. Je suis à votre écoute pour créer une solution digitale sur mesure.",
-    url: "https://codebyconte.fr/contact",
+    url: "https://www.codebyconte.fr/contact",
     siteName: "Code By Conte",
     images: [
       {

@@ -16,7 +16,7 @@ export const metadata = {
   description:
     "Combien coûte la création d'un site internet à Brest en 2025 ? Quels sont les délais typiques ? Découvrez les tarifs, les étapes clés et les pièges à éviter (freelance vs. agence vs. no-code). Demandez un audit offert !",
   alternates: {
-    canonical: "https://codebyconte.fr/blog/creation-site",
+    canonical: "https://www.codebyconte.fr/blog/creation-site",
   },
 };
 
@@ -37,18 +37,18 @@ export default function Page() {
             author: {
               "@type": "Person",
               name: "Conte Mouctar",
-              url: "https://codebyconte.fr",
+              url: "https://www.codebyconte.fr",
             },
             datePublished: "2025-05-30",
             dateModified: "2025-05-30",
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://codebyconte.fr/blog/creation-site",
+              "@id": "https://www.codebyconte.fr/blog/creation-site",
             },
             publisher: {
               "@type": "Person",
               name: "Code By Conte",
-              url: "https://codebyconte.fr",
+              url: "https://www.codebyconte.fr",
             },
           }),
         }}

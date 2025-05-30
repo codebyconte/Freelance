@@ -5,19 +5,19 @@ export const metadata = {
   description:
     "Apprenez à améliorer la performance, la visibilité et la conversion de votre site web grâce à nos articles rédigés par un développeur freelance à Brest.",
   alternates: {
-    canonical: "https://codebyconte.fr/blog",
+    canonical: "https://www.codebyconte.fr/blog",
   },
   openGraph: {
     title: "Blog – Conseils en création de site web & SEO | Code By Conte",
     description:
       "Optimisez votre site web grâce à nos conseils pratiques sur la création, le SEO, la performance et la stratégie digitale.",
-    url: "https://codebyconte.fr/blog",
+    url: "https://www.codebyconte.fr/blog",
     siteName: "Code By Conte",
     locale: "fr_FR",
     type: "website",
     images: [
       {
-        url: "https://codebyconte.fr/opengraph-image.png",
+        url: "https://www.codebyconte.fr/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Blog Code By Conte",
@@ -31,7 +31,7 @@ export const metadata = {
       "Les conseils pratiques d’un développeur web freelance à Brest pour booster la performance de votre site.",
     site: "@klyx_digital",
     creator: "@klyx_digital",
-    images: ["https://codebyconte.fr/opengraph-image.png"],
+    images: ["https://www.codebyconte.fr/opengraph-image.png"],
   },
 };
 
@@ -91,28 +91,24 @@ export default function Page() {
             "@context": "https://schema.org",
             "@type": "Blog",
             name: "Blog de Code By Conte",
-            url: "https://codebyconte.fr/blog",
+            url: "https://www.codebyconte.fr/blog",
             description:
               "Le blog de Code By Conte vous propose des conseils en création de site web, SEO, performance et stratégie digitale.",
             publisher: {
               "@type": "Person",
               name: "Conte Mouctar",
-              url: "https://codebyconte.fr",
+              url: "https://www.codebyconte.fr",
             },
             blogPost: posts.map((post) => ({
               "@type": "BlogPosting",
               headline: post.title,
-              image: `https://codebyconte.fr${post.imageUrl}`,
+              image: `https://www.codebyconte.fr${post.imageUrl}`,
               author: {
                 "@type": "Person",
                 name: "Conte Mouctar",
               },
               datePublished: post.datetime,
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id": `https://codebyconte.fr${post.href}`,
-              },
-              url: `https://codebyconte.fr${post.href}`,
+              url: `https://www.codebyconte.fr${post.href}`,
               description: post.description,
             })),
           }),

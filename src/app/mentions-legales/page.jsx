@@ -3,13 +3,13 @@ export const metadata = {
   description:
     "Informations légales du site Code By Conte : éditeur, SIRET, hébergeur (Vercel), propriété intellectuelle. Développeur web freelance à Brest.",
   alternates: {
-    canonical: "https://codebyconte.fr/mentions-legales",
+    canonical: "https://www.codebyconte.fr/mentions-legales",
   },
   openGraph: {
     title: "Mentions légales – Code By Conte",
     description:
       "Toutes les informations légales relatives au site Code By Conte. Editeur : Conte Mouctar, freelance à Brest. Hébergement : Vercel.",
-    url: "https://codebyconte.fr/mentions-legales",
+    url: "https://www.codebyconte.fr/mentions-legales",
     siteName: "Code By Conte",
     locale: "fr_FR",
     type: "website",

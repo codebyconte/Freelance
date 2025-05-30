@@ -2,4 +2,4 @@ User-Agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://codebyconte.fr/sitemap.xml
+Sitemap: https://www.codebyconte.fr/sitemap.xml

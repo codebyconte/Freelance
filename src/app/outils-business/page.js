@@ -10,14 +10,14 @@ export const metadata = {
   description:
     "Découvrez pourquoi un site internet rapide, sécurisé et sur mesure est indispensable pour attirer des clients, renforcer votre image et booster vos résultats.",
   alternates: {
-    canonical: "https://codebyconte.fr/outils-business",
+    canonical: "https://www.codebyconte.fr/outils-business",
   },
   openGraph: {
     title:
       "Site performant vs No-code : le comparatif essentiel – Code By Conte",
     description:
       "Faut-il créer un site codé sur mesure ou utiliser une solution no-code ? Découvrez les différences de performance, SEO, sécurité et coûts.",
-    url: "https://codebyconte.fr/outils-business",
+    url: "https://www.codebyconte.fr/outils-business",
     siteName: "Code By Conte",
     images: [
       {

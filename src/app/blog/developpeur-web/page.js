@@ -18,7 +18,7 @@ export const metadata = {
   description:
     "Vous cherchez un développeur web à Brest pour créer un site professionnel, visible sur Google et adapté à vos besoins ? Découvrez les bonnes pratiques, les pièges à éviter et comment choisir le bon freelance.",
   alternates: {
-    canonical: "https://codebyconte.fr/blog/developpeur-web",
+    canonical: "https://www.codebyconte.fr/blog/developpeur-web",
   },
 };
 
@@ -35,22 +35,18 @@ export default function Page() {
               "Développeur Web à Brest : Vo tre Allié Local pour un Site Performant, Visible et Rentable",
             description:
               "Vous cherchez un développeur web à Brest pour créer un site professionnel, visible sur Google et adapté à vos besoins ? Découvrez les bonnes pratiques, les pièges à éviter et comment choisir le bon freelance.",
-            image: "https://codebyconte.fr/Devellopeur web.jpg",
+            image: "https://www.codebyconte.fr/Devellopeur web.jpg",
             author: {
               "@type": "Person",
               name: "Conte Mouctar",
-              url: "https://codebyconte.fr",
+              url: "https://www.codebyconte.fr",
             },
             datePublished: "2025-05-30",
             dateModified: "2025-05-30", // Mettez à jour si l'article est modifié
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://codebyconte.fr/blog/developpeur-web", // URL de cet article
-            },
             publisher: {
               "@type": "Person", // Ou "Organization" si vous avez une structure d'entreprise
               name: "Code By Conte", // Nom de votre "marque"
-              url: "https://codebyconte.fr",
+              url: "https://www.codebyconte.fr",
             },
           }),
         }}

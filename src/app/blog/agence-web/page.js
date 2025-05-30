@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Vous cherchez une agence web à Brest pour créer votre site ? Découvrez pourquoi de plus en plus d'entrepreneurs se tournent vers des freelances locaux pour plus de flexibilité, d'écoute et de résultats.",
   alternates: {
-    canonical: "https://codebyconte.fr/blog/agence-web",
+    canonical: "https://www.codebyconte.fr/blog/agence-web",
   },
 };
 
@@ -26,18 +26,18 @@ export default function Page() {
               "Agence Web à Brest : Existe-t-il une meilleure alternative en 2025 ?",
             description:
               "Vous cherchez une agence web à Brest pour créer votre site ? Découvrez pourquoi de plus en plus d'entrepreneurs se tournent vers des freelances locaux pour plus de flexibilité, d'écoute et de résultats.",
-            image: "https://codebyconte.fr/agence-web.jpg",
+            image: "https://www.codebyconte.fr/agence-web.jpg",
             author: {
               "@type": "Person",
               name: "Conte Mouctar",
-              url: "https://codebyconte.fr",
+              url: "https://www.codebyconte.fr",
             },
             datePublished: "2025-05-30",
             dateModified: "2025-05-30",
             publisher: {
               "@type": "Person",
               name: "Code By Conte",
-              url: "https://codebyconte.fr",
+              url: "https://www.codebyconte.fr",
             },
           }),
         }}

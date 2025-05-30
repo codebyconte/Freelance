@@ -10,13 +10,13 @@ export const metadata = {
   description:
     "Découvrez mes offres de création de sites web sur-mesure : Présence Pro, Évolutif ou E-commerce. Sites performants, design unique, SEO et accompagnement inclus.",
   alternates: {
-    canonical: "https://codebyconte.fr/services",
+    canonical: "https://www.codebyconte.fr/services",
   },
   openGraph: {
     title: "Création site internet professionnel | Offres sur-mesure",
     description:
       "Comparez mes trois formules pour booster votre visibilité en ligne : site vitrine, blog évolutif ou boutique e-commerce.",
-    url: "https://codebyconte.fr/services",
+    url: "https://www.codebyconte.fr/services",
     siteName: "Code By Conte",
     images: [
       {
@@ -54,7 +54,7 @@ export default function PageServices() {
                 name: "Site Présence Pro",
                 description:
                   "Site vitrine sur-mesure pour présenter votre entreprise avec professionnalisme. Design responsive, SEO de base, formulaire et plan d’accès inclus.",
-                image: "https://codebyconte.fr/opengraph-image.png",
+                image: "https://www.codebyconte.fr/opengraph-image.png",
                 brand: {
                   "@type": "Organization",
                   name: "Code By Conte",
@@ -63,7 +63,7 @@ export default function PageServices() {
                   "@type": "Offer",
                   priceCurrency: "EUR",
                   price: "1200",
-                  url: "https://codebyconte.fr/services",
+                  url: "https://www.codebyconte.fr/services",
                   availability: "https://schema.org/InStock",
                   itemCondition: "https://schema.org/NewCondition",
                 },
@@ -73,7 +73,7 @@ export default function PageServices() {
                 name: "Site Structuré & Évolutif",
                 description:
                   "Site web complet avec CMS intégré, blog, SEO avancé et évolutivité. Idéal pour faire grandir votre présence en ligne.",
-                image: "https://codebyconte.fr/opengraph-image.png",
+                image: "https://www.codebyconte.fr/opengraph-image.png",
                 brand: {
                   "@type": "Organization",
                   name: "Code By Conte",
@@ -82,7 +82,7 @@ export default function PageServices() {
                   "@type": "Offer",
                   priceCurrency: "EUR",
                   price: "1800",
-                  url: "https://codebyconte.fr/services",
+                  url: "https://www.codebyconte.fr/services",
                   availability: "https://schema.org/InStock",
                   itemCondition: "https://schema.org/NewCondition",
                 },
@@ -92,7 +92,7 @@ export default function PageServices() {
                 name: "Site E-commerce Performant",
                 description:
                   "Boutique en ligne sur-mesure avec paiement sécurisé, gestion des stocks et optimisation conversion. Idéal pour vendre efficacement vos produits ou services.",
-                image: "https://codebyconte.fr/opengraph-image.png",
+                image: "https://www.codebyconte.fr/opengraph-image.png",
                 brand: {
                   "@type": "Organization",
                   name: "Code By Conte",
@@ -101,7 +101,7 @@ export default function PageServices() {
                   "@type": "Offer",
                   priceCurrency: "EUR",
                   price: "2500",
-                  url: "https://codebyconte.fr/services",
+                  url: "https://www.codebyconte.fr/services",
                   availability: "https://schema.org/InStock",
                   itemCondition: "https://schema.org/NewCondition",
                 },

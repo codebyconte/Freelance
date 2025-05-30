@@ -3,13 +3,13 @@ export const metadata = {
   description:
     "Découvrez la politique de confidentialité du site Code By Conte : gestion des données, responsable de traitement, durée de conservation et droits des utilisateurs.",
   alternates: {
-    canonical: "https://codebyconte.fr/confidentialite",
+    canonical: "https://www.codebyconte.fr/confidentialite",
   },
   openGraph: {
     title: "Politique de confidentialité – Code By Conte",
     description:
       "Comment vos données personnelles sont traitées sur le site Code By Conte. Transparence, respect du RGPD et confidentialité assurée.",
-    url: "https://codebyconte.fr/confidentialite",
+    url: "https://www.codebyconte.fr/confidentialite",
     siteName: "Code By Conte",
     locale: "fr_FR",
     type: "website",

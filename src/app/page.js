@@ -11,13 +11,13 @@ export const metadata = {
   description:
     "Développeur web freelance à Brest, je crée des sites internet modernes, rapides et sur mesure pour les entrepreneurs et artisans. Discutons de votre projet !",
   alternates: {
-    canonical: "https://codebyconte.fr/",
+    canonical: "https://www.codebyconte.fr/",
   },
   openGraph: {
     title: "Développeur web à Brest | Sites modernes et performants",
     description:
       "Je crée des sites web sur mesure à Brest pour les entreprises ambitieuses. Rapide, responsive et bien référencé.",
-    url: "https://codebyconte.fr",
+    url: "https://www.codebyconte.fr",
     siteName: "Code By Conte",
     images: [
       {
@@ -47,9 +47,9 @@ export default function Home() {
     "@type": "LocalBusiness",
     name: "Code By Conte",
     alternateName: "Conte Mouctar",
-    url: "https://codebyconte.fr",
-    logo: "https://codebyconte.fr/Logo.svg",
-    image: "https://codebyconte.fr/opengraph-image.png",
+    url: "https://www.codebyconte.fr/",
+    logo: "https://www.codebyconte.fr/Logo.svg",
+    image: "https://www.codebyconte.fr/opengraph-image.png",
     description:
       "Développeur Web Freelance à Brest – Sites performants sur mesure",
     openingHours: "Mo-Su 08:00-20:00",
