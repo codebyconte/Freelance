@@ -4,7 +4,6 @@ const navigation = {
   main: [
     { name: "Accueil", href: "/" },
     { name: "Offres & tarifs", href: "/services" },
-    { name: "Pourquoi un site performant ?", href: "/site-performant" },
     { name: "Outils business", href: "/outils-business" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "À propos", href: "/a-propos" },

@@ -13,12 +13,28 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title:
-    "Développeur web à Brest : Ce que vous devez savoir avant de créer votre site en 2025",
+  title: "Développeur web à Brest : Créez un site pro en 2025",
   description:
-    "Vous cherchez un développeur web à Brest pour créer un site professionnel, visible sur Google et adapté à vos besoins ? Découvrez les bonnes pratiques, les pièges à éviter et comment choisir le bon freelance.",
+    "Vous cherchez un développeur web à Brest ? Découvrez comment créer un site professionnel, visible sur Google et adapté à vos besoins avec un freelance local",
   alternates: {
     canonical: "https://www.codebyconte.fr/blog/developpeur-web",
+  },
+  openGraph: {
+    url: "https://www.codebyconte.fr/blog/developpeur-web",
+    title: "Développeur web à Brest : Créez un site pro en 2025",
+    description:
+      "Freelance web à Brest : créez un site professionnel, rapide, optimisé SEO et pensé pour convertir vos visiteurs en clients. Découvrez mon approche.",
+    siteName: "Code By Conte",
+    locale: "fr_FR",
+    type: "article",
+    images: [
+      {
+        url: "https://www.codebyconte.fr/Devellopeur web.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Développeur web freelance à Brest",
+      },
+    ],
   },
 };
 

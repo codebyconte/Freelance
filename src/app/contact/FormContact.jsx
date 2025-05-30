@@ -92,9 +92,9 @@ export function FormContact() {
                   />
                 </svg>
               </div>
-              <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+              <h1 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                 Travaillons ensemble sur votre site
-              </h2>
+              </h1>
               <p className="mt-6 text-lg/8 text-gray-600">
                 Vous avez un projet en tête ou vous hésitez encore sur la
                 meilleure solution pour votre entreprise ? Je suis là pour vous

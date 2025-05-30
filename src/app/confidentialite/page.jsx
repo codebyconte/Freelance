@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Politique de confidentialité – Code By Conte",
   description:
-    "Découvrez la politique de confidentialité du site Code By Conte : gestion des données, responsable de traitement, durée de conservation et droits des utilisateurs.",
+    "Code By Conte – Politique de confidentialité : données collectées, durée de conservation, droits des utilisateurs et coordonnées du responsable de traitement.",
   alternates: {
     canonical: "https://www.codebyconte.fr/confidentialite",
   },
@@ -13,6 +13,14 @@ export const metadata = {
     siteName: "Code By Conte",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Politique de confidentialité",
+      },
+    ],
   },
   twitter: {
     card: "summary",
@@ -21,6 +29,7 @@ export const metadata = {
       "Découvrez comment sont utilisées les données collectées sur le site Code By Conte. Respect de la vie privée et du RGPD.",
     site: "@klyx_digital",
     creator: "@klyx_digital",
+    images: ["https://www.codebyconte.fr/opengraph-image.png"],
   },
 };
 

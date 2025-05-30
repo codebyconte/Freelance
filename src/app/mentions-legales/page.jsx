@@ -13,6 +13,14 @@ export const metadata = {
     siteName: "Code By Conte",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Mentions légales",
+      },
+    ],
   },
   twitter: {
     card: "summary",
@@ -21,6 +29,7 @@ export const metadata = {
       "Informations sur l’éditeur, l’hébergeur et la propriété intellectuelle du site Code By Conte.",
     site: "@klyx_digital",
     creator: "@klyx_digital",
+    images: ["https://www.codebyconte.fr/opengraph-image.png"],
   },
 };
 

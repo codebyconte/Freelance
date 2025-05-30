@@ -8,7 +8,7 @@ export const metadata = {
   title:
     "Création de site internet professionnel | Offres sur-mesure – Code By Conte",
   description:
-    "Découvrez mes offres de création de sites web sur-mesure : Présence Pro, Évolutif ou E-commerce. Sites performants, design unique, SEO et accompagnement inclus.",
+    "Création de site internet professionnel à Brest | Code By Conte",
   alternates: {
     canonical: "https://www.codebyconte.fr/services",
   },

@@ -11,12 +11,28 @@ import {
 } from "@/components/ui/table";
 
 export const metadata = {
-  title:
-    "Création Site Internet Brest : Guide Complet des Prix, Délais et Erreurs à Éviter en 2025",
+  title: "Création site internet à Brest : Prix, délais et erreurs 2025",
   description:
-    "Combien coûte la création d'un site internet à Brest en 2025 ? Quels sont les délais typiques ? Découvrez les tarifs, les étapes clés et les pièges à éviter (freelance vs. agence vs. no-code). Demandez un audit offert !",
+    "Combien coûte un site web à Brest en 2025 ? Comparez freelance, agence et no-code. Tarifs, délais, pièges à éviter… et recevez votre audit gratuit !",
   alternates: {
     canonical: "https://www.codebyconte.fr/blog/creation-site",
+  },
+  openGraph: {
+    url: "https://www.codebyconte.fr/blog/creation-site",
+    title: "Création site internet à Brest : Prix, délais et erreurs 2025",
+    description:
+      "Combien coûte un site web à Brest en 2025 ? Comparez freelance, agence et no-code. Tarifs, délais, pièges à éviter… et recevez votre audit gratuit !",
+    siteName: "Code By Conte",
+    locale: "fr_FR",
+    type: "article",
+    images: [
+      {
+        url: "/site-internet.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Création site internet à Brest",
+      },
+    ],
   },
 };
 
@@ -30,9 +46,9 @@ export default function Page() {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             headline:
-              "Création Site Internet Brest : Guide Complet des Prix, Délais et Erreurs à Éviter en 2025",
+              "Création site internet à Brest : Prix, délais et erreurs 2025",
             description:
-              "Combien coûte la création d'un site internet à Brest en 2025 ? Quels sont les délais typiques ? Découvrez les tarifs, les étapes clés et les pièges à éviter (freelance vs. agence vs. no-code). Demandez un audit offert !",
+              "Combien coûte un site web à Brest en 2025 ? Comparez freelance, agence et no-code. Tarifs, délais, pièges à éviter… et recevez votre audit gratuit !",
             image: "/site-internet.jpg",
             author: {
               "@type": "Person",

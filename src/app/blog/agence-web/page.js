@@ -7,9 +7,27 @@ import { Divider } from "@/components/ui/divider";
 export const metadata = {
   title: "Agence Web à Brest : Existe-t-il une meilleure alternative en 2025 ?",
   description:
-    "Vous cherchez une agence web à Brest pour créer votre site ? Découvrez pourquoi de plus en plus d'entrepreneurs se tournent vers des freelances locaux pour plus de flexibilité, d'écoute et de résultats.",
+    "Agence web à Brest ou freelance local ? Découvrez pourquoi de nombreux entrepreneurs choisissent un développeur indépendant pour plus de flexibilité et de résultats.",
   alternates: {
     canonical: "https://www.codebyconte.fr/blog/agence-web",
+  },
+  openGraph: {
+    url: "https://www.codebyconte.fr/blog/agence-web",
+    title:
+      "Agence Web à Brest : Existe-t-il une meilleure alternative en 2025 ?",
+    description:
+      "Agence web à Brest ou freelance local ? Découvrez pourquoi de nombreux entrepreneurs choisissent un développeur indépendant pour plus de flexibilité et de résultats.",
+    siteName: "Code By Conte",
+    locale: "fr_FR",
+    type: "article",
+    images: [
+      {
+        url: "/agence-web.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Agence web à Brest",
+      },
+    ],
   },
 };
 

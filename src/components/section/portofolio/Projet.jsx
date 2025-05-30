@@ -39,7 +39,7 @@ export default function Projet() {
             className="flex w-full flex-col overflow-hidden border border-zinc-950/10 bg-white mx-auto hover:outline"
           >
             <MorphingDialogImage
-              src="/Booki.png"
+              src="/Booki.webp"
               alt="Site vitrine pour une agence de voyage"
               className="h-48 w-full object-cover"
             />
@@ -65,7 +65,7 @@ export default function Projet() {
               className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 sm:w-[500px]"
             >
               <MorphingDialogImage
-                src="/Booki.png"
+                src="/Booki.webp"
                 alt="Site vitrine pour une agence de voyage"
                 className="h-full w-full"
               />

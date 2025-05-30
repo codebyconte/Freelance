@@ -6,7 +6,7 @@ import { Ear, MessagesSquare, Target, PhoneCall } from "lucide-react";
 export const metadata = {
   title: "À propos – Conte Mouctar, développeur web à Brest",
   description:
-    "Découvrez le parcours, les valeurs et les engagements de Conte Mouctar, développeur web freelance à Brest. Une approche humaine, sur-mesure et orientée performance pour accompagner votre réussite digitale.",
+    "Découvrez le parcours et les valeurs de Conte Mouctar, développeur web freelance à Brest. Une approche humaine et performante pour réussir votre projet digital.",
   alternates: {
     canonical: "https://codebyconte.fr/a-propos",
   },
