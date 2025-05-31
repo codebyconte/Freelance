@@ -39,10 +39,10 @@ const posts = [
   {
     id: 1,
     title:
-      "Développeur web à Brest : Ce que vous devez savoir avant de créer votre site en 2025",
-    href: "/blog/developpeur-web",
+      "Développeur web Brest : créez un site performant pour votre entreprise",
+    href: "/blog/developpeur-web-brest",
     description:
-      "Vous cherchez un développeur web à Brest pour créer un site professionnel, visible sur Google et adapté à vos besoins ? Découvrez les bonnes pratiques, les pièges à éviter et comment choisir le bon freelance.",
+      "Vous cherchez un développeur web à Brest ? Découvrez comment un site sur-mesure booste votre visibilité, vos ventes et votre crédibilité en ligne.",
     imageUrl: "/Devellopeur web.jpg",
     date: "30 mai 2025",
     datetime: "2025-05-30",
@@ -50,10 +50,10 @@ const posts = [
   {
     id: 2,
     title:
-      "Création Site Internet Brest : Guide Complet des Prix, Délais et Erreurs à Éviter en 2025",
-    href: "/blog/creation-site",
+      "Création site internet Brest : trouvez la solution idéale pour votre activité",
+    href: "/blog/creation-site-internet-brest",
     description:
-      "Combien coûte la création d'un site internet à Brest en 2025 ? Quels sont les délais typiques ? Découvrez les tarifs, les étapes clés et les pièges à éviter (freelance vs. agence vs. no-code). Demandez un audit offert !",
+      "Besoin d’un site web performant à Brest ? Découvrez les solutions pour la création de site internet à Brest : freelance, agence ou sur-mesure. Conseils et comparaison.",
     imageUrl: "/site-internet.jpg",
     date: "30 mai 2025",
     datetime: "2025-05-30",
@@ -62,20 +62,10 @@ const posts = [
     id: 3,
     title:
       "Agence Web à Brest : Existe-t-il une meilleure alternative en 2025 ?",
-    href: "/blog/agence-web",
+    href: "/blog/agence-web-brest-freelance-vs-agence",
     description:
       "Vous cherchez une agence web à Brest pour créer votre site ? Découvrez pourquoi de plus en plus d'entrepreneurs se tournent vers des freelances locaux pour plus de flexibilité, d'écoute et de résultats.",
     imageUrl: "/agence-web.jpg",
-    date: "30 mai 2025",
-    datetime: "2025-05-30",
-  },
-  {
-    id: 4,
-    title: "Pourquoi un site web performant est essentiel pour réussir en 2025",
-    href: "/blog/site-performant",
-    description:
-      "Découvrez pourquoi créer un site web performant est devenu indispensable pour toute entreprise en 2025. Crédibilité, acquisition, référencement local… tout est lié.",
-    imageUrl: "/performance.jpg",
     date: "30 mai 2025",
     datetime: "2025-05-30",
   },

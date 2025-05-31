@@ -37,25 +37,19 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: "https://www.codebyconte.fr/blog/site-performant",
+      url: "https://www.codebyconte.fr/blog/agence-web-brest-freelance-vs-agence",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://www.codebyconte.fr/blog/agence-web",
+      url: "https://www.codebyconte.fr/blog/creation-site-internet-brest",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://www.codebyconte.fr/blog/creation-site",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: "https://www.codebyconte.fr/blog/developpeur-web",
+      url: "https://www.codebyconte.fr/blog/developpeur-web-brest",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
