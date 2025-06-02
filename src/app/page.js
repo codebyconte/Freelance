@@ -1,22 +1,26 @@
-import Hero from "@/components/section/home/Hero";
+import { Hero } from "@/components/section/home/Hero";
 import { ServicesApercu } from "@/components/section/home/ServicesApercu";
 import { GoogleStat } from "@/components/section/home/GoogleStat";
+import { Probleme } from "@/components/section/home/Probleme";
 import PourquoiMoi from "@/components/section/home/PourquoiMoi";
 import Cta from "@/components/section/home/Cta";
 import { JeuxGratter } from "@/components/section/home/JeuxGratter";
-import Bento from "@/components/section/home/Bento";
+import { Bento } from "@/components/section/home/Bento";
+import { Etape } from "@/components/section/home/Etape";
+import { Garantie } from "@/components/section/home/Garantie";
+import { Faq } from "@/components/section/home/Faq";
 
 export const metadata = {
-  title: "Création site internet à Brest – Développeur web freelance",
+  title: "Création site internet Brest : développeur sur mesure",
   description:
-    "Développeur web freelance à Brest, je crée des sites internet modernes, rapides et sur mesure pour les entrepreneurs et artisans. Discutons de votre projet !",
+    "Expert en création de site internet à Brest. Sites sur mesure, rapides, optimisés SEO pour booster votre visibilité locale. ",
   alternates: {
     canonical: "https://www.codebyconte.fr/",
   },
   openGraph: {
-    title: "Développeur web à Brest | Sites modernes et performants",
+    title: "Création site internet Brest : développeur sur mesure",
     description:
-      "Je crée des sites web sur mesure à Brest pour les entreprises ambitieuses. Rapide, responsive et bien référencé.",
+      "Expert en création de site internet à Brest. Sites sur mesure, rapides, optimisés SEO pour booster votre visibilité locale. ",
     url: "https://www.codebyconte.fr",
     siteName: "Code By Conte",
     images: [
@@ -32,9 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Création site internet à Brest – Code By Conte",
+    title: "Création site internet Brest : développeur sur mesure",
     description:
-      "Sites sur mesure performants pour entrepreneurs et indépendants à Brest.",
+      "Expert en création de site internet à Brest. Sites sur mesure, rapides, optimisés SEO pour booster votre visibilité locale. ",
     site: "@klyx_digital",
     creator: "@klyx_digital",
     images: ["/opengraph-image.png"],
@@ -51,7 +55,7 @@ export default function Home() {
     logo: "https://www.codebyconte.fr/Logo.svg",
     image: "https://www.codebyconte.fr/opengraph-image.png",
     description:
-      "Développeur Web Freelance à Brest – Sites performants sur mesure",
+      "Expert en création de site internet à Brest. Sites sur mesure, rapides, optimisés SEO pour booster votre visibilité locale. ",
     openingHours: "Mo-Su 08:00-20:00",
     address: {
       "@type": "PostalAddress",
@@ -68,19 +72,74 @@ export default function Home() {
     paymentAccepted: ["Cash", "Credit Card", "Cryptocurrency"],
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Quel est le prix pour la création d'un site internet professionnel à Brest ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Le tarif pour un site vitrine à Brest démarre autour de 1200€. Il dépend de la complexité, des fonctionnalités et du nombre de pages. Un devis gratuit vous est fourni sous 24h.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Combien de temps faut-il pour créer mon site web à Brest ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La création d’un site internet à Brest prend en moyenne entre 2 et 6 semaines, selon les spécificités du projet et la fourniture des contenus.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Dois-je fournir le texte et les images pour mon site ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Fournir vos textes et visuels est idéal, mais je vous accompagne pour structurer vos idées, optimiser le SEO et vous conseiller des images de qualité ou des photographes à Brest.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Que se passe-t-il une fois mon site web livré ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Une fois en ligne, vous êtes propriétaire du site. Vous avez droit à une période de garantie et pouvez gérer le site vous-même ou opter pour un forfait de maintenance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Proposez-vous des facilités de paiement pour la création de site ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui, le paiement en 2 ou 3 fois sans frais est possible pour faciliter votre projet de site internet à Brest.",
+        },
+      },
+    ],
+  };
+
   return (
     <main className="w-full">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Hero />
       <GoogleStat />
-      <ServicesApercu />
+      <Probleme />
       <Bento />
       <PourquoiMoi />
-      <Cta />
+      <Etape />
+      <ServicesApercu />
+      <Garantie />
+      <Faq />
       <JeuxGratter />
+      <Cta />
     </main>
   );
 }

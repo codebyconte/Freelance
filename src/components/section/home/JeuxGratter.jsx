@@ -12,17 +12,15 @@ export function JeuxGratter() {
 
   return (
     <section className="bg-[#020617] text-white px-4 py-12 md:py-24">
-      <div className="max-w-5xl mx-auto text-center space-y-6 md:space-y-10">
-        <h2
-          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold`}
-        >
-          Boostez votre site gratuitement… en grattant une carte{" "}
+      <div className="max-w-4xl mx-auto space-y-6 md:space-y-10">
+        <h2 className="text-2xl md:text-3xl font-semibold">
+          Un petit coup de pouce pour votre succès en ligne à Brest !{" "}
         </h2>
-        <p className="max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
-          Pour vous remercier de votre visite, grattez une carte au hasard et
-          découvrez une ressource offerte pour améliorer votre site. Pas besoin
-          d’achat ni d’engagement juste un petit cadeau pour booster votre
-          présence en ligne.
+        <p className="max-w-3xl  text-lg leading-relaxed">
+          Pour vous remercier de votre visite, tentez votre chance ! Grattez une
+          carte ci-dessous et découvrez immédiatement une ressource ou un
+          service offert pour améliorer votre présence digitale. C'est gratuit,
+          sans engagement, juste un cadeau de bienvenue !
         </p>
       </div>
 

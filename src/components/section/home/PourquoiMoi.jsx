@@ -1,37 +1,28 @@
-import {
-  CheckCircle,
-  Crosshair,
-  Code2,
-  Handshake,
-  CircleCheckBig,
-} from "lucide-react";
+import { CheckCircle, Crosshair, Code2, Handshake } from "lucide-react";
 import { dmSerif } from "@/app/styles/fonts";
 
 export default function PourquoiMoi() {
   return (
-    <section className="bg-black text-white py-24  px-4 w-full ">
-      <div className="max-w-4xl mx-auto text-center mb-16">
-        <h2 className={`${dmSerif.className} text-4xl sm:text-6xl font-bold`}>
-          Pourquoi travailler avec un développeur web local à Brest ?
+    <section className="bg-black text-white py-12 sm:py-24  px-4 w-full ">
+      <div className="max-w-4xl mx-auto mb-16">
+        <h2 className="text-2xl sm:text-3xl font-semibold sm:text-center">
+          Pourquoi Choisir un Développeur Web Freelance à Brest pour Votre Site
+          ?{" "}
         </h2>
-        <p className="mt-4 text-lg text-white leading-relaxed">
-          Faire appel à un développeur web freelance basé à Brest, c’est
-          bénéficier d’un accompagnement humain, réactif et personnalisé. Je
-          connais les réalités des entrepreneurs locaux et je suis disponible
-          pour des échanges en présentiel si besoin. Ensemble, nous construisons
-          un site web sur mesure, aligné sur vos objectifs, optimisé pour
-          Google, et parfaitement adapté à votre clientèle brestoise.
-        </p>
       </div>
 
+      <p className="text-center text-lg font-semibold pb-6">
+        Collaborer avec un expert local comme moi à Brest, c'est choisir :
+      </p>
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div className="flex  gap-4">
           <div className="mt-1">
             <Code2 className="text-blue-700 size-6" />
           </div>
           <p>
-            Sites 100 % personnalisés, développés sans template, adaptés à votre
-            image de marque
+            Un Site 100% Sur Mesure : Adapté à votre métier, vos clients
+            brestois, votre image. Pas du prêt-à-porter, mais de la haute
+            couture digitale.
           </p>
         </div>
         <div className="flex  gap-4">
@@ -39,8 +30,10 @@ export default function PourquoiMoi() {
             <Crosshair className="text-blue-700 size-6" />
           </div>
           <p>
-            Objectifs clairs dès le départ : visibilité locale à Brest,
-            conversion clients, notoriété en ligne{" "}
+            Nous définissons ensemble des indicateurs de succès concrets :
+            augmentation des demandes de devis depuis Brest, amélioration de
+            votre position sur Google pour des mots-clés stratégiques,
+            croissance de votre notoriété locale.
           </p>
         </div>
         <div className="flex  gap-4">
@@ -48,8 +41,9 @@ export default function PourquoiMoi() {
             <Handshake className="text-blue-700 size-6" />
           </div>
           <p>
-            Collaboration transparente et humaine, du premier contact à la mise
-            en ligne
+            Collaboration Humaine & Transparente : Un interlocuteur unique,
+            passionné, qui parle votre langue (sans jargon technique inutile).
+            Échanges directs en visio ou en présentiel à Brest.
           </p>
         </div>
         <div className="flex  gap-4">
@@ -57,11 +51,15 @@ export default function PourquoiMoi() {
             <CheckCircle className="text-blue-700 size-6" />
           </div>
           <p>
-            Vision long terme : votre site est prêt à évoluer avec votre
-            entreprise
+            Vision à Long Terme pour Votre Entreprise Brestoise : Votre site est
+            une fondation solide, prête à évoluer avec vos ambitions, sans
+            devoir tout refaire tous les deux ans.
           </p>
         </div>
       </div>
+      <p className="text-center text-lg font-semibold pt-8 italic">
+        Votre succès en ligne à Brest est ma priorité.
+      </p>
     </section>
   );
 }

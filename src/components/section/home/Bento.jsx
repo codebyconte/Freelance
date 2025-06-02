@@ -1,31 +1,34 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
-export default function Bento() {
+export function Bento() {
   return (
-    <div className="mb-16 ">
-      <div className="mx-auto max-w-3xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-center text-base/7 font-semibold text-blue-600">
-          Des sites web performants, modernes et pensés pour votre activité à
-          Brest
-        </h2>
-        <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
-          Tout ce dont vous avez besoin pour créer un site internet sur mesure,
-          rapide, responsive et bien référencé à Brest ou ailleurs.{" "}
-        </p>
+    <div className="py-12">
+      <div className="max-w-3xl px-6 lg:max-w-7xl lg:px-8 space-y-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 leading-tight ">
+            Votre Futur Site Web à Brest : Conçu pour Convertir, Performer et
+            Durer.{" "}
+          </h2>
+          <p className="max-w-4xl text-gray-600 leading-relaxed text-lg mt-2">
+            En me confiant la création de votre site internet à Brest, voici ce
+            que vous obtenez concrètement :
+          </p>
+        </div>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative lg:row-span-2">
             <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Adapté à tous les écrans
+                  Affichage Parfait sur Tous les Écrans{" "}
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Votre site est entièrement responsive : il s’adapte
-                  parfaitement aux smartphones, tablettes et ordinateurs. Un
-                  design fluide est essentiel pour l’expérience utilisateur et
-                  améliore aussi votre référencement Google, notamment pour les
-                  recherches locales à Brest.
+                  Un design 100% responsive, pensé d'abord pour le mobile,
+                  garantissant une expérience utilisateur impeccable sur
+                  smartphones, tablettes et ordinateurs. Votre image
+                  professionnelle est soignée, quel que soit le support utilisé
+                  par vos clients à Brest.
                 </p>
               </div>
               <div className="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
@@ -47,13 +50,12 @@ export default function Bento() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Des performances au service de votre business
+                  Performance & Vitesse Optimale{" "}
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Chaque site que je développe est optimisé pour un chargement
-                  rapide, une navigation fluide et une performance technique
-                  exemplaire. Ces optimisations favorisent votre positionnement
-                  SEO, notamment pour les entreprises locales à Brest.
+                  Un site qui charge en un éclair . Fini les visiteurs frustrés,
+                  bonjour les conversions et un meilleur classement Google.
+                  Chaque page est optimisée pour la vitesse.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
@@ -74,14 +76,11 @@ export default function Bento() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Sécurisé et fiable
+                  Sécurité & Fiabilité Modernes{" "}
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Vos données sont protégées grâce à un code propre, une
-                  architecture fiable et le respect des meilleures pratiques de
-                  sécurité web. En tant que développeur basé à Brest, je veille
-                  à ce que votre site reste fiable, sécurisé et conforme aux
-                  standards actuels.
+                  Certificat SSL (HTTPS), code propre et sécurisé, protection
+                  contre les menaces courantes. Dormez sur vos deux oreilles.
                 </p>
               </div>
               <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
@@ -97,40 +96,48 @@ export default function Bento() {
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5"></div>
           </div>
-          <div className="relative lg:row-span-2">
-            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+          <div className="relative">
+            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-tr-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Une base solide et évolutive
+                  Une Base Solide et Évolutive (Technologie Moderne){" "}
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Grâce à des technologies modernes (Next.js, React, Tailwind,
-                  etc.), je développe des sites web uniques, performants et
-                  évolutifs. Basé à Brest, je vous accompagne sur le long terme
-                  avec une solution digitale fiable, adaptable à la croissance
-                  de votre activité.
+                  Développé avec des technologies de pointe (Next.js, React),
+                  votre site est prêt à grandir avec votre entreprise brestoise.
+                  Pas de solutions propriétaires qui vous enferment.
                 </p>
               </div>
-              <div className="relative min-h-[30rem] w-full grow">
-                <div className="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
-                  <div className="flex bg-gray-800/40 ring-1 ring-white/5">
-                    <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
-                      <div className="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">
-                        Layout.jsx
-                      </div>
-                      <div className="border-r border-gray-600/10 px-4 py-2">
-                        App.jsx
-                      </div>
-                    </div>
-                  </div>
-                  <div className="px-6 pt-6 pb-14"></div>
-                </div>
+            </div>
+            <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 lg:rounded-tr-[2rem]"></div>
+          </div>
+          <div className="relative">
+            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]"></div>
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+              <div className="px-8 py-8 sm:px-10 sm:pt-10">
+                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                  Visibilité Locale SEO Renforcée à Brest{" "}
+                </p>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  Optimisation pour les recherches "votre activité + Brest",
+                  "meilleur [service] Finistère", et sur Google Maps. Vos
+                  clients locaux vous trouvent enfin facilement.
+                </p>
               </div>
             </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+            <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]"></div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center mt-12">
+        <Button
+          color="blue"
+          href="/portfolio"
+          aria-label="Voir mes réalisations de sites internet à Brest"
+        >
+          VOIR MES RÉALISATIONS
+        </Button>
       </div>
     </div>
   );
