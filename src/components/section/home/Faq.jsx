@@ -7,7 +7,7 @@ import {
 
 export function Faq() {
   return (
-    <section className="py-12 px-4">
+    <section className="py-12 px-4 max-w-5xl mx-auto">
       <h2 className="font-semibold text-2xl py-6">
         Questions Fréquentes sur la Création de Site Internet à Brest{" "}
       </h2>

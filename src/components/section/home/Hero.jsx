@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Clock } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="min-h-screen py-6 sm:py-16">
+    <section className="min-h-screen flex justify-center items-center py-6 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-center leading-tight ">
@@ -42,12 +41,6 @@ export function Hero() {
             >
               OBTENIR MON DEVIS GRATUIT EN 24H
             </Button>
-          </div>
-
-          <div className="flex none  sm:flex-row justify-center items-center gap-1 md:gap-4 text-sm text-gray-500">
-            <Badge color="green">✓ Devis 100% gratuit</Badge>
-            <Badge color="blue">✓ Sans engagement</Badge>
-            <Badge color="purple">✓ Réponse sous 24h</Badge>
           </div>
         </div>
       </div>

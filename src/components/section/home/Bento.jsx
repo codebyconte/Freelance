@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export function Bento() {
   return (
     <div className="py-12">
-      <div className="max-w-3xl px-6 lg:max-w-7xl lg:px-8 space-y-6">
+      <div className="max-w-3xl px-6 lg:max-w-7xl lg:px-8 space-y-6 mx-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 leading-tight ">
             Votre Futur Site Web à Brest : Conçu pour Convertir, Performer et

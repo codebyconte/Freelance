@@ -11,7 +11,7 @@ import { Badge } from "@/components/ui/badge";
 
 export function ServicesApercu() {
   return (
-    <section className="px-4 md:px-12 py-12 md:py-24">
+    <section className="px-4 md:px-12 py-12 md:py-24 max-w-6xl mx-auto">
       <div className="mx-auto max-w-4xl space-y-6 md:space-y-10">
         <h2 className="text-2xl md:text-3xl font-semibold">
           Mes Services de Création de Site Internet sur Mesure à Brest{" "}
@@ -24,9 +24,9 @@ export function ServicesApercu() {
         </p>
       </div>
 
-      <div className="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+      <div className="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
         {/* Tes cartes inchangées, sauf transition Tailwind harmonisée 👇 */}
-        <Card className="hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-out">
+        <Card className="hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-out ">
           <CardHeader>
             <Store className="text-blue-600" />
             <div className="flex gap-2 py-2">
