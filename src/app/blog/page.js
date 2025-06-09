@@ -69,6 +69,17 @@ const posts = [
     date: "30 mai 2025",
     datetime: "2025-05-30",
   },
+  {
+    id: 4,
+    title:
+      "Refonte site internet Brest : comment faire une refonte web réussie ?",
+    href: "/blog/refonte-site-internet-brest",
+    description:
+      "Vous cherchez une agence web à Brest pour créer votre site ? Découvrez pourquoi de plus en plus d'entrepreneurs se tournent vers des freelances locaux pour plus de flexibilité, d'écoute et de résultats.",
+    imageUrl: "/refonte-site-internet.jpg",
+    date: "9 juin 2025",
+    datetime: "2025-06-09",
+  },
 ];
 
 export default function Page() {
