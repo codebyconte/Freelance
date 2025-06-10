@@ -40,10 +40,10 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.codebyconte.fr/Devellopeur web.jpg",
+        url: "https://www.codebyconte.fr/refonte-site-internet-brest.jpg",
         width: 1200,
         height: 630,
-        alt: "Développeur web freelance à Brest",
+        alt: "Refonte site internet Brest",
       },
     ],
   },
@@ -405,7 +405,7 @@ export default function Page() {
               devis
             </li>
           </ul>
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center mt-6 text-center">
             <Button href="/services" color="blue">
               Voir nos offres de création de site web à Brest
             </Button>
@@ -428,7 +428,7 @@ export default function Page() {
             <li>Accompagnement humain, audit gratuit</li>
             <li>Code sur mesure (Next.js, SEO technique 2025)</li>
           </ul>
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center mt-6 text-center">
             <Button href="/about" color="blue">
               À propos – mon parcours de développeur freelance à Brest
             </Button>

@@ -53,10 +53,10 @@ export default function RootLayout({ children }) {
         <Header>
           <GoogleAnalytics GA_MEASUREMENT_ID="G-NNH04SFGH2" />
           {children}
+          <SpeedInsights />
         </Header>
         <Footer />
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
