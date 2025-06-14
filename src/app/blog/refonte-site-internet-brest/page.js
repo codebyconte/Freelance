@@ -429,7 +429,7 @@ export default function Page() {
             <li>Code sur mesure (Next.js, SEO technique 2025)</li>
           </ul>
           <div className="flex justify-center mt-6 text-center">
-            <Button href="/about" color="blue">
+            <Button href="/a-propos" color="blue">
               À propos – mon parcours de développeur freelance à Brest
             </Button>
           </div>
