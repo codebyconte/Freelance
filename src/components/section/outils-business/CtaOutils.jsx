@@ -1,25 +1,51 @@
 import { Button } from "@/components/ui/button";
-import { dmSerif } from "@/app/styles/fonts";
 
 export default function CtaOutils() {
   return (
-    <section className="bg-black text-white py-12 md:py-16 px-6  mx-auto text-center space-y-6 w-full overflow-x-hidden">
-      <h2
-        className={`${dmSerif.className} text-2xl md:text-4xl lg:text-5xl font-bold`}
-      >
-        Vous souhaitez booster la performance de votre entreprise ?
-      </h2>
-      <p className="text-base md:text-lg max-w-2xl mx-auto">
-        Recevez gratuitement une analyse personnalisée de votre site web.
-      </p>
-      <ul className="text-gray-300 max-w-md mx-auto space-y-2 list-disc list-inside text-left sm:text-center">
-        <li>Points forts & axes d’amélioration</li>
-        <li>Conseils concrets pour gagner en visibilité</li>
-        <li>Rapport clair, sans engagement</li>
-      </ul>
+    <section className="bg-black text-white py-14 md:py-20 px-6 text-center space-y-8 overflow-x-hidden">
+      <div className="space-y-4 max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+          Vos données sont claires. <br className="hidden md:inline" />
+          Votre stratégie est prête. Et votre site web ?
+        </h2>
+
+        <p className="text-lg md:text-xl text-gray-300">
+          Un outil, aussi puissant soit-il, ne remplace pas une vitrine en ligne
+          performante. Votre site est votre commercial le plus travailleur : il
+          doit être rapide, convaincant et parfaitement optimisé pour convertir
+          vos visiteurs en clients.
+        </p>
+      </div>
+
+      <div className="space-y-6 max-w-3xl mx-auto text-base md:text-lg">
+        <p className="underline underline-offset-4 text-white">
+          Recevez une analyse gratuite et personnalisée de votre site web.{" "}
+        </p>
+        <p>
+          En moins de 48h, je vous envoie un rapport clair (sans blabla
+          technique) qui identifie :
+        </p>
+
+        <ul className="list-disc list-inside text-left text-gray-300 space-y-2">
+          <li>Vos points forts actuels.</li>
+          <li>
+            Les axes d'amélioration précis pour la vitesse, le design et le SEO.
+          </li>
+          <li>
+            Des conseils concrets pour augmenter votre visibilité et vos
+            conversions.
+          </li>
+        </ul>
+
+        <p>
+          C'est gratuit, sans engagement, et c'est le premier pas vers un site
+          qui travaille vraiment pour vous.
+        </p>
+      </div>
+
       <div>
-        <Button href="/contact" color="blue">
-          Profitez d’un audit gratuit de votre site !
+        <Button href="/contact" color="blue" size="lg">
+          Demander mon audit gratuit
         </Button>
       </div>
     </section>

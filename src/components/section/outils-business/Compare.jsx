@@ -53,15 +53,9 @@ export default function Compare() {
   return (
     <section className="bg-white py-12 md:py-24 px-4 w-full  overflow-x-hidden">
       <div className="max-w-5xl mx-auto text-center space-y-6 mb-16 md:mb-20">
-        <h2
-          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-5xl font-bold text-black`}
-        >
-          Nos outils pour entrepreneurs et dirigeants
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black">
+          Notre suite d'outils gratuits pour votre business{" "}
         </h2>
-        <p className="text-base md:text-lg text-gray-600">
-          Évaluez votre position sur le marché en un instant grâce à notre
-          comparateur d’entreprises concurrentes.
-        </p>
       </div>
 
       <div className="max-w-4xl mx-auto bg-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-lg transition duration-300 ease-in-out space-y-10">
@@ -78,8 +72,13 @@ export default function Compare() {
 
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
             <h3 className="text-xl md:text-2xl font-bold text-black">
-              Comparateur d’entreprises concurrentes
+              Analyse concurrentielle{" "}
             </h3>
+            <p>
+              Découvrez qui sont vos concurrents directs dans votre ville,
+              comprenez leur structure juridique et mesurez la saturation de
+              votre marché pour trouver votre avantage unique.
+            </p>
             <ul className="space-y-4 text-base">
               <li className="flex items-start gap-2">
                 <Search className="text-blue-600 mt-1" size={20} />
@@ -90,29 +89,26 @@ export default function Compare() {
               <li className="flex items-start gap-2">
                 <BarChart3 className="text-blue-600 mt-1" size={20} />
                 <span>
-                  <strong>Nombre de concurrents</strong> dans votre ville et
-                  votre secteur
+                  <strong>Nombre de concurrents</strong> dans votre secteur et
+                  zone géographique.
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <BadgePercent className="text-blue-600 mt-1" size={20} />
                 <span>
-                  <strong>Statuts juridiques</strong> les plus courants
+                  <strong>Statuts juridiques</strong> les plus fréquents chez
+                  vos concurrents.
                 </span>
               </li>
             </ul>
 
-            <p className="text-sm mt-4">
-              Identifiez vos forces, repérez vos axes d’amélioration et gardez
-              une longueur d’avance.
-            </p>
             <Button
               color="blue"
               type="button"
               className="cursor-pointer"
               onClick={() => setModaleRecherche(true)}
             >
-              Comparer mon entreprise
+              Analyser mes concurrents{" "}
             </Button>
           </div>
         </div>

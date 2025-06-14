@@ -65,78 +65,63 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="px-4   text-center space-y-8 max-w-4xl min-h-screen">
-        <h1
-          className={`${dmSerif.className} text-3xl sm:text-4xl md:text-6xl leading-tight text-shadow-lg`}
-        >
-          Un développeur web passionné, au service de votre réussite digitale
+      <div className="px-4 text-center space-y-8 max-w-4xl min-h-screen mt-8 lg:mt-24 py-8">
+        <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-6xl lg:text-pretty ">
+          Votre projet mérite plus qu'un site web. Il mérite un partenaire
+          digital.
         </h1>
+
         <p className="text-base sm:text-lg max-w-3xl mx-auto">
-          Bonjour, je m’appelle <span className="font-bold">Conte Mouctar</span>
-          , développeur web indépendant, diplômé{" "}
-          <span className="underline decoration-indigo-500">
-            d’OpenClassrooms (Bac+2)
-          </span>{" "}
-          en développement web.
+          Vous avez une vision claire pour votre entreprise, un service de
+          qualité à offrir, et l'ambition de vous démarquer. Mais le chemin pour
+          traduire cette vision en une présence digitale efficace peut sembler
+          complexe.
         </p>
         <p className="text-base sm:text-lg max-w-3xl mx-auto">
-          Depuis toujours, je suis fasciné par l’informatique et les
-          technologies numériques. J’aime comprendre comment fonctionnent les
-          choses, relever des défis techniques et transformer des idées en
-          solutions concrètes. Le web est pour moi un espace d’innovation infini
-          où je peux allier créativité et expertise pour accompagner les
-          entreprises dans leur transformation digitale.
+          C'est là que j'interviens. Je suis <strong>Conte Mouctar</strong>, un
+          développeur web indépendant dont la mission est de transformer vos
+          idées en outils numériques performants.
         </p>
         <p className="text-base sm:text-lg max-w-3xl mx-auto">
-          Aujourd’hui, j’aide les entrepreneurs, indépendants et petites
-          entreprises à se démarquer grâce à des sites web performants,
-          sur-mesure et pensés pour atteindre leurs objectifs : renforcer leur
-          image, développer leur visibilité et convertir leurs visiteurs en
-          clients.
+          Ma fascination pour la technologie n'est pas une simple curiosité ;
+          c'est l'assurance que votre projet sera construit avec des outils
+          modernes, rapides et fiables, prêts à soutenir votre croissance.
+          Aujourd'hui, j'accompagne les entrepreneurs comme vous à obtenir un
+          site qui ne se contente pas d'être beau, mais qui convertit les
+          visiteurs en clients.
         </p>
       </div>
 
       <div className="bg-black text-white w-full px-4 py-16 sm:py-24 space-y-8 text-center">
-        <h2
-          className={`${dmSerif.className} text-2xl sm:text-3xl md:text-5xl text-center`}
-        >
-          Ma philosophie de travail
+        <h2 className="text-2xl sm:text-3xl md:text-5xl text-center">
+          Ma philosophie : une collaboration, pas une simple prestation
         </h2>
         <p className="text-base sm:text-lg text-gray-300">
-          Une collaboration{" "}
-          <span className="box-decoration-slice bg-linear-to-r from-blue-900 to-cyan-400 text-white px-2">
-            humaine
-          </span>{" "}
-          avant tout
+          Un projet réussi naît d'une relation de confiance et d'une
+          compréhension mutuelle.
         </p>
-        <p className="text-base sm:text-lg">
-          Travailler avec moi, c’est bien plus qu’une simple prestation
-          technique. Je crois fermement que la réussite d’un projet repose sur
-          une relation de confiance et une communication fluide.
-        </p>
+
         <ul className="grid md:grid-cols-2 gap-6 mt-8 py-10">
           <li className="flex gap-4 max-w-2xl mx-auto">
             <div>
               <Ear className="text-blue-600" />
             </div>
             <p>
-              <span className="font-bold">L’écoute avant tout :</span> Vous êtes
-              au cœur du projet. Je prends le temps de comprendre votre vision,
-              vos attentes et vos objectifs pour créer un site qui vous
-              ressemble vraiment.
+              <strong>Votre vision comme point de départ.</strong> Avant toute
+              ligne de code, il y a votre histoire et vos ambitions. Je
+              m'immerge dans votre projet pour que le résultat final soit le
+              reflet fidèle de votre identité.
             </p>
           </li>
-
           <li className="flex gap-4 max-w-2xl mx-auto">
             <div>
               <MessagesSquare className="text-blue-600" />
             </div>
             <p>
-              <span className="font-bold ">
-                Des échanges simples et clairs :
-              </span>
-              Pas de jargon technique inutile ni d’intermédiaires. Chaque étape
-              est expliquée de manière transparente.
+              <strong>La clarté avant tout.</strong> Le jargon technique, c'est
+              pour moi. Pour vous, ce sont des explications simples, des mises à
+              jour régulières et une transparence totale sur l'avancement du
+              projet.
             </p>
           </li>
           <li className="flex gap-4 max-w-2xl mx-auto">
@@ -144,10 +129,10 @@ export default function AboutPage() {
               <Target className="text-blue-600" />
             </div>
             <p>
-              <span className="font-bold">Un accompagnement sur-mesure :</span>{" "}
-              Chaque entreprise est unique. Je m’adapte à vos besoins
-              spécifiques pour proposer des solutions adaptées à vos enjeux
-              réels.
+              <strong>Des solutions, pas juste du code.</strong> Votre
+              entreprise est unique. Mon rôle est de vous proposer la solution
+              technique la plus adaptée à VOS enjeux, et non une solution
+              générique.
             </p>
           </li>
           <li className="flex gap-4 max-w-2xl mx-auto">
@@ -155,35 +140,40 @@ export default function AboutPage() {
               <PhoneCall className="text-blue-600" />
             </div>
             <p>
-              <span className="font-bold">Disponibilité et réactivité :</span>{" "}
-              Je reste à votre disposition pour répondre à vos questions ou
-              ajuster le projet selon vos retours.
+              <strong>Un partenaire réactif à vos côtés.</strong> Vous avez une
+              question ? Besoin d'un ajustement ? Je suis votre interlocuteur
+              unique et je m'engage à être disponible et réactif tout au long de
+              notre collaboration.
             </p>
           </li>
         </ul>
         <p className="text-center mt-8">
-          Une relation humaine forte permet non seulement d’atteindre vos
-          objectifs mais aussi de dépasser vos attentes.
+          Ensemble, nous n'atteindrons pas seulement vos objectifs, nous
+          chercherons à les dépasser.
         </p>
       </div>
 
       <div className="px-4 py-16 sm:py-24 text-center space-y-10">
-        <h2 className={`${dmSerif.className} text-2xl sm:text-3xl md:text-5xl`}>
-          Pourquoi me faire confiance ?
+        <h2 className="text-2xl sm:text-3xl md:text-5xl">
+          Les piliers de notre future collaboration
         </h2>
-        <ul className="grid grid-cols-1 md:grid-cols-3 gap-12  mx-auto">
+
+        <ul className="grid grid-cols-1 md:grid-cols-3 gap-12 mx-auto">
           <li className="flex flex-col justify-center items-center gap-3">
             <Image
               src="/Diplome.svg"
               width={250}
               height={250}
-              alt="Formation solide"
+              alt="Expertise technique"
             />
-            <h3 className="font-semibold text-lg ">Formation solide</h3>
+            <h3 className="font-semibold text-lg">
+              Une expertise technique solide
+            </h3>
             <p>
-              Diplômé d’OpenClassrooms en développement web (Bac+2), je maîtrise
-              les technologies modernes comme HTML5, CSS3, JavaScript, React.js
-              et Tailwind CSS.
+              Votre projet sera entre de bonnes mains. Ma formation certifiée
+              (Bac+2) et ma maîtrise des technologies modernes (React,
+              Next.js...) sont le gage d'un site web construit sur des
+              fondations saines, sécurisées et prêtes pour l'avenir.
             </p>
           </li>
           <li className="flex flex-col justify-center items-center gap-3">
@@ -191,12 +181,15 @@ export default function AboutPage() {
               src="/Code.svg"
               width={250}
               height={250}
-              alt="Formation solide"
+              alt="Solutions innovantes"
             />
-            <h3 className="font-semibold text-lg ">Passionné & curieux</h3>
+            <h3 className="font-semibold text-lg">
+              Une curiosité au service de l'innovation
+            </h3>
             <p>
-              Le monde numérique évolue vite. Je reste en veille constante pour
-              proposer des solutions toujours à la pointe.
+              Le web évolue chaque jour. Ma veille technologique constante vous
+              assure de bénéficier des solutions les plus récentes et
+              performantes, pour un site qui ne sera pas dépassé dans six mois.
             </p>
           </li>
           <li className="flex flex-col justify-center items-center gap-3">
@@ -204,37 +197,36 @@ export default function AboutPage() {
               src="/Ensemble.svg"
               width={250}
               height={250}
-              alt="Formation solide"
+              alt="Engagement pour votre réussite"
             />
-            <h3 className="font-semibold text-lg ">Engagement fort</h3>
+            <h3 className="font-semibold text-lg">
+              Un engagement total pour votre réussite
+            </h3>
             <p>
-              Votre satisfaction est ma priorité. Je m’investis pleinement dans
-              chaque mission pour obtenir un résultat à la hauteur de vos
-              attentes.
+              Je ne mesure pas mon succès au nombre de lignes de code, mais à
+              l'impact que je crée pour votre entreprise. Votre satisfaction est
+              ma priorité absolue, et je m'investis pleinement pour y parvenir.
             </p>
           </li>
         </ul>
       </div>
 
       <div className="space-y-4 text-center py-24 p-4 bg-blue-600 w-full">
-        <h2 className={`${dmSerif.className} text-2xl sm:text-3xl md:text-5xl`}>
-          Mon objectif
+        <h2 className="text-2xl sm:text-3xl md:text-5xl">
+          Prêt à construire votre succès en ligne ?
         </h2>
-        <p className=" text-base sm:text-lg max-w-3xl mx-auto">
-          Vous aider à prendre une longueur d’avance sur le web. Que vous soyez
-          une petite entreprise, un entrepreneur ou un indépendant, je vous
-          accompagne pour créer un site qui vous distingue vraiment.
+        <p className="text-base sm:text-lg max-w-3xl mx-auto">
+          Votre projet a du potentiel. Ensemble, transformons-le en une
+          plateforme digitale performante qui sert vos ambitions et vous
+          distingue de la concurrence.
         </p>
 
         <h3 className="text-lg sm:text-xl font-semibold">
-          Prêt à collaborer ?
+          La première étape ? Un simple échange.
         </h3>
-        <p>
-          Ensemble, nous pouvons transformer vos idées en un outil digital
-          performant qui sert vos ambitions.
-        </p>
+        <p>Parlons de vos idées, sans engagement.</p>
         <Button href="/contact" color="dark">
-          Contactez-moi dès maintenant
+          Démarrons notre collaboration
         </Button>
       </div>
     </main>

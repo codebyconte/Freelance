@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function WhyBusiness() {
   return (
-    <section className="bg-black text-white px-4 py-12 md:py-16 w-full space-y-10  overflow-x-hidden">
+    <section className="bg-black text-white px-4 py-12 md:py-24 w-full space-y-10  overflow-x-hidden">
       <div className="max-w-6xl mx-auto text-center">
-        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 md:mb-10">
-          Pourquoi utiliser nos outils business ?
-        </h3>
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 md:mb-10">
+          Pourquoi utiliser ces outils ?{" "}
+        </h2>
 
         <ul className="grid grid-cols-1 sm:grid-cols-3 gap-10">
           <li className="flex flex-col items-center text-center space-y-4 px-2">
@@ -17,11 +17,12 @@ export default function WhyBusiness() {
               height={180}
               alt="Gagner du temps"
             />
-            <h4 className="text-base md:text-lg font-bold text-white">
-              Gagnez du temps
-            </h4>
+            <h3 className="text-base md:text-lg font-bold text-white">
+              Gagnez un temps précieux{" "}
+            </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Accédez à des analyses instantanées, sans expertise technique.
+              Accédez à des analyses instantanées et des simulateurs pertinents
+              sans passer des heures sur des tableurs complexes.{" "}
             </p>
           </li>
 
@@ -32,11 +33,12 @@ export default function WhyBusiness() {
               height={180}
               alt="Analytics"
             />
-            <h4 className="text-base md:text-lg font-bold text-white">
-              Décidez en toute confiance
-            </h4>
+            <h3 className="text-base md:text-lg font-bold text-white">
+              Prenez des décisions éclairées{" "}
+            </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Appuyez vos choix sur des données fiables et à jour.
+              Fondez votre stratégie sur des données fiables et à jour pour
+              minimiser les risques et maximiser vos chances de succès.
             </p>
           </li>
 
@@ -47,12 +49,12 @@ export default function WhyBusiness() {
               height={180}
               alt="Rester compétitif"
             />
-            <h4 className="text-base md:text-lg font-bold text-white">
-              Restez compétitif
-            </h4>
+            <h3 className="text-base md:text-lg font-bold text-white">
+              Conservez votre avantage concurrentiel{" "}
+            </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Surveillez votre marché et anticipez les évolutions de votre
-              secteur.
+              Surveillez votre marché, comprenez ses dynamiques et anticipez les
+              prochaines tendances de votre secteur.
             </p>
           </li>
         </ul>

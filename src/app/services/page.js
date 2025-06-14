@@ -1,8 +1,6 @@
-import HeroService from "@/components/section/services/HeroService";
-import OffreInclue from "@/components/section/services/OffreInclue";
-import Tarif from "@/components/section/services/Tarif";
-import Faq from "@/components/section/services/Faq";
-import Quiz from "@/components/section/services/Quiz";
+import { Faq } from "@/components/section/services/Faq";
+import { Quiz } from "@/components/section/services/Quiz";
+import { GrilleTarif } from "@/components/section/services/GrilleTarif";
 
 export const metadata = {
   title:
@@ -51,9 +49,9 @@ export default function PageServices() {
             "@graph": [
               {
                 "@type": "Product",
-                name: "Site Présence Pro",
+                name: "Site Vitrine Essentiel",
                 description:
-                  "Site vitrine sur-mesure pour présenter votre entreprise avec professionnalisme. Design responsive, SEO de base, formulaire et plan d’accès inclus.",
+                  "La solution idéale pour lancer votre activité, présenter vos services et être enfin visible sur internet avec un site professionnel et rapide.",
                 image: "https://www.codebyconte.fr/opengraph-image.png",
                 brand: {
                   "@type": "Organization",
@@ -70,9 +68,9 @@ export default function PageServices() {
               },
               {
                 "@type": "Product",
-                name: "Site Structuré & Évolutif",
+                name: "Site Visibilité Pro",
                 description:
-                  "Site web complet avec CMS intégré, blog, SEO avancé et évolutivité. Idéal pour faire grandir votre présence en ligne.",
+                  "Pour les entreprises qui veulent attirer plus de clients grâce à Google, avec un blog pour démontrer votre expertise et un design sur-mesure.",
                 image: "https://www.codebyconte.fr/opengraph-image.png",
                 brand: {
                   "@type": "Organization",
@@ -89,9 +87,9 @@ export default function PageServices() {
               },
               {
                 "@type": "Product",
-                name: "Site E-commerce Performant",
+                name: "Site E-commerce & Réservation",
                 description:
-                  "Boutique en ligne sur-mesure avec paiement sécurisé, gestion des stocks et optimisation conversion. Idéal pour vendre efficacement vos produits ou services.",
+                  "Vendez vos produits ou services en ligne 24/7. Une plateforme complète pour gérer vos ventes, vos clients et vos réservations sans effort.",
                 image: "https://www.codebyconte.fr/opengraph-image.png",
                 brand: {
                   "@type": "Organization",
@@ -110,9 +108,7 @@ export default function PageServices() {
           }),
         }}
       />
-      <HeroService />
-      <Tarif />
-      <OffreInclue />
+      <GrilleTarif />
       <Quiz />
       <Faq />
     </main>

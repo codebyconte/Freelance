@@ -6,7 +6,7 @@ export function Hero() {
     <section className="min-h-screen flex justify-center items-center py-6 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-center leading-tight ">
+          <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-6xl lg:text-pretty ">
             Création Site Internet Brest : Votre Partenaire Web Local pour Plus
             de Clients
           </h1>

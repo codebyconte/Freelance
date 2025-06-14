@@ -110,12 +110,12 @@ export default function Graphique() {
         <h2
           className={`${dmSerif.className} text-2xl md:text-4xl lg:text-5xl font-bold text-black`}
         >
-          Analyse sectorielle : Top secteurs par chiffre d’affaires et secteurs
-          à risques
+          Prenez le pouls de votre secteur
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
-          Analysez votre marché, comparez-vous à la concurrence, simulez vos
-          revenus et suivez les tendances locales en quelques clics.
+          Toutes les entreprises ne se valent pas. Identifiez les secteurs les
+          plus porteurs et ceux qui présentent le plus de risques pour affiner
+          votre positionnement et sécuriser votre développement.
         </p>
       </div>
 
@@ -124,12 +124,9 @@ export default function Graphique() {
           Top secteurs par chiffre d’affaires
         </h3>
         <p className="text-base max-w-3xl mx-auto">
-          Identifier les secteurs les plus performants en termes de chiffre
-          d’affaires, c’est anticiper les tendances du marché, cibler les
-          segments les plus attractifs et maximiser le potentiel de
-          développement de votre entreprise. Cette vision globale vous permet
-          d’ajuster votre stratégie en fonction des réalités économiques et de
-          la concurrence.
+          Visualisez les secteurs qui génèrent le plus de valeur. C'est un
+          indicateur clé pour identifier les marchés en croissance, les
+          opportunités d'investissement et ajuster votre propre stratégie.
         </p>
       </div>
 
@@ -175,20 +172,9 @@ export default function Graphique() {
           Secteurs avec le plus de radiations
         </h3>
         <p className="text-base">
-          Repérez les secteurs d’activité où le nombre de radiations
-          d’entreprises est le plus élevé. Cette donnée essentielle met en avant
-          les secteurs les plus instables, risqués ou saturés, et vous aide à
-          anticiper les difficultés potentielles avant de vous lancer ou
-          d’investir.
-        </p>
-        <h4 className="text-lg font-medium mt-4 text-center md:text-left">
-          Pourquoi surveiller le taux de radiations ?
-        </h4>
-        <p className="text-base">
-          Un secteur affichant beaucoup de radiations peut indiquer une forte
-          concurrence, des évolutions rapides ou des difficultés structurelles.
-          Cette information est cruciale pour évaluer les risques et bâtir une
-          stratégie solide et pérenne.
+          Un taux de radiation élevé peut signaler une forte concurrence, une
+          saturation ou une instabilité. Utilisez cette donnée cruciale pour
+          évaluer les risques avant de vous lancer ou d'investir.
         </p>
       </div>
 
@@ -221,15 +207,6 @@ export default function Graphique() {
           Tous les chiffres présentés ici sont issus des données officielles de
           l’Urssaf pour l’année 2024, garantissant une information fiable et à
           jour sur les auto-entrepreneurs en France.
-        </p>
-      </div>
-
-      <div className="mt-12 max-w-3xl mx-auto text-center">
-        <p className="text-base md:text-lg">
-          Grâce à ces analyses sectorielles, bénéficiez d’une vision claire et
-          objective du paysage économique français. Que vous soyez entrepreneur,
-          investisseur ou dirigeant, appuyez-vous sur ces données pour prendre
-          des décisions éclairées et assurer la réussite de vos projets.
         </p>
       </div>
     </section>

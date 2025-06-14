@@ -4,236 +4,125 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { dmSerif } from "@/app/styles/fonts";
 import Link from "next/link";
 
-export default function Faq() {
+// --- NOUVEAU : Données de la FAQ structurées pour une meilleure lisibilité et maintenance ---
+const faqSections = [
+  {
+    category: "Tarifs & Offres",
+    items: [
+      {
+        question: "Quelle offre est la plus adaptée pour moi ?",
+        answer:
+          "C'est une excellente question ! L'offre 'Site Vitrine Essentiel' est parfaite pour vous lancer et présenter votre activité. Si votre but est d'attirer des clients via Google et de publier du contenu, l'offre 'Visibilité Pro' avec son blog et son SEO avancé est idéale. Enfin, si vous souhaitez vendre ou proposer des réservations, l'offre 'E-commerce & Réservation' est faite pour vous. Le mieux reste d'en discuter ensemble !",
+      },
+      {
+        question:
+          "Que se passe-t-il après les 3 mois de 'Lancement Serein' inclus ?",
+        answer:
+          "Après cette période, vous avez le choix. Vous pouvez souscrire à mon forfait de maintenance pour que je continue de m'occuper de tout (hébergement, sécurité, support). Si vous préférez être 100% autonome, je vous accompagne pour transférer le site chez l'hébergeur de votre choix. Dans tous les cas, vous êtes et restez l'unique propriétaire de votre site web.",
+      },
+      {
+        question: "Les tarifs indiqués sont-ils fixes ?",
+        answer:
+          "Les tarifs affichés sont des bases de départ transparentes pour des projets standards. Chaque entreprise a des besoins uniques. C'est pourquoi, après un premier échange pour bien comprendre vos objectifs, je vous fournis un devis détaillé, personnalisé et sans aucune surprise.",
+      },
+    ],
+  },
+  {
+    category: "Le Projet & La Collaboration",
+    items: [
+      {
+        question:
+          "Pourquoi choisir un site codé sur-mesure plutôt qu'un template (WordPress, Wix...) ?",
+        answer:
+          "Un site codé sur-mesure, c'est la garantie d'avoir un site qui vous ressemble à 100% et qui est optimisé pour la performance. Contrairement aux templates, il n'y a pas de code superflu qui ralentit votre site. Vous obtenez une meilleure sécurité, des temps de chargement records et une flexibilité totale pour les évolutions futures.",
+      },
+      {
+        question: "Comment se déroule un projet avec vous ?",
+        answer:
+          "Mon processus est simple et transparent. 1) On échange sur vos besoins lors d'un appel découverte. 2) Je vous envoie une proposition détaillée. 3) Après validation, je conçois et développe le site en vous tenant informé à chaque étape clé. 4) On valide ensemble avant la mise en ligne. Vous avez un seul interlocuteur : moi.",
+      },
+      {
+        question: "Puis-je modifier le contenu de mon site moi-même ?",
+        answer:
+          "Absolument. Toutes mes offres incluent l'intégration d'un CMS (Système de Gestion de Contenu) comme Sanity ou Strapi. Je vous forme à son utilisation pour que vous puissiez modifier textes, images et articles de blog en toute autonomie, sans avoir besoin de toucher une ligne de code.",
+      },
+    ],
+  },
+  {
+    category: "Technique & Performance",
+    items: [
+      {
+        question: "Mon site sera-t-il bien visible sur Google (SEO) ?",
+        answer:
+          "Oui, c'est une priorité non négociable. Dès la construction, j'applique toutes les bonnes pratiques du SEO technique : structure sémantique, balises optimisées, vitesse de chargement, responsive design... Pour aller plus loin, l'offre 'Visibilité Pro' inclut une stratégie SEO avancée.",
+      },
+      {
+        question: "Utilisez-vous des technologies modernes ?",
+        answer:
+          "Oui, je travaille principalement avec Next.js (React), une technologie de pointe utilisée par les plus grandes entreprises pour créer des sites ultra-rapides et sécurisés. Côté design, j'utilise Tailwind CSS pour des interfaces modernes et sur-mesure.",
+      },
+      {
+        question: "La sécurité est-elle prise en compte ?",
+        answer:
+          "La sécurité est au cœur de mon travail. Chaque site est livré avec un certificat SSL (le cadenas dans l'URL), et je mets en place les meilleures pratiques pour le protéger contre les vulnérabilités courantes. Mon forfait de maintenance assure également des mises à jour de sécurité continues.",
+      },
+    ],
+  },
+];
+
+export function Faq() {
   return (
-    <section className="py-12 md:py-20 bg-black text-white grid grid-cols-1 sm:grid-cols-2 px-4 gap-8">
-      <div className="text-center">
-        <h2
-          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-6xl font-bold max-w-6xl text-center mb-6`}
-        >
-          Questions les plus fréquentes
-        </h2>
-        <p className="text-base md:text-lg leading-relaxed">
-          Vous ne trouvez pas ce que vous recherchez ?{" "}
-          <Link href="/contact" className="text-blue-600 hover:underline">
-            Contactez-moi
-          </Link>
-        </p>
-      </div>
-      <div>
-        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
-          Services proposés
-        </h3>
-        <Accordion type="single" className="w-full" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>
-              Quels types de sites web développez-vous ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Je conçois des sites web 100% codés à la main : site vitrine,
-              e-commerce, landing page, application sur mesure… chaque projet
-              est unique et pensé pour vos objectifs business.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              Pourquoi coder un site à la main plutôt qu’utiliser WordPress ou
-              Wix ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Un site codé à la main est plus rapide, plus sécurisé, plus
-              évolutif. Pas de thème préfabriqué, chaque ligne de code est
-              optimisée pour vos besoins spécifiques.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>
-              Travaillez-vous avec tous les secteurs d’activité ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Oui. Artisan, coach, PME, commerce local ou entreprise nationale :
-              je m’adapte à chaque univers métier.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>
-              Peut-on intégrer des fonctionnalités spécifiques ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Bien sûr. Réservation en ligne, paiement sécurisé, blog, tableau
-              de bord… Je développe tout sur mesure selon vos besoins.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
-          Processus de travail
-        </h3>
-        <Accordion type="single" className="w-full" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Comment démarre un projet ?</AccordionTrigger>
-            <AccordionContent>
-              Un premier échange permet de clarifier vos besoins. Ensuite, je
-              vous propose un plan clair, un calendrier et les étapes.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              Comment se passent les échanges pendant le projet ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Vous avez un interlocuteur unique et un suivi régulier par email,
-              visio ou téléphone.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>
-              Puis-je demander des modifications en cours de route ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Oui, dans la limite de ce qui est prévu au planning. Je reste
-              toujours flexible et transparent.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
-          Services proposés
-        </h3>
-        <Accordion type="single" className="w-full" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>
-              Quels types de sites web développez-vous ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Je conçois des sites web 100% codés à la main : site vitrine,
-              e-commerce, landing page, application sur mesure… chaque projet
-              est unique et pensé pour vos objectifs business.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              Pourquoi coder un site à la main plutôt qu’utiliser WordPress ou
-              Wix ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Un site codé à la main est plus rapide, plus sécurisé, plus
-              évolutif. Pas de thème préfabriqué, chaque ligne de code est
-              optimisée pour vos besoins spécifiques.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>
-              Travaillez-vous avec tous les secteurs d’activité ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Oui. Artisan, coach, PME, commerce local ou entreprise nationale :
-              je m’adapte à chaque univers métier.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>
-              Peut-on intégrer des fonctionnalités spécifiques ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Bien sûr. Réservation en ligne, paiement sécurisé, blog, tableau
-              de bord… Je développe tout sur mesure selon vos besoins.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
-          Aspects techniques
-        </h3>
-        <Accordion type="single" className="w-full" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Le site sera-t-il responsive ?</AccordionTrigger>
-            <AccordionContent>
-              Oui. Tous mes sites sont conçus pour s’adapter parfaitement à tous
-              les écrans (mobile, tablette, desktop).
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>Mon site sera-t-il sécurisé ?</AccordionTrigger>
-            <AccordionContent>
-              Absolument. Certificat SSL, protection contre les injections,
-              bonnes pratiques à jour : la sécurité est une priorité.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>
-              Pourrai-je modifier le contenu moi-même ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Si vous le souhaitez, j’intègre une interface simple pour éditer
-              textes et images sans toucher au code.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>
-              Proposez-vous le paiement en ligne et base de données ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Oui. Intégration de Stripe, PayPal, formulaires avancés, bases
-              MongoDB/PostgreSQL, etc.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-5">
-            <AccordionTrigger>
-              Le site sera-t-il optimisé pour Google (SEO) ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Oui. Structure, balises, vitesse, accessibilité… Tout est optimisé
-              pour améliorer votre visibilité.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
-          Support & maintenance
-        </h3>
-        <Accordion type="single" className="w-full" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>
-              Proposez-vous un service après livraison ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Oui. Je reste disponible pour toute mise à jour ou évolution. Des
-              forfaits de maintenance sont également proposés.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              Comment faire si j’ai besoin d’aide après la mise en ligne ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Un simple message suffit. Je suis joignable facilement pour vous
-              accompagner.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        <h3 className="text-xl md:text-2xl font-semibold text-gray-400 mt-8 md:mt-12 mb-4">
-          Collaboration & qualité
-        </h3>
-        <Accordion type="single" className="w-full" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>
-              Et si je ne suis pas satisfait du design ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Chaque étape intègre vos retours. Mon objectif : un résultat à la
-              hauteur de vos attentes, sans surprise.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              Comment garantissez-vous la qualité du code ?
-            </AccordionTrigger>
-            <AccordionContent>
-              Je respecte les standards modernes (HTML5, Tailwind, JavaScript
-              ES6+), et chaque projet est testé et documenté.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+    <section id="faq" className="bg-black text-white">
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:grid lg:grid-cols-12 lg:gap-8">
+        {/* --- Colonne de gauche améliorée --- */}
+        <div className="lg:col-span-5">
+          <h2 className="text-4xl font-bold leading-10 text-white sm:text-5xl">
+            Des réponses claires pour un projet serein
+          </h2>
+          <p className="mt-4 text-base leading-7 text-gray-300">
+            La transparence est la clé d'une collaboration réussie. Voici les
+            réponses aux questions que l'on me pose le plus souvent. Mon but est
+            que vous ayez toutes les cartes en main pour prendre la meilleure
+            décision pour votre projet.
+          </p>
+          <p className="mt-6 text-base leading-7 text-gray-300">
+            Une autre question ?{" "}
+            <Link
+              href="/contact"
+              className="font-semibold text-blue-500 hover:text-blue-400"
+            >
+              Contactez-moi directement.
+            </Link>
+          </p>
+        </div>
+
+        {/* --- Colonne de droite avec les accordéons --- */}
+        <div className="mt-10 lg:col-span-7 lg:mt-0">
+          {faqSections.map((section) => (
+            <div key={section.category} className="mb-8">
+              <h3 className="text-xl md:text-2xl font-semibold text-gray-300 mb-4 border-b border-gray-700 pb-2">
+                {section.category}
+              </h3>
+              <Accordion type="single" className="w-full" collapsible>
+                {section.items.map((item, index) => (
+                  <AccordionItem
+                    value={`item-${section.category}-${index}`}
+                    key={item.question}
+                  >
+                    <AccordionTrigger className="text-left hover:no-underline">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-400">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
