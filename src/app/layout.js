@@ -50,13 +50,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={inter.className}>
       <body className="w-full">
-        <Header>
-          <GoogleAnalytics GA_MEASUREMENT_ID="G-NNH04SFGH2" />
-          {children}
-          <SpeedInsights />
-        </Header>
-        <Footer />
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-NNH04SFGH2" />
+        <SpeedInsights />
         <Analytics />
+        <Header>{children}</Header>
+        <Footer />
       </body>
     </html>
   );
