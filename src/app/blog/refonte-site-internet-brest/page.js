@@ -290,13 +290,18 @@ export default function Page() {
               mission première.
             </li>
           </ol>
-          <p className="flex items-center gap-2  mt-6 bg-yellow-50 p-4 rounded-lg border border-yellow-500">
-            <TriangleAlert className="w-10 h-10 text-yellow-500" />
-            Le piège à éviter : Tenter de &quot;bricoler&quot; un vieux site
-            avec des plugins lourds ou un thème WordPress mal optimisé.
-            C&apos;est souvent plus coûteux et moins efficace qu&apos;une
-            refonte de site internet à Brest menée par un expert.
-          </p>
+          <div className="py-4 bg-red-50 p-4 rounded-lg border border-red-500">
+            <TriangleAlert className=" text-red-500" />
+            <p>
+              <span className="font-semibold text-red-500">
+                Le piège à éviter :{" "}
+              </span>{" "}
+              Tenter de &quot;bricoler&quot; un vieux site avec des plugins
+              lourds ou un thème WordPress mal optimisé. C&apos;est souvent plus
+              coûteux et moins efficace qu&apos;une refonte de site internet à
+              Brest menée par un expert.
+            </p>
+          </div>
         </section>
 
         <Divider />
@@ -362,12 +367,16 @@ export default function Page() {
               </p>
             </li>
           </ul>
-          <p className="flex items-center  mt-6 bg-blue-50 p-4 rounded-lg border border-blue-500">
+          <div className="py-4 bg-blue-50 p-4 rounded-lg border border-blue-500">
             <TargetIcon className="w-6 h-6 mr-2 text-blue-600" />{" "}
-            L&apos;objectif final : Transformer votre site web d&apos;une simple
-            carte de visite numérique en votre principal levier
-            d&apos;acquisition de clients.
-          </p>
+            <p>
+              <span className="font-semibold text-blue-600">
+                L&apos;objectif final :{" "}
+              </span>{" "}
+              Transformer votre site web d&apos;une simple carte de visite
+              numérique en votre principal levier d&apos;acquisition de clients.
+            </p>
+          </div>
         </section>
 
         <Divider />

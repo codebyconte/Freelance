@@ -85,41 +85,15 @@ export default function Projet() {
                   }}
                 >
                   <p>
-                    <span className="font-semibold">Secteur :</span>Améliorer la
-                    visibilité de l’agence grâce à une landing page moderne et
-                    responsive.
-                  </p>
-                  <p>
                     <span className="font-semibold">Objectif client :</span>
-                    Tourisme
+                    Améliorer la visibilité de l’agence grâce à une landing page
+                    moderne et responsive.
                   </p>
-                  <p className="font-semibold">Ce que j’ai développé :</p>
-                  <ul className="list-disc">
-                    <li>
-                      Intégration HTML/CSS 100% fidèle à la maquette fournie
-                    </li>
-                    <li>
-                      Responsive design optimisé pour mobile, tablette et
-                      desktop
-                    </li>
-                    <li>Code propre, maintenable, versionné avec Git</li>
-                  </ul>
                   <p>
                     <span className="font-semibold ">Bénéfice</span> Un site
                     vitrine clair, professionnel, et prêt à convertir les
                     visiteurs.
                   </p>
-                  <p className="font-semibold">Problématiques rencontrées :</p>
-                  <ul className="list-disc ">
-                    <li>
-                      Respect strict de la maquette tout en assurant un
-                      affichage responsive sur mobile, tablette et desktop.
-                    </li>
-                    <li>
-                      Organisation du code HTML/CSS pour garantir propreté,
-                      maintenabilité et évolutivité.
-                    </li>
-                  </ul>
                   <Link
                     href="https://klyx-digital.github.io/Booki/"
                     className="mt-2 text-blue-400"
@@ -195,42 +169,10 @@ export default function Projet() {
                 >
                   <div className="space-y-1">
                     <p>
-                      <span className="font-semibold">Secteur :</span>
-                      Architecture
-                    </p>
-                    <p>
-                      <span className="font-semibold">Objectif client :</span>
-                      Présenter les projets de l’architecte de façon dynamique
-                      et professionnelle.
-                    </p>
-                    <p className="font-semibold">Ce que j’ai développé :</p>
-                    <ul className="list-disc">
-                      <li>
-                        Front-end en JavaScript natif pour affichage dynamique
-                      </li>
-                      <li>
-                        Connexion à une API REST pour la gestion des projets
-                      </li>
-                      <li>Formulaire de contact fonctionnel et sécurisé</li>
-                    </ul>
-                    <p>
                       <span className="font-semibold ">Bénéfice</span> Un
                       portfolio simple à mettre à jour, élégant, et facile à
                       utiliser.
                     </p>
-                    <p className="font-semibold">
-                      Problématiques rencontrées :
-                    </p>
-                    <ul className="list-disc ">
-                      <li>
-                        Développement d'un affichage dynamique sans
-                        l'utilisation de frameworks modernes.
-                      </li>
-                      <li>
-                        Gestion sécurisée de la récupération des données via une
-                        API externe.
-                      </li>
-                    </ul>
                   </div>
                 </MorphingDialogDescription>
               </div>
@@ -303,31 +245,10 @@ export default function Projet() {
                       <span className="font-semibold">Secteur :</span>Immobilier
                     </p>
                     <p>
-                      <span className="font-semibold">Objectif client :</span>
-                      Proposer une expérience fluide pour la consultation de
-                      logements à louer.
-                    </p>
-                    <p className="font-semibold">Ce que j’ai développé :</p>
-                    <ul className="list-disc">
-                      <li>Application SPA en React avec routing optimisé</li>
-                      <li>Architecture modulaire en composants</li>
-                      <li>
-                        Accessibilité respectée (ARIA, contrastes…) + animations
-                        CSS
-                      </li>
-                    </ul>
-                    <p>
                       <span className="font-semibold ">Bénéfice</span> Un site
                       rapide, agréable à naviguer et facilement extensible.
                     </p>
                   </div>
-                  <p className="font-semibold">Problématiques rencontrées :</p>
-                  <ul className="list-disc ">
-                    <li>
-                      Structuration de l’architecture en composants
-                      réutilisables et évolutifs.
-                    </li>
-                  </ul>
                   <Link
                     href="https://klyx-digital.github.io/Kasa/"
                     className="mt-2 text-blue-400"
@@ -411,37 +332,11 @@ export default function Projet() {
                       Créer un système sécurisé pour gérer les livres et leurs
                       notations.
                     </p>
-                    <p className="font-semibold">Ce que j’ai développé :</p>
-                    <ul className="list-disc">
-                      <li>API REST complète (CRUD, sécurité, validation)</li>
-                      <li>
-                        Authentification JWT, chiffrement des mots de passe
-                        (bcrypt)
-                      </li>
-                      <li>
-                        Stockage des données avec MongoDB, back-end Node.js +
-                        Express
-                      </li>
-                    </ul>
                     <p>
                       <span className="font-semibold ">Bénéfice</span> Une base
                       technique fiable et sécurisée, prête à alimenter une
                       interface utilisateur.
                     </p>
-                    <p className="font-semibold">
-                      Problématiques rencontrées :
-                    </p>
-                    <ul className="list-disc m">
-                      <li>
-                        Conception d'une API REST sécurisée respectant les
-                        bonnes pratiques de validation et de gestion des
-                        erreurs.
-                      </li>
-                      <li>
-                        Implémentation de l'authentification avec JWT et
-                        sécurisation des mots de passe avec bcrypt.
-                      </li>
-                    </ul>
                   </div>
                 </MorphingDialogDescription>
               </div>

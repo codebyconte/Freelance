@@ -403,8 +403,8 @@ export default function Page() {
           </ul>
 
           <div className="bg-blue-50 p-4 rounded-lg border border-blue-600">
+            <Lightbulb className="text-blue-600" />
             <p>
-              <Lightbulb className="text-blue-600" />
               <strong className="text-blue-600">
                 Le meilleur des deux mondes
               </strong>{" "}

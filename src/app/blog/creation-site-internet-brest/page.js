@@ -201,11 +201,14 @@ export default function Page() {
               Analyser vos visiteurs et améliorer votre stratégie marketing.
             </li>
           </ul>
-          <p className="flex items-center space-x-2 italic">
-            <Lightbulb className="w-10 h-10 text-yellow-500 mr-2" />
-            Astuce : Associez votre site à un compte Google Business Profile
-            pour remonter dans les recherches locales.
-          </p>
+          <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-600">
+            <Lightbulb className=" text-yellow-500 " />
+            <p className="">
+              <span className="font-semibold text-yellow-500">Astuce :</span>{" "}
+              Associez votre site à un compte Google Business Profile pour
+              remonter dans les recherches locales.
+            </p>
+          </div>
         </section>
 
         <Divider />
@@ -254,11 +257,14 @@ export default function Page() {
               </TableRow>
             </TableBody>
           </Table>
-          <p className="flex items-center space-x-2 italic mt-6">
-            <TriangleAlert className="text-yellow-500 w-10 h-10 mr-2" /> À
-            éviter : choisir un prestataire uniquement sur le prix. Un site mal
-            conçu vous coûtera plus cher à long terme.
-          </p>
+          <div className="py-4 bg-red-50 p-4 rounded-lg border border-red-600">
+            <TriangleAlert className="text-red-500" />
+            <p className="mt-2">
+              <span className="font-semibold text-red-500">À éviter :</span>{" "}
+              choisir un prestataire uniquement sur le prix. Un site mal conçu
+              vous coûtera plus cher à long terme.
+            </p>
+          </div>
           <div>
             <p className="text-gray-800 mt-4">
               Envie d’aller plus loin ? Découvrez notre comparatif complet :

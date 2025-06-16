@@ -19,7 +19,7 @@ import {
 import { createPortal } from "react-dom";
 import { cn } from "@/lib/utils";
 import { XIcon } from "lucide-react";
-import useClickOutside from "@/components/motionprimitives/useClickOutside";
+import useClickOutside from "./useClickOutside";
 
 export type MorphingDialogContextType = {
   isOpen: boolean;
@@ -405,7 +405,7 @@ function MorphingDialogClose({
       variants={variants}
     >
       {children || (
-        <XIcon size={24} className="text-black hover:cursor-pointer" />
+        <XIcon size={30} className="text-black hover:cursor-pointer" />
       )}
     </motion.button>
   );

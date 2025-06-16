@@ -216,13 +216,14 @@ export default function Page() {
               aussi vite.
             </li>
           </ul>
-
-          <p className="bg-blue-50 p-4 rounded-lg border border-blue-500">
-            <CircleCheck className="text-blue-600 mb-2" />
-            Faire appel à un développeur web professionnel, ce n&apos;est pas
-            une dépense, c&apos;est une assurance contre ces risques et un
-            investissement pour vos revenus futurs.
-          </p>
+          <div className="py-4 bg-green-50 p-4 rounded-lg border border-green-500">
+            <CircleCheck className="text-green-600 mb-2" />
+            <p>
+              Faire appel à un développeur web professionnel, ce n&apos;est pas
+              une dépense, c&apos;est une assurance contre ces risques et un
+              investissement pour vos revenus futurs.
+            </p>
+          </div>
         </section>
 
         <Divider />
