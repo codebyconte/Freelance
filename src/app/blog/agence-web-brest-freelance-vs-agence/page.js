@@ -21,7 +21,7 @@ import {
 export const metadata = {
   title: "Agence Web Brest : Le Guide 2025 pour Choisir le Bon Partenaire",
   description:
-    "Vous cherchez la meilleure agence web à Brest ? Découvrez notre guide pour choisir le partenaire idéal (agence ou freelance) pour la création de votre site internet et garantir votre retour sur investissement.",
+    "Agence web à Brest ? Notre guide pratique vous aide à choisir l’agence ou le freelance idéal pour créer votre site et maximiser votre ROI.",
   alternates: {
     canonical:
       "https://www.codebyconte.fr/blog/agence-web-brest-freelance-vs-agence",
@@ -30,7 +30,7 @@ export const metadata = {
     url: "https://www.codebyconte.fr/blog/agence-web-brest-freelance-vs-agence",
     title: "Agence Web Brest : Le Guide 2025 pour Choisir le Bon Partenaire",
     description:
-      "Vous cherchez la meilleure agence web à Brest ? Découvrez notre guide pour choisir le partenaire idéal (agence ou freelance) pour la création de votre site internet et garantir votre retour sur investissement.",
+      "Agence web à Brest ? Notre guide pratique vous aide à choisir l’agence ou le freelance idéal pour créer votre site et maximiser votre ROI.",
     siteName: "Code By Conte",
     locale: "fr_FR",
     type: "article",
@@ -51,7 +51,7 @@ export default function Page() {
     "@type": "Article",
     headline: "Agence Web Brest : Le Guide 2025 pour Choisir le Bon Partenaire",
     description:
-      "Vous cherchez la meilleure agence web à Brest ? Découvrez notre guide pour choisir le partenaire idéal (agence ou freelance) pour la création de votre site internet et garantir votre retour sur investissement.",
+      "Agence web à Brest ? Notre guide pratique vous aide à choisir l’agence ou le freelance idéal pour créer votre site et maximiser votre ROI.",
     author: {
       "@type": "Person",
       name: "Conte Mouctar",

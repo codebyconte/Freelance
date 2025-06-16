@@ -81,7 +81,7 @@ const posts = [
   {
     id: 5,
     title:
-      "Maintenance de Site Internet à Brest : Le Guide Complet pour Protéger et Booster Votre Activité en 2025",
+      "Maintenance site internet à Brest | Protégez et boostez votre activité",
     href: "/blog/maintenance-site-internet-brest",
     description:
       "Votre site web à Brest est lent, vulnérable ou invisible sur Google ? Découvrez notre guide complet sur la maintenance de site internet. Protégez votre investissement et attirez plus de clients.",

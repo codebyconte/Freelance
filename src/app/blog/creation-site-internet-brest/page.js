@@ -21,7 +21,7 @@ export const metadata = {
   title:
     "Création site internet Brest : trouvez la solution idéale pour votre activité",
   description:
-    "Besoin d’un site web performant à Brest ? Découvrez les solutions pour la création de site internet à Brest : freelance, agence ou sur-mesure. Conseils et comparaison.",
+    "Création site internet Brest : comparez agences & freelances pour un site sur-mesure optimisé SEO. Demandez votre devis gratuit et boostez votre visibilité !",
   alternates: {
     canonical: "https://www.codebyconte.fr/blog/creation-site-internet-brest",
   },

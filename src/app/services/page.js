@@ -3,10 +3,9 @@ import { Quiz } from "@/components/section/services/Quiz";
 import { GrilleTarif } from "@/components/section/services/GrilleTarif";
 
 export const metadata = {
-  title:
-    "Création de site internet professionnel | Offres sur-mesure – Code By Conte",
+  title: "Tarifs & prix des services web à Brest",
   description:
-    "Création de site internet professionnel à Brest | Code By Conte",
+    "Découvrez nos prix pour la création, maintenance et SEO de site web à Brest. Offres sur-mesure et transparentes, adaptées à votre budget. Devis gratuit.",
   alternates: {
     canonical: "https://www.codebyconte.fr/services",
   },

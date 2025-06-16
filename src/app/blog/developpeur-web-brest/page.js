@@ -17,7 +17,7 @@ import {
 export const metadata = {
   title: "Développeur Web Brest : Le Guide Ultime pour un Site Qui Rapporte",
   description:
-    "À la recherche du meilleur développeur web à Brest ? Découvrez le guide complet pour créer un site internet sur-mesure, rapide et optimisé pour le SEO local, qui transforme vos visiteurs en clients.",
+    "Développeur web à Brest : votre site sur-mesure, rapide et SEO local. Guide pour choisir le meilleur pro et convertir vos visiteurs en clients.",
   alternates: {
     canonical: "https://www.codebyconte.fr/blog/developpeur-web-brest",
   },
@@ -25,7 +25,7 @@ export const metadata = {
     url: "https://www.codebyconte.fr/blog/developpeur-web-brest",
     title: "Développeur Web Brest : Le Guide Ultime pour un Site Qui Rapporte",
     description:
-      "À la recherche du meilleur développeur web à Brest ? Découvrez le guide complet pour créer un site internet sur-mesure, rapide et optimisé pour le SEO local, qui transforme vos visiteurs en clients.",
+      "Développeur web à Brest : votre site sur-mesure, rapide et SEO local. Guide pour choisir le meilleur pro et convertir vos visiteurs en clients.",
     siteName: "Code By Conte",
     locale: "fr_FR",
     type: "article",
@@ -47,7 +47,7 @@ export default function Page() {
     headline:
       "Développeur Web Brest : Le Guide Ultime pour un Site Qui Rapporte",
     description:
-      "À la recherche du meilleur développeur web à Brest ? Découvrez le guide complet pour créer un site internet sur-mesure, rapide et optimisé pour le SEO local, qui transforme vos visiteurs en clients.",
+      "Développeur web à Brest : votre site sur-mesure, rapide et SEO local. Guide pour choisir le meilleur pro et convertir vos visiteurs en clients.",
     author: {
       "@type": "Person",
       name: "Conte Mouctar",

@@ -3,7 +3,6 @@ import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/layout/Header";
 import { inter } from "@/app/styles/fonts";
 import Footer from "@/components/layout/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from "@/components/layout/GoogleAnalytics";
 
 export const metadata = {
@@ -51,7 +50,6 @@ export default function RootLayout({ children }) {
     <html lang="fr" className={inter.className}>
       <body className="w-full">
         <GoogleAnalytics GA_MEASUREMENT_ID="G-NNH04SFGH2" />
-        <SpeedInsights />
         <Analytics />
         <Header>{children}</Header>
         <Footer />
