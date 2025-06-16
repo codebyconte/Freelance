@@ -38,11 +38,10 @@ export const metadata = {
 const posts = [
   {
     id: 1,
-    title:
-      "Développeur web Brest : créez un site performant pour votre entreprise",
+    title: "Développeur Web Brest : Le Guide Ultime pour un Site Qui Rapporte",
     href: "/blog/developpeur-web-brest",
     description:
-      "Vous cherchez un développeur web à Brest ? Découvrez comment un site sur-mesure booste votre visibilité, vos ventes et votre crédibilité en ligne.",
+      "À la recherche du meilleur développeur web à Brest ? Découvrez le guide complet pour créer un site internet sur-mesure, rapide et optimisé pour le SEO local, qui transforme vos visiteurs en clients.",
     imageUrl: "/Devellopeur web.jpg",
     date: "30 mai 2025",
     datetime: "2025-05-30",
@@ -60,11 +59,10 @@ const posts = [
   },
   {
     id: 3,
-    title:
-      "Agence Web à Brest : Existe-t-il une meilleure alternative en 2025 ?",
+    title: "Agence Web Brest : Le Guide 2025 pour Choisir le Bon Partenaire",
     href: "/blog/agence-web-brest-freelance-vs-agence",
     description:
-      "Vous cherchez une agence web à Brest pour créer votre site ? Découvrez pourquoi de plus en plus d'entrepreneurs se tournent vers des freelances locaux pour plus de flexibilité, d'écoute et de résultats.",
+      "Vous cherchez la meilleure agence web à Brest ? Découvrez notre guide pour choisir le partenaire idéal (agence ou freelance) pour la création de votre site internet et garantir votre retour sur investissement.",
     imageUrl: "/agence-web.jpg",
     date: "30 mai 2025",
     datetime: "2025-05-30",
@@ -72,10 +70,10 @@ const posts = [
   {
     id: 4,
     title:
-      "Refonte site internet Brest : comment faire une refonte web réussie ?",
+      "Refonte site internet Brest : boostez votre présence locale en 2025",
     href: "/blog/refonte-site-internet-brest",
     description:
-      "Vous cherchez une agence web à Brest pour créer votre site ? Découvrez pourquoi de plus en plus d'entrepreneurs se tournent vers des freelances locaux pour plus de flexibilité, d'écoute et de résultats.",
+      "Refonte site internet Brest : offrez une seconde vie à votre site web avec un design moderne, SEO local et performance mobile. Audit gratuit !",
     imageUrl: "/refonte-site-internet.jpg",
     date: "9 juin 2025",
     datetime: "2025-06-09",
