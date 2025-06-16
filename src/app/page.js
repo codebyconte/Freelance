@@ -50,19 +50,22 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Code By Conte",
-    alternateName: "Conte Mouctar",
+    founder: "Conte Mouctar",
+    foundingLocation: "Brest",
+    hasCredential: "BAC+2 - Développeur informatique",
     url: "https://www.codebyconte.fr/",
     logo: "https://www.codebyconte.fr/Logo.svg",
     image: "https://www.codebyconte.fr/opengraph-image.png",
     description:
       "Expert en création de site internet à Brest. Sites sur mesure, rapides, optimisés SEO pour booster votre visibilité locale. ",
-    openingHours: "Mo-Su 08:00-20:00",
+    openingHours: "Mo-Su 08:00-18:00",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Brest",
       postalCode: "29200",
       addressCountry: "FR",
     },
+    companyRegistration: "82893014900020 - INSEE",
     areaServed: {
       "@type": "Place",
       name: "France",
@@ -70,6 +73,7 @@ export default function Home() {
     telephone: "+33 6 11 23 51 90",
     email: "mr.conte@icloud.com",
     paymentAccepted: ["Cash", "Credit Card", "Cryptocurrency"],
+    currenciesAccepted: "EUR",
   };
 
   const faqJsonLd = {
