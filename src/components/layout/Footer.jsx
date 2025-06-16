@@ -10,6 +10,7 @@ const navigation = {
   ],
   legal: [
     { name: "Mentions légales", href: "/mentions-legales" },
+    { name: "CGV", href: "/conditions-generales-vente" },
     {
       name: "Politique de confidentialité",
       href: "/confidentialite",
