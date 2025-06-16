@@ -19,20 +19,18 @@ import {
 } from "@/components/ui/accordion";
 
 export const metadata = {
-  title:
-    "Agence web Brest : freelance ou agence, que choisir pour votre site ?",
+  title: "Agence Web Brest : Le Guide 2025 pour Choisir le Bon Partenaire",
   description:
-    "Freelance ou agence web à Brest ? Découvrez les avantages de chaque solution pour créer votre site internet et faites le bon choix pour votre entreprise.",
+    "Vous cherchez la meilleure agence web à Brest ? Découvrez notre guide pour choisir le partenaire idéal (agence ou freelance) pour la création de votre site internet et garantir votre retour sur investissement.",
   alternates: {
     canonical:
       "https://www.codebyconte.fr/blog/agence-web-brest-freelance-vs-agence",
   },
   openGraph: {
     url: "https://www.codebyconte.fr/blog/agence-web-brest-freelance-vs-agence",
-    title:
-      "Agence web Brest : freelance ou agence, que choisir pour votre site ?",
+    title: "Agence Web Brest : Le Guide 2025 pour Choisir le Bon Partenaire",
     description:
-      "Freelance ou agence web à Brest ? Découvrez les avantages de chaque solution pour créer votre site internet et faites le bon choix pour votre entreprise.",
+      "Vous cherchez la meilleure agence web à Brest ? Découvrez notre guide pour choisir le partenaire idéal (agence ou freelance) pour la création de votre site internet et garantir votre retour sur investissement.",
     siteName: "Code By Conte",
     locale: "fr_FR",
     type: "article",
@@ -51,10 +49,9 @@ export default function Page() {
   const jsonLdArticle = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline:
-      "Agence web Brest : freelance ou agence, que choisir pour votre site ?",
+    headline: "Agence Web Brest : Le Guide 2025 pour Choisir le Bon Partenaire",
     description:
-      "Freelance ou agence web à Brest ? Découvrez les avantages de chaque solution pour créer votre site internet et faites le bon choix pour votre entreprise.",
+      "Vous cherchez la meilleure agence web à Brest ? Découvrez notre guide pour choisir le partenaire idéal (agence ou freelance) pour la création de votre site internet et garantir votre retour sur investissement.",
     author: {
       "@type": "Person",
       name: "Conte Mouctar",
@@ -85,7 +82,7 @@ export default function Page() {
         name: "Quelle est la différence entre un développeur web freelance et une agence ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Un freelance travaille seul, souvent spécialisé, avec une relation directe. Une agence regroupe plusieurs profils et gère des projets plus complets.",
+          text: "Un freelance est un artisan-expert qui est votre unique point de contact et réalise lui-même le travail. Une agence est une entreprise avec plusieurs salariés et un chef de projet comme intermédiaire. L'un offre l'agilité et l'expertise directe, l'autre une force de frappe plus large.",
         },
       },
       {
@@ -93,7 +90,7 @@ export default function Page() {
         name: "Un freelance peut-il faire un site aussi bien qu’une agence ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Oui, surtout pour les projets vitrines, sites pro ou refontes simples. La qualité dépend de l’expérience du freelance.",
+          text: "Oui, et souvent mieux pour les projets de sites vitrines, e-commerce ou institutionnels. La qualité ne dépend pas de la taille de la structure, mais de l'expérience de la personne qui code. Un freelance senior produira toujours un meilleur site qu'un développeur junior en agence.",
         },
       },
       {
@@ -101,7 +98,7 @@ export default function Page() {
         name: "Combien coûte un site internet à Brest ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Chez un freelance : 1000–2000 €. Chez une agence : 3000–6000 €. Ces prix varient selon les options (SEO, blog, e-commerce…).",
+          text: "C'est comme demander le prix d'une maison ! Mais pour un site professionnel sur-mesure : comptez 1 200€ - 3 000€ avec un freelance expert. Pour un projet équivalent en agence, le budget de départ sera plutôt autour de 4 000€ - 8 000€ en raison de leurs frais de structure.",
         },
       },
       {
@@ -109,7 +106,7 @@ export default function Page() {
         name: "Peut-on commencer avec un freelance puis évoluer ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Bien sûr ! Un freelance peut poser les bases d’un site évolutif, avec la possibilité d’ajouter des fonctionnalités ensuite.",
+          text: "C'est même le scénario idéal ! Un bon freelance construit des fondations techniques saines et évolutives. Votre site pourra grandir avec votre entreprise, en ajoutant de nouvelles fonctionnalités sans avoir à tout recommencer.",
         },
       },
     ],
@@ -132,13 +129,22 @@ export default function Page() {
       <article>
         <header className="py-8 space-y-4">
           <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            Agence web Brest : freelance ou agence, que choisir pour votre site
-            ?
+            Agence Web Brest : Le Guide 2025 pour Choisir le Bon Partenaire ?
           </h1>
-          <p className="text-base sm:text-lg text-gray-600">
-            Freelance ou agence web à Brest ? Découvrez les avantages de chaque
-            solution pour créer votre site internet et faites le bon choix pour
-            votre entreprise.
+          <p className="">
+            Vous cherchez une <strong>agence web à Brest</strong> pour créer ou
+            refondre le site de votre entreprise. C&apos;est le bon réflexe. Un
+            site performant est aujourd&apos;hui le pilier de toute activité
+            locale. Mais la vraie question n&apos;est pas tant de trouver une
+            &quot;agence&quot; mais de choisir le bon partenaire pour votre
+            projet.
+          </p>
+          <p>
+            Car un site web n&apos;est pas un produit sur étagère, c&apos;est un
+            investissement stratégique. Allez-vous le confier à une grande
+            structure ou à un artisan expert ? Ce guide est conçu pour vous,
+            entrepreneur brestois, afin de vous aider à y voir clair et à
+            prendre la décision la plus rentable pour votre croissance.
           </p>
         </header>
 
@@ -146,31 +152,32 @@ export default function Page() {
           aria-label="Table des matières"
           className="border border-gray-500 bg-white p-6 rounded-2xl py-8"
         >
-          <ul className="list-disc space-y-2">
+          <ol className="list-decimal space-y-2">
             <li className="underline hover:text-blue-600">
-              <a href="#introduction">Introduction</a>
-            </li>
-            <li className="underline hover:text-blue-600">
-              <a href="#freelance-agence">
-                1. Freelance ou agence web à Brest : quelles différences ?
+              <a href="#introduction">
+                Avant de Choisir : Quel est Vraiment Votre Besoin ?
               </a>
             </li>
             <li className="underline hover:text-blue-600">
-              <a href="#avantages-freelance">
-                2. Les avantages d’un freelance pour la création de site web
+              <a href="#freelance-agence">
+                Les 2 Modèles de Partenaires Web à Brest : Le Comparatif{" "}
               </a>
             </li>
             <li className="underline hover:text-blue-600">
               <a href="#avantages-agence">
-                3. Les avantages d’une agence web à Brest
+                Dans Quels Cas une Agence Web est-elle Indispensable ?{" "}
               </a>
             </li>
             <li className="underline hover:text-blue-600">
-              <a href="#limites">4. Les limites des deux options</a>
+              <a href="#avantages-freelance">
+                Pourquoi un Freelance Expert est Souvent le Choix le Plus Malin
+                pour une TPE/PME à Brest ?{" "}
+              </a>
             </li>
             <li className="underline hover:text-blue-600">
-              <a href="#choisir">
-                5. Comment choisir le bon prestataire à Brest ?
+              <a href="#checklist">
+                Votre Checklist Ultime pour Choisir Votre Prestataire Web à
+                Brest
               </a>
             </li>
             <li className="underline hover:text-blue-600">
@@ -179,24 +186,45 @@ export default function Page() {
             <li className="underline hover:text-blue-600">
               <a href="#conclusion">Conclusion</a>
             </li>
-          </ul>
+          </ol>
         </nav>
 
         <section id="introduction" className="py-8 space-y-2">
           <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
-            Introduction
+            Avant de Choisir : Quel est Vraiment Votre Besoin ?
           </h2>
           <p>
-            Vous cherchez une <strong>agence web à Brest</strong> pour créer ou
-            refondre votre site internet ? Mais un doute persiste :{" "}
-            <strong>faut-il passer par une agence ou un freelance ?</strong>
-            Les deux options existent dans le paysage digital brestois, chacune
-            avec ses avantages.
+            La meilleure agence web n&apos;est pas la plus grande ou la plus
+            chère, c&apos;est celle qui correspond parfaitement à votre projet.
+            Posez-vous les bonnes questions :
           </p>
-          <p>
-            Dans cet article, je vous propose un comparatif clair, local et
-            honnête, pour vous aider à faire le bon choix selon votre besoin,
-            votre budget, et votre niveau d’accompagnement souhaité.
+          <ul className="list-disc space-y-2 ml-6">
+            <li>
+              <strong>Quel est mon objectif principal ?</strong> (Ex : obtenir
+              des devis, vendre en ligne, renforcer ma crédibilité, présenter
+              mon portfolio d&apos;artisan...).
+            </li>
+            <li>
+              <strong>Quel est mon budget ?</strong> Un site vitrine n&apos;a
+              pas le même coût qu&apos;une plateforme e-commerce complexe. Soyez
+              réaliste.
+            </li>
+            <li>
+              <strong>
+                Quel niveau d&apos;implication je souhaite avoir ?
+              </strong>
+              Voulez-vous un interlocuteur unique et direct ou préférez-vous
+              déléguer entièrement la gestion à un chef de projet ?
+            </li>
+            <li>
+              <strong>De quelles compétences ai-je besoin ?</strong> Uniquement
+              du développement web, ou aussi de la stratégie SEO, de la
+              rédaction de contenu, de la maintenance ?
+            </li>
+          </ul>
+          <p className="mt-4 italic">
+            Cette auto-évaluation est la première étape pour ne pas vous
+            tromper.
           </p>
         </section>
 
@@ -204,228 +232,241 @@ export default function Page() {
 
         <section id="freelance-agence" className="py-8 space-y-2">
           <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
-            1. Freelance ou agence web à Brest : quelles différences ?
+            Les 2 Modèles de Partenaires Web à Brest : Le Comparatif{" "}
           </h2>
-          <p className="font-semibold text-lg mt-4">Définition rapide</p>
+          <p>
+            Dans le paysage numérique brestois, deux grands modèles
+            s&apos;offrent à vous.
+          </p>
           <ul className="list-disc space-y-2 ml-6">
             <li>
-              <strong>Freelance </strong> : professionnel indépendant, souvent
-              spécialisé (ex : développeur web, graphiste, SEO…).
+              <strong>L&apos;Agence Web &quot;Classique&quot;</strong> : Une
+              entreprise avec une équipe de plusieurs spécialistes (chefs de
+              projet, designers, développeurs, marketeurs). Elle est structurée
+              pour gérer des projets de A à Z.
             </li>
             <li>
-              <strong>Agence web</strong> : équipe pluridisciplinaire (design,
-              développement, marketing), souvent structurée en pôle.
+              <strong>Le Partenaire Freelance Expert</strong> : Un professionnel
+              indépendant qui est votre interlocuteur unique. Il est souvent
+              hyper-spécialisé dans un domaine (par exemple, le développement de
+              sites sur-mesure ultra-performants et le SEO technique).
             </li>
           </ul>
-          <p className="font-semibold text-lg">Fonctionnement</p>
-          <Table>
+
+          <p className="font-semibold text-lg">
+            Voici comment ils se comparent sur les points qui comptent vraiment
+            pour vous :
+          </p>
+          <Table grid>
             <TableHead>
               <TableRow>
-                <TableHeader>Critère</TableHeader>
-                <TableHeader>Freelance</TableHeader>
-                <TableHeader>Agence</TableHeader>
+                <TableHeader className="w-1/4">Critère Clé</TableHeader>
+                <TableHeader className="w-3/8">
+                  Le Modèle Agence Web
+                </TableHeader>
+                <TableHeader className="w-3/8">
+                  Le Modèle Partenaire Freelance
+                </TableHeader>
               </TableRow>
             </TableHead>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">Structure</TableCell>
-                <TableCell>Indépendant</TableCell>
-                <TableCell>Équipe ou entreprise</TableCell>
+                <TableCell className="font-medium">
+                  Relation & Communication
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Structurée via un chef de projet. Moins de contact direct avec
+                  les techniciens.
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Directe, humaine et sans filtre. Vous parlez à celui qui fait.
+                </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Processus</TableCell>
-                <TableCell>Flexible, plus direct</TableCell>
-                <TableCell>Plus formel (brief, devis, délais)</TableCell>
+                <TableCell className="font-medium">
+                  Agilité & Flexibilité
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Processus plus formels et parfois rigides. Les changements
+                  peuvent prendre du temps.
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Réactivité maximale. Le circuit de décision est instantané,
+                  idéal pour s&apos;adapter.
+                </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Outils & méthodes</TableCell>
-                <TableCell>Adaptés à sa spécialité</TableCell>
-                <TableCell>Standards d’équipe, méthodologie complète</TableCell>
+                <TableCell className="font-medium">Budget & ROI</TableCell>
+                <TableCell className="whitespace-normal">
+                  Coûts de structure plus élevés (locaux, salaires), donc un
+                  budget de départ plus conséquent (souvent &gt; 3000€).
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Excellent retour sur investissement. Pas de frais de
+                  structure, vous payez pour l&apos;expertise pure.
+                </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">Communication</TableCell>
-                <TableCell>1 interlocuteur direct</TableCell>
-                <TableCell>Plusieurs interlocuteurs (chef de projet)</TableCell>
+                <TableCell className="font-medium">
+                  Niveau d&apos;Expertise
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Accès à une palette de compétences variées.
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Expertise pointue et passionnée. Idéal pour un besoin
+                  spécifique (vitesse, SEO, design...).
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  Implication du Client
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Le client est souvent briefé puis attend la livraison.
+                </TableCell>
+                <TableCell className="whitespace-normal">
+                  Processus collaboratif. Vous êtes impliqué aux étapes clés
+                  pour un résultat sur-mesure.
+                </TableCell>
               </TableRow>
             </TableBody>
           </Table>
-          <p className="flex items-center space-x-2 italic mt-6">
-            <Lightbulb className="text-yellow-500 w-10 h-10" /> À Brest, de
-            nombreux freelances comme moi travaillent avec des outils pro
-            identiques à ceux des agences.
-          </p>
-        </section>
-
-        <Divider />
-
-        <section id="avantages-freelance" className="py-8 space-y-3">
-          <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
-            2. Les avantages d’un freelance pour la création de site web
-          </h2>
-          <div className="mt-4">
-            <h3 className="flex items-center text-lg font-semibold">
-              <BadgeCheck className="text-green-500 w-6 h-6 mr-2" /> Réactivité
-              & proximité
-            </h3>
-            <p>
-              Un freelance gère tout lui-même. Résultat : un échange direct,
-              rapide, sans intermédiaire. Parfait si vous cherchez une relation
-              humaine et de proximité.
-            </p>
-          </div>
-          <div>
-            <h3 className="flex items-center text-lg font-semibold">
-              <BadgeCheck className="text-green-500 w-6 h-6 mr-2" /> Budget
-              souvent plus souple
-            </h3>
-            <p>
-              Pas de structure à faire tourner, pas de TVA (souvent
-              autoentrepreneur) = des tarifs plus accessibles.{" "}
-              <em>
-                Exemple : un site vitrine à partir de 900–1500 €, contre 3000 €
-                minimum en agence.
-              </em>
-            </p>
-          </div>
-          <div>
-            <h3 className="flex items-center text-lg font-semibold">
-              <BadgeCheck className="text-green-500 w-6 h-6 mr-2" /> Expertise
-              ciblée
-            </h3>
-            <p>
-              Certains freelances sont ultra pointus dans leur domaine : SEO,
-              performance, e-commerce, etc. Idéal si vous avez un besoin
-              spécifique (refonte SEO, mise en conformité RGPD, site ultra
-              rapide…).
-            </p>
-          </div>
-
-          <div className="flex justify-center mt-6">
-            <Button href="/services">
-              Découvrir mes offres de création de site
-            </Button>
-          </div>
         </section>
 
         <Divider />
 
         <section id="avantages-agence" className="py-8 space-y-3">
           <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
-            3. Les avantages d’une agence web à Brest
+            Dans Quels Cas une Agence Web est-elle Indispensable ?{" "}
           </h2>
-          <div className="mt-4">
-            <h3 className="flex items-center text-lg font-semibold">
-              <BadgeCheck className="text-green-500 w-6 h-6 mr-2" /> Une équipe
-              complète
-            </h3>
-            <p>
-              Créa, développement, stratégie, maintenance : tout est pris en
-              charge. C’est rassurant si vous cherchez un prestataire
-              tout-en-un.
-            </p>
-          </div>
-          <div>
-            <h3 className="flex items-center text-lg font-semibold">
-              <BadgeCheck className="text-green-500 w-6 h-6 mr-2" /> Capacité à
-              gérer des gros projets
-            </h3>
-            <p>
-              Si vous avez besoin d’un site complexe (intranet, SaaS,
-              multisite…), une agence avec des développeurs en interne pourra
-              mobiliser les ressources nécessaires.
-            </p>
-          </div>
-          <div>
-            <h3 className="flex items-center text-lg font-semibold">
-              <BadgeCheck className="text-green-500 w-6 h-6 mr-2" />{" "}
-              Accompagnement global
-            </h3>
-            <p>
-              Certaines agences proposent un suivi long terme, avec des forfaits
-              mensuels, du reporting SEO, du conseil digital, etc.
-            </p>
-          </div>
-          <p className="flex items-center space-x-2 italic">
-            <TriangleAlert className=" w-6 h-6 mr-2" />
-            Mais cela implique souvent un budget plus conséquent (à partir de
-            3000–5000 €).
+          <p>
+            Soyons honnêtes, le modèle de l&apos;agence est parfois le plus
+            adapté.
           </p>
+          <ul className="list-disc space-y-2 ml-6">
+            <li>
+              <strong>Pour les projets de très grande envergure</strong> :
+              Développement d&apos;un logiciel SaaS, d&apos;une application
+              mobile complexe ou d&apos;un intranet pour une grande entreprise.
+            </li>
+            <li>
+              <strong>Pour un besoin de communication à 360°</strong> : Si votre
+              projet de site s&apos;intègre dans une campagne globale incluant
+              relations presse, publicité, gestion de réseaux sociaux à grande
+              échelle...
+            </li>
+            <li>
+              <strong>Pour les très gros budgets (+15 000€)</strong> : Lorsque
+              vous avez besoin de mobiliser une équipe complète de 5 à 10
+              personnes à temps plein sur plusieurs mois.
+            </li>
+          </ul>
         </section>
 
         <Divider />
 
-        <section id="limites" className="py-8 space-y-3">
+        <section id="avantages-freelance" className="py-8 space-y-3">
           <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
-            4. Les limites des deux options
+            Pourquoi un Freelance Expert est Souvent le Choix le Plus Malin pour
+            une TPE/PME à Brest ?{" "}
           </h2>
-          <div>
-            <h3 className="text-lg font-semibold">Limites d’un freelance</h3>
-            <ul className="list-disc space-y-2 ml-6">
-              <li>Capacité limitée (1 seul projet à la fois)</li>
-              <li>Moins de garantie sur les délais si surcharge</li>
-              <li>Pas toujours toutes les compétences en interne</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">Limites d’une agence</h3>
-            <ul className="list-disc space-y-2 ml-6">
-              <li>Tarifs élevés (structure, TVA, charges…)</li>
-              <li>Moins de flexibilité (délais + process rigides)</li>
-              <li>Risque d’être un “petit client” si budget limité</li>
-            </ul>
+          <p>
+            Pour 90% des entreprises à Brest (artisans, commerçants,
+            restaurateurs, consultants, TPE, PME), le partenaire freelance offre
+            le meilleur des deux mondes.
+          </p>
+          <ul className="list-disc space-y-2 ml-6">
+            <li>
+              <strong>Un ROI Imbattable</strong> : Votre budget est entièrement
+              dédié à la qualité du code, au design et à l&apos;optimisation de
+              votre site, pas à payer les charges de l&apos;agence.
+            </li>
+            <li>
+              <strong>L&apos;Excellence d&apos;un Spécialiste</strong> : Vous
+              n&apos;avez pas affaire à un développeur junior, mais à un expert
+              qui a fait de la performance et du résultat son unique argument de
+              vente.
+            </li>
+            <li>
+              <strong>Une Relation de Confiance</strong> : Votre projet
+              n&apos;est pas &quot;un dossier parmi d&apos;autres&quot;. Un
+              freelance s&apos;investit personnellement dans votre réussite, car
+              sa réputation en dépend directement.
+            </li>
+            <li>
+              <strong>La Proximité et la Compréhension Locale</strong> : En tant
+              que freelance basé à Brest, je comprends les enjeux du marché
+              local, de la concurrence sur le port de commerce à la visibilité
+              dans le Pays d&apos;Iroise.
+            </li>
+          </ul>
+
+          <div className="bg-blue-50 p-4 rounded-lg border border-blue-600">
+            <p>
+              <Lightbulb className="text-blue-600" />
+              <strong className="text-blue-600">
+                Le meilleur des deux mondes
+              </strong>{" "}
+              : Un freelance expert collabore souvent avec d&apos;autres talents
+              (rédacteurs, photographes) pour vous offrir un service complet,
+              avec la souplesse en plus. Vous bénéficiez d&apos;une
+              &quot;mini-agence&quot; agile, construite autour de votre projet.
+            </p>
           </div>
         </section>
 
         <Divider />
 
-        <section id="choisir" className="py-8 space-y-3">
+        <section id="checklist" className="py-8 space-y-3">
           <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
-            5. Comment choisir le bon prestataire à Brest ?
+            Votre Checklist Ultime pour Choisir Votre Prestataire Web à Brest{" "}
           </h2>
-          <p className="text-lg">Voici 5 critères simples pour trancher</p>
+          <p>
+            Que vous contactiez une agence ou un freelance, posez ces questions.
+            Leurs réponses feront toute la différence.
+          </p>
           <div>
-            <h3 className="text-lg font-semibold">1. Vos besoins</h3>
-            <ul className="list-disc space-y-2 ml-6">
-              <li>Besoin simple = freelance</li>
-              <li>Projet complexe = agence</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">2. Votre budget</h3>
-            <ul className="list-disc space-y-2 ml-6">
+            <ol className="list-decimal space-y-2 ml-6">
               <li>
-                inferieur à 2000 € : ciblez un freelance ou une micro-agence
+                <strong>Portfolio</strong>: Pouvez-vous me montrer des sites que
+                vous avez réalisés pour des entreprises similaires à la mienne à
+                Brest ou en Finistère ?
               </li>
-              <li>5000 € : envisagez une agence complète</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">
-              3. Votre préférence de relation
-            </h3>
-            <ul className="list-disc space-y-2 ml-6">
-              <li>Humaine, directe ? Freelance</li>
-              <li>Structurée, déléguée ? Agence</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">4. Les outils proposés</h3>
-            <h4>Assurez-vous que le prestataire propose :</h4>
-            <ul className="list-disc space-y-2 ml-6">
-              <li>site responsive</li>
-              <li>SEO de base</li>
-              <li>maintenance ou formation</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">
-              5. Sa connaissance du territoire
-            </h3>
-            <h4>Un prestataire local à Brest comprendra mieux :</h4>
-            <ul className="list-disc space-y-2 ml-6">
-              <li>vos cibles régionales</li>
-              <li>les spécificités de votre marché local</li>
-            </ul>
+              <li>
+                <strong>Performance</strong>: Quelle est votre approche pour
+                garantir que mon site sera rapide et performant (Core Web
+                Vitals) ?
+              </li>
+              <li>
+                <strong>SEO Local</strong>: Comment allez-vous optimiser mon
+                site pour que mes clients me trouvent sur des recherches comme
+                &quot;mon métier + Brest&quot; ?
+              </li>
+              <li>
+                <strong>Technologie</strong>: Travaillez-vous avec des thèmes
+                WordPress préfabriqués ou développez-vous sur-mesure ? (Indice :
+                le sur-mesure est gage de qualité).
+              </li>
+              <li>
+                <strong>Autonomie</strong>: Serais-je capable de modifier
+                facilement le contenu de mon site une fois livré ? Une formation
+                est-elle prévue ?
+              </li>
+              <li>
+                <strong>Propriété</strong>: Serai-je bien propriétaire à 100% de
+                mon nom de domaine, de mon hébergement et de mon site ?
+              </li>
+              <li>
+                <strong>Le &quot;Après&quot;</strong>: Proposez-vous des
+                contrats de maintenance pour assurer la sécurité et les mises à
+                jour du site ?
+              </li>
+            </ol>
+            <p className="italic">
+              Un prestataire sérieux répondra à ces questions avec clarté et
+              transparence.
+            </p>
           </div>
         </section>
 
@@ -433,7 +474,7 @@ export default function Page() {
 
         <section id="faq" className="py-8 space-y-3">
           <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
-            FAQ
+            FAQ : Les Questions que tout Entrepreneur se Pose
           </h2>
           <div>
             <Accordion
@@ -449,33 +490,41 @@ export default function Page() {
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance">
                   <p>
-                    Un freelance travaille seul, souvent spécialisé, avec une
-                    relation directe. Une agence regroupe plusieurs profils et
-                    gère des projets plus complets.
+                    Un freelance est un artisan-expert qui est votre unique
+                    point de contact et réalise lui-même le travail. Une agence
+                    est une entreprise avec plusieurs salariés et un chef de
+                    projet comme intermédiaire. L&apos;un offre l&apos;agilité
+                    et l&apos;expertise directe, l&apos;autre une force de
+                    frappe plus large.
                   </p>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>
-                  Un freelance peut-il faire un site aussi bien qu’une agence ?
+                  Un freelance peut-il faire un site aussi bien qu&apos;une
+                  agence ?{" "}
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance">
                   <p>
-                    Oui, surtout pour les projets vitrines, sites pro ou
-                    refontes simples. La qualité dépend de l’expérience du
-                    freelance.
+                    Oui, et souvent mieux pour les projets de sites vitrines,
+                    e-commerce ou institutionnels. La qualité ne dépend pas de
+                    la taille de la structure, mais de l&apos;expérience de la
+                    personne qui code. Un freelance senior produira toujours un
+                    meilleur site qu&apos;un développeur junior en agence.
                   </p>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>
-                  Combien coûte un site internet à Brest ?
+                  Combien coûte un site internet à Brest ?{" "}
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance">
-                  <p>Chez un freelance : 1000–2000 €</p>
-                  <p>Chez une agence : 3000–6000 €</p>
                   <p>
-                    Ces prix varient selon les options (SEO, blog, e-commerce…).
+                    C&apos;est comme demander le prix d&apos;une maison ! Mais
+                    pour un site professionnel sur-mesure : comptez 1 200€ - 3
+                    000€ avec un freelance expert. Pour un projet équivalent en
+                    agence, le budget de départ sera plutôt autour de 4 000€ - 8
+                    000€ en raison de leurs frais de structure.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -485,9 +534,10 @@ export default function Page() {
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance">
                   <p>
-                    Bien sûr ! Un freelance peut poser les bases d’un site
-                    évolutif, avec la possibilité d’ajouter des fonctionnalités
-                    ensuite.
+                    C&apos;est même le scénario idéal ! Un bon freelance
+                    construit des fondations techniques saines et évolutives.
+                    Votre site pourra grandir avec votre entreprise, en ajoutant
+                    de nouvelles fonctionnalités sans avoir à tout recommencer.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -498,25 +548,35 @@ export default function Page() {
         <Divider />
 
         <section id="conclusion" className="py-8 space-y-3">
-          <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
-            Conclusion
+          <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl text-center">
+            Conclusion : Votre Projet Mérite le Bon Partenaire, pas Juste une
+            Agence
           </h2>
           <h3 className="text-lg font-semibold">
-            Freelance ou agence web à Brest ?
+            Au final, le choix entre une agence web à Brest et un freelance se
+            résume à une chose : trouver le partenaire qui s&apos;engagera à vos
+            côtés pour atteindre vos objectifs.{" "}
           </h3>
           <p>
-            Il n’y a pas de bon ou de mauvais choix — seulement une solution
-            adaptée à votre besoin réel.
+            Pour la plupart des entreprises brestoises, faire appel à un
+            freelance expert local n&apos;est pas un compromis, c&apos;est un
+            choix stratégique : celui d&apos;un meilleur retour sur
+            investissement, d&apos;une relation plus forte et d&apos;une
+            expertise directement accessible.
           </p>
 
-          <h3>
-            Si vous cherchez un partenaire local, réactif, qui comprend les
-            enjeux des PME brestoises, je vous accompagne avec des sites 100 %
-            sur-mesure, performants et évolutifs.
+          <h3 className="text-lg font-semibold">
+            Vous voulez savoir quel modèle est le plus adapté à votre projet et
+            à votre budget ?
           </h3>
+          <p>
+            Discutons-en ensemble. Je vous offre un premier appel de découverte
+            gratuit et sans engagement pour analyser vos besoins et tracer une
+            feuille de route claire pour votre réussite en ligne.
+          </p>
           <div className="flex justify-center">
-            <Button href="/contact">
-              Contactez-moi pour discuter de votre projet gratuitement
+            <Button href="/contact" color="blue">
+              Planifier mon appel stratégique gratuit
             </Button>
           </div>
         </section>

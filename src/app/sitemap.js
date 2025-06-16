@@ -61,6 +61,12 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: "https://www.codebyconte.fr/blog/maintenance-site-internet-brest",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: "https://www.codebyconte.fr/mentions-legales",
       lastModified: new Date(),
       changeFrequency: "yearly",

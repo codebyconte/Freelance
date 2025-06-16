@@ -80,6 +80,17 @@ const posts = [
     date: "9 juin 2025",
     datetime: "2025-06-09",
   },
+  {
+    id: 5,
+    title:
+      "Maintenance de Site Internet à Brest : Le Guide Complet pour Protéger et Booster Votre Activité en 2025",
+    href: "/blog/maintenance-site-internet-brest",
+    description:
+      "Votre site web à Brest est lent, vulnérable ou invisible sur Google ? Découvrez notre guide complet sur la maintenance de site internet. Protégez votre investissement et attirez plus de clients.",
+    imageUrl: "/maintenance.jpg",
+    date: "16 juin 2025",
+    datetime: "2025-06-16",
+  },
 ];
 
 export default function Page() {
