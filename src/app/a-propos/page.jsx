@@ -65,7 +65,10 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="px-4 text-center space-y-8 max-w-4xl min-h-screen mt-8 lg:mt-24 py-8">
+      <div
+        className="px-4 text-center space-y-8 max-w-4xl min-h-screen mt-8 lg:mt-24 py-8"
+        id="about"
+      >
         <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-6xl lg:text-pretty ">
           Votre projet mérite plus qu'un site web. Il mérite un partenaire
           digital.

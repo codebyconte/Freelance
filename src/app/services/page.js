@@ -47,206 +47,102 @@ export default function PageServices() {
             "@context": "https://schema.org",
             "@graph": [
               {
-                "@type": "Product",
+                "@type": [
+                  "Organization",
+                  "ProfessionalService",
+                  "LocalBusiness",
+                ],
+                "@id": "https://www.codebyconte.fr/a-propos#about",
+                name: "Code By Conte",
+                url: "https://www.codebyconte.fr/",
+                logo: "https://www.codebyconte.fr/logo.svg",
+              },
+
+              {
+                "@type": "MerchantReturnPolicy",
+                "@id":
+                  "https://www.codebyconte.fr/conditions-generales-vente#return-policy",
+                applicableCountry: "FR",
+                returnPolicyCategory:
+                  "https://schema.org/MerchantReturnNotApplicable",
+              },
+
+              {
+                "@type": "Service",
+                "@id": "https://www.codebyconte.fr/#service-site-vitrine",
                 name: "Site Vitrine Essentiel",
+                serviceType: "Création de site vitrine",
+                provider: {
+                  "@id": "https://www.codebyconte.fr/a-propos#about",
+                },
                 description:
-                  "La solution idéale pour lancer votre activité, présenter vos services et être enfin visible sur internet avec un site professionnel et rapide.",
-                image: "https://www.codebyconte.fr/opengraph-image.png",
-                sku: "SITE-VITRINE-ESSENTIEL",
-                brand: {
-                  "@type": "Brand",
-                  name: "Code By Conte",
-                },
-                aggregateRating: {
-                  "@type": "AggregateRating",
-                  ratingValue: "5",
-                  bestRating: "5",
-                  ratingCount: "14",
-                },
-                review: [
-                  {
-                    "@type": "Review",
-                    author: { "@type": "Person", name: "Anoil El fadili" },
-                    datePublished: "2025-06-01", // Date approximative
-                    reviewBody:
-                      "Tout est bien clair est détailler je recommande vraiment 5/5",
-                    reviewRating: {
-                      "@type": "Rating",
-                      ratingValue: "5",
-                      bestRating: "5",
-                    },
-                  },
-                  {
-                    "@type": "Review",
-                    author: { "@type": "Person", name: "Erick Vincent" },
-                    datePublished: "2025-06-01",
-                    reviewBody: "Au top vraiment !!",
-                    reviewRating: {
-                      "@type": "Rating",
-                      ratingValue: "5",
-                      bestRating: "5",
-                    },
-                  },
-                  {
-                    "@type": "Review",
-                    author: { "@type": "Person", name: "daloba conte" },
-                    datePublished: "2025-05-25",
-                    reviewBody: "Service impeccable",
-                    reviewRating: {
-                      "@type": "Rating",
-                      ratingValue: "5",
-                      bestRating: "5",
-                    },
-                  },
-                ],
+                  "Solution idéale pour lancer votre activité et être visible rapidement.",
+                areaServed: "FR",
+
                 offers: {
                   "@type": "Offer",
+                  "@id": "https://www.codebyconte.fr/services#essentiel",
                   url: "https://www.codebyconte.fr/services",
                   priceCurrency: "EUR",
-                  price: "1200",
+                  price: 1200,
                   priceValidUntil: "2025-12-31",
                   availability: "https://schema.org/InStock",
-                  itemCondition: "https://schema.org/NewCondition",
                   hasMerchantReturnPolicy: {
-                    "@type": "MerchantReturnPolicy",
-                    applicableCountry: "FR",
-                    returnPolicyCategory:
-                      "https://schema.org/MerchantReturnFiniteReturnWindow",
-                    merchantReturnDays: 14,
-                    returnMethod: "https://schema.org/ReturnByMail",
-                    returnFees: "https://schema.org/FreeReturn",
-                  },
-                  shippingDetails: {
-                    "@type": "OfferShippingDetails",
-                    shippingRate: {
-                      "@type": "MonetaryAmount",
-                      value: "0",
-                      currency: "EUR",
-                    },
-                    shippingDestination: {
-                      "@type": "DefinedRegion",
-                      addressCountry: "FR",
-                    },
+                    "@id":
+                      "https://www.codebyconte.fr/conditions-generales-vente#return-policy",
                   },
                 },
               },
               {
-                "@type": "Product",
+                "@type": "Service",
+                "@id": "https://www.codebyconte.fr/services#visibilite",
                 name: "Site Visibilité Pro",
+                serviceType: "Création de site optimisé SEO",
+                provider: {
+                  "@id": "https://www.codebyconte.fr/a-propos#about",
+                },
                 description:
-                  "Pour les entreprises qui veulent attirer plus de clients grâce à Google, avec un blog pour démontrer votre expertise et un design sur-mesure.",
-                image: "https://www.codebyconte.fr/opengraph-image.png",
-                sku: "SITE-VISIBILITE-PRO",
-                brand: {
-                  "@type": "Brand",
-                  name: "Code By Conte",
-                },
-                aggregateRating: {
-                  "@type": "AggregateRating",
-                  ratingValue: "5",
-                  bestRating: "5",
-                  ratingCount: "14",
-                },
-                review: [
-                  {
-                    "@type": "Review",
-                    author: { "@type": "Person", name: "Wilfried Jene" },
-                    datePublished: "2025-06-01",
-                    reviewBody: "Je recommande!!!",
-                    reviewRating: {
-                      "@type": "Rating",
-                      ratingValue: "5",
-                      bestRating: "5",
-                    },
-                  },
-                  {
-                    "@type": "Review",
-                    author: { "@type": "Person", name: "jordan arnoult" },
-                    datePublished: "2025-05-25",
-                    reviewBody: "Au top 🔥",
-                    reviewRating: {
-                      "@type": "Rating",
-                      ratingValue: "5",
-                      bestRating: "5",
-                    },
-                  },
-                ],
+                  "Attirez plus de clients grâce à Google, avec blog et design sur-mesure.",
+                areaServed: "FR",
+
                 offers: {
                   "@type": "Offer",
+                  "@id": "https://www.codebyconte.fr/services#visibilite",
                   url: "https://www.codebyconte.fr/services",
                   priceCurrency: "EUR",
-                  price: "1800",
+                  price: 1800,
                   priceValidUntil: "2025-12-31",
                   availability: "https://schema.org/InStock",
-                  itemCondition: "https://schema.org/NewCondition",
                   hasMerchantReturnPolicy: {
-                    "@type": "MerchantReturnPolicy",
-                    applicableCountry: "FR",
-                    returnPolicyCategory:
-                      "https://schema.org/MerchantReturnFiniteReturnWindow",
-                    merchantReturnDays: 14,
-                    returnMethod: "https://schema.org/ReturnByMail",
-                    returnFees: "https://schema.org/FreeReturn",
-                  },
-                  shippingDetails: {
-                    "@type": "OfferShippingDetails",
-                    shippingRate: {
-                      "@type": "MonetaryAmount",
-                      value: "0",
-                      currency: "EUR",
-                    },
-                    shippingDestination: {
-                      "@type": "DefinedRegion",
-                      addressCountry: "FR",
-                    },
+                    "@id":
+                      "https://www.codebyconte.fr/conditions-generales-vente#return-policy",
                   },
                 },
               },
+
               {
-                "@type": "Product",
+                "@type": "Service",
+                "@id": "https://www.codebyconte.fr/services#ecommerce",
                 name: "Site E-commerce & Réservation",
+                serviceType: "Création de site e-commerce / réservation",
+                provider: {
+                  "@id": "https://www.codebyconte.fr/a-propos#about",
+                },
                 description:
-                  "Vendez vos produits ou services en ligne 24/7. Une plateforme complète pour gérer vos ventes, vos clients et vos réservations sans effort.",
-                image: "https://www.codebyconte.fr/opengraph-image.png",
-                sku: "SITE-ECOMMERCE-RESERVATION",
-                brand: {
-                  "@type": "Brand",
-                  name: "Code By Conte",
-                },
-                aggregateRating: {
-                  "@type": "AggregateRating",
-                  ratingValue: "5",
-                  bestRating: "5",
-                  ratingCount: "14",
-                },
+                  "Vendez vos produits ou services en ligne 24 h/24 – 7 j/7.",
+                areaServed: "FR",
+
                 offers: {
                   "@type": "Offer",
+                  "@id": "https://www.codebyconte.fr/services#ecommerce",
                   url: "https://www.codebyconte.fr/services",
                   priceCurrency: "EUR",
-                  price: "2500",
+                  price: 2500,
                   priceValidUntil: "2025-12-31",
                   availability: "https://schema.org/InStock",
-                  itemCondition: "https://schema.org/NewCondition",
                   hasMerchantReturnPolicy: {
-                    "@type": "MerchantReturnPolicy",
-                    applicableCountry: "FR",
-                    returnPolicyCategory:
-                      "https://schema.org/MerchantReturnFiniteReturnWindow",
-                    merchantReturnDays: 14,
-                    returnMethod: "https://schema.org/ReturnByMail",
-                    returnFees: "https://schema.org/FreeReturn",
-                  },
-                  shippingDetails: {
-                    "@type": "OfferShippingDetails",
-                    shippingRate: {
-                      "@type": "MonetaryAmount",
-                      value: "0",
-                      currency: "EUR",
-                    },
-                    shippingDestination: {
-                      "@type": "DefinedRegion",
-                      addressCountry: "FR",
-                    },
+                    "@id":
+                      "https://www.codebyconte.fr/conditions-generales-vente#return-policy",
                   },
                 },
               },

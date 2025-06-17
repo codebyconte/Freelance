@@ -53,7 +53,7 @@ export default function ConditionsGeneralesVente() {
         font par virement bancaire ou tout autre moyen indiqué sur le devis.
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">
+      <h2 className="text-xl font-semibold mt-8 mb-2" id="return-policy">
         4. Droit de rétractation
       </h2>
       <p>
