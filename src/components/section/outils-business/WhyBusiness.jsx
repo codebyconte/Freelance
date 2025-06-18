@@ -1,4 +1,3 @@
-import { dmSerif } from "@/app/styles/fonts";
 import Image from "next/image";
 
 export default function WhyBusiness() {

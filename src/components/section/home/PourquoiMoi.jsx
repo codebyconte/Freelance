@@ -1,5 +1,4 @@
 import { CheckCircle, Crosshair, Code2, Handshake } from "lucide-react";
-import { dmSerif } from "@/app/styles/fonts";
 
 export default function PourquoiMoi() {
   return (

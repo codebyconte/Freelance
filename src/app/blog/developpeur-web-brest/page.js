@@ -1,12 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Divider } from "@/components/ui/divider";
-import {
-  Lightbulb,
-  TriangleAlert,
-  CodeXml,
-  MessageCircleMore,
-  CircleCheck,
-} from "lucide-react";
+import { CircleCheck } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -149,7 +143,7 @@ export default function Page() {
           aria-label="Table des matières"
           className="border border-gray-500 bg-white p-6 rounded-2xl py-8"
         >
-          <ul className="list-disc space-y-2">
+          <ul className="list-disc space-y-2 p-2">
             <li className="underline hover:text-blue-600">
               <a href="#la-dure-realité">
                 La Dure Réalité : Pourquoi un Site &quot;Bricolé&quot; ou Bas de

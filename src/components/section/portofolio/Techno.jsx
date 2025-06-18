@@ -13,15 +13,12 @@ import {
   SiGithub,
   SiPostman,
 } from "react-icons/si";
-import { dmSerif } from "@/app/styles/fonts";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 
 export default function Techno() {
   return (
     <section className="px-4 py-12 md:py-20 w-full max-w-6xl mx-auto overflow-x-hidden">
-      <h2
-        className={`${dmSerif.className} text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-12 leading-tight`}
-      >
+      <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-12 leading-tight">
         J’utilise les outils les plus performants pour livrer des sites
         modernes, rapides et sécurisés.
       </h2>

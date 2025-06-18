@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/dialog";
 import { Field, Label } from "@/components/ui/fieldset";
 import { Input } from "@/components/ui/input";
-import { dmSerif } from "@/app/styles/fonts";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Search, BarChart3, BadgePercent } from "lucide-react";

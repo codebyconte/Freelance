@@ -42,7 +42,7 @@ const posts = [
     href: "/blog/developpeur-web-brest",
     description:
       "À la recherche du meilleur développeur web à Brest ? Découvrez le guide complet pour créer un site internet sur-mesure, rapide et optimisé pour le SEO local, qui transforme vos visiteurs en clients.",
-    imageUrl: "/Devellopeur web.jpg",
+    imageUrl: "/Devellopeur web.webp",
     date: "30 mai 2025",
     datetime: "2025-05-30",
   },
@@ -53,7 +53,7 @@ const posts = [
     href: "/blog/creation-site-internet-brest",
     description:
       "Besoin d’un site web performant à Brest ? Découvrez les solutions pour la création de site internet à Brest : freelance, agence ou sur-mesure. Conseils et comparaison.",
-    imageUrl: "/site-internet.jpg",
+    imageUrl: "/site-internet.webp",
     date: "30 mai 2025",
     datetime: "2025-05-30",
   },
@@ -63,7 +63,7 @@ const posts = [
     href: "/blog/agence-web-brest-freelance-vs-agence",
     description:
       "Vous cherchez la meilleure agence web à Brest ? Découvrez notre guide pour choisir le partenaire idéal (agence ou freelance) pour la création de votre site internet et garantir votre retour sur investissement.",
-    imageUrl: "/agence-web.jpg",
+    imageUrl: "/agence-web.webp",
     date: "30 mai 2025",
     datetime: "2025-05-30",
   },
@@ -74,7 +74,7 @@ const posts = [
     href: "/blog/refonte-site-internet-brest",
     description:
       "Refonte site internet Brest : offrez une seconde vie à votre site web avec un design moderne, SEO local et performance mobile. Audit gratuit !",
-    imageUrl: "/refonte-site-internet.jpg",
+    imageUrl: "/refonte-site-internet.webp",
     date: "9 juin 2025",
     datetime: "2025-06-09",
   },
@@ -85,7 +85,7 @@ const posts = [
     href: "/blog/maintenance-site-internet-brest",
     description:
       "Votre site web à Brest est lent, vulnérable ou invisible sur Google ? Découvrez notre guide complet sur la maintenance de site internet. Protégez votre investissement et attirez plus de clients.",
-    imageUrl: "/maintenance.jpg",
+    imageUrl: "/maintenance.webp",
     date: "16 juin 2025",
     datetime: "2025-06-16",
   },
@@ -130,10 +130,10 @@ export default function Page() {
       />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+          <h1 className="text-4xl font-semibold text-gray-900 sm:text-5xl">
             Blog – Votre Expert Web à Brest : Conseils pour un Site Performant{" "}
           </h1>
-          <p className="mt-2 text-lg/8 text-gray-600">
+          <p className="mt-2 text-lg text-gray-600">
             Booster votre visibilité web à Brest ? Améliorer votre site ? En
             créer un sur mesure ? Ce blog vous offre des conseils pratiques et
             des stratégies de développeur web local pour un site performant et

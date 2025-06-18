@@ -1,6 +1,5 @@
 import { Hero } from "@/components/section/home/Hero";
 import { ServicesApercu } from "@/components/section/home/ServicesApercu";
-import { GoogleStat } from "@/components/section/home/GoogleStat";
 import { Probleme } from "@/components/section/home/Probleme";
 import PourquoiMoi from "@/components/section/home/PourquoiMoi";
 import Cta from "@/components/section/home/Cta";
@@ -134,7 +133,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Hero />
-      <GoogleStat />
       <Probleme />
       <Bento />
       <PourquoiMoi />

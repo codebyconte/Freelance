@@ -1,5 +1,3 @@
-import { dmSerif } from "@/app/styles/fonts";
-
 export default function HeroPortfolio() {
   return (
     <section className="min-h-screen flex justify-center items-center px-4 sm:py-16  ">

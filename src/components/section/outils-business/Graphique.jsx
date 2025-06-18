@@ -1,5 +1,4 @@
 "use client";
-import { dmSerif } from "@/app/styles/fonts";
 import { useState, useEffect } from "react";
 import {
   BarChart,
@@ -107,9 +106,7 @@ export default function Graphique() {
   return (
     <section className="mx-auto px-4 py-12 md:py-24 space-y-12 w-full overflow-x-hidden ">
       <div className="mb-12 text-center mx-auto">
-        <h2
-          className={`${dmSerif.className} text-2xl md:text-4xl lg:text-5xl font-bold text-black`}
-        >
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black">
           Prenez le pouls de votre secteur
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-700 max-w-3xl mx-auto">

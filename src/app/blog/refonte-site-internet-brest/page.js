@@ -8,13 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  Lightbulb,
-  TriangleAlert,
-  CodeXml,
-  MessageCircleMore,
-  TargetIcon,
-} from "lucide-react";
+import { TriangleAlert, TargetIcon } from "lucide-react";
 import {
   Accordion,
   AccordionContent,

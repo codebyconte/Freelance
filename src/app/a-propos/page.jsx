@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { dmSerif } from "../styles/fonts";
 import Image from "next/image";
 import { Ear, MessagesSquare, Target, PhoneCall } from "lucide-react";
 

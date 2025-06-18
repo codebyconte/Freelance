@@ -1,4 +1,4 @@
-import { BadgeEuro, Lightbulb, TriangleAlert, Gift } from "lucide-react";
+import { Lightbulb, TriangleAlert } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Divider } from "@/components/ui/divider";
 import Link from "next/link";

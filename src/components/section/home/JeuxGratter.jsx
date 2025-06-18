@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { ScratchToReveal } from "@/components/magicui/scratch-to-reveal";
-import { dmSerif } from "@/app/styles/fonts";
 import { Button } from "@/components/ui/button";
 
 export function JeuxGratter() {

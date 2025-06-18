@@ -11,15 +11,12 @@ import {
   MorphingDialogContainer,
 } from "@/components/motionprimitives/morphing-dialog";
 import { PlusIcon } from "lucide-react";
-import { dmSerif } from "@/app/styles/fonts";
 
 export default function Projet() {
   return (
     <section className="px-4  sm:px-6 md:px-8 max-w-6xl mx-auto o">
       <div>
-        <h2
-          className={`${dmSerif.className} text-4xl sm:text-6xl font-bold max-w-6xl text-center p-4 mb-12`}
-        >
+        <h2 className="text-4xl md:text-6xl font-bold max-w-6xl text-center p-4 mb-12">
           Voici quelques exemples de projets réalisés récemment.
         </h2>
       </div>

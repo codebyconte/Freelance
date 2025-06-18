@@ -1,6 +1,6 @@
 // app/blog/agence-web-brest/page.jsx
 
-import { Lightbulb, BadgeCheck, TriangleAlert } from "lucide-react";
+import { Lightbulb } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Divider } from "@/components/ui/divider";
 import {
