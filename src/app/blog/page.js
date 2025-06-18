@@ -91,11 +91,11 @@ const posts = [
   },
 ];
 
-export default function Page() {
-  const sortedPosts = posts.sort(
-    (a, b) => new Date(b.datetime) - new Date(a.datetime)
-  );
+const sortedPosts = [...posts].sort((a, b) =>
+  b.datetime.localeCompare(a.datetime)
+);
 
+export default function Page() {
   return (
     <main className="bg-white py-8 sm:py-16">
       <script

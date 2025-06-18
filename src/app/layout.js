@@ -3,7 +3,6 @@ import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/layout/Header";
 import { inter } from "@/app/styles/fonts";
 import Footer from "@/components/layout/Footer";
-import { GoogleAnalytics } from "@/components/layout/GoogleAnalytics";
 
 export const metadata = {
   metadataBase: new URL("https://codebyconte.fr"),
@@ -49,7 +48,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={inter.className}>
       <body className="w-full">
-        <GoogleAnalytics GA_MEASUREMENT_ID="G-NNH04SFGH2" />
         <Analytics />
         <Header>{children}</Header>
         <Footer />
