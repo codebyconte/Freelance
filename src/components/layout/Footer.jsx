@@ -19,7 +19,7 @@ const navigation = {
   social: [
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/mouctar-conte/",
+      href: "https://www.linkedin.com/company/codebyconte/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.026-3.038-1.85-3.038-1.853 0-2.137 1.447-2.137 2.942v5.665h-3.554V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.368-1.85 3.598 0 4.263 2.368 4.263 5.451v6.29zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zm1.778 13.019H3.559V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.228.792 24 1.771 24h20.451C23.2 24 24 23.228 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
@@ -28,7 +28,7 @@ const navigation = {
     },
     {
       name: "Instagram",
-      href: "https://www.instagram.com/klyx_digital/",
+      href: "https://www.instagram.com/codebyconte?igsh=dGxmMTNrd2k3YTJt&utm_source=qr",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -41,7 +41,7 @@ const navigation = {
     },
     {
       name: "X",
-      href: "https://x.com/klyx_digital",
+      href: "https://x.com/codebyconte?s=21",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
@@ -50,7 +50,7 @@ const navigation = {
     },
     {
       name: "GitHub",
-      href: "https://github.com/klyx-digital",
+      href: "https://github.com/codebyconte",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
