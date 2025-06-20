@@ -7,13 +7,13 @@ export const metadata = {
   description:
     "Découvrez le parcours et les valeurs de Conte Mouctar, développeur web freelance à Brest. Une approche humaine et performante pour réussir votre projet digital.",
   alternates: {
-    canonical: "https://codebyconte.fr/a-propos",
+    canonical: "https://www.codebyconte.fr/a-propos",
   },
   openGraph: {
     title: "Développeur web à Brest – Une approche humaine et sur-mesure",
     description:
       "Conte Mouctar vous accompagne dans votre projet web avec passion, écoute et engagement. Découvrez son parcours et sa vision.",
-    url: "https://codebyconte.fr/a-propos",
+    url: "https://www.codebyconte.fr/a-propos",
     siteName: "Code By Conte",
     images: [
       {
@@ -51,10 +51,10 @@ export default function AboutPage() {
       "@type": "Organization",
       name: "Code By Conte",
     },
-    url: "https://codebyconte.fr/a-propos",
-    image: "https://codebyconte.fr/opengraph-image.png",
+    url: "https://www.codebyconte.fr/a-propos",
+    image: "https://www.codebyconte.fr/opengraph-image.png",
     sameAs: [
-      "https://codebyconte.fr",
+      "https://www.codebyconte.fr",
       "https://www.linkedin.com/in/conte-mouctar/",
     ],
   };
